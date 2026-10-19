@@ -1,0 +1,530 @@
+{
+  "fecha_utc": "2026-10-18T22:14:11.030309+00:00",
+  "versiones": {
+    "python": "3.12.14",
+    "numpy": "2.5.4",
+    "pandas": "2.2.3",
+    "scikit-learn": "1.9.1"
+  },
+  "objetivo": "Discriminar archivo de origen: construction=0, production=1; no predecir fraude.",
+  "universo": {
+    "filas": 284807,
+    "construction": 170884,
+    "production": 113923,
+    "columnas": [
+      "X1",
+      "X2",
+      "X3",
+      "X4",
+      "X5",
+      "X6",
+      "X7",
+      "X8",
+      "X9",
+      "X10",
+      "X11",
+      "X12",
+      "X13",
+      "X14",
+      "X15",
+      "X16",
+      "X17",
+      "X18",
+      "X19",
+      "X20",
+      "Amount"
+    ],
+    "muestreo": "Todos los registros; sin submuestreo.",
+    "excluidos": [
+      "Class",
+      "índice",
+      "posición de fila",
+      "nombre de archivo como predictor"
+    ]
+  },
+  "particion": {
+    "metodo": "GroupShuffleSplit, 30% de grupos para evaluación",
+    "semilla": 20261019,
+    "agrupacion": "igualdad exacta de los 21 predictores",
+    "grupos_exactos": 275590,
+    "grupos_canonicos": 275590,
+    "particiones_exacta_y_canonica_identicas": true,
+    "grupos_compartidos_train_test": 0,
+    "entrenamiento": {
+      "filas": 199379,
+      "grupos": 192913,
+      "construction": 119508,
+      "production": 79871
+    },
+    "evaluacion": {
+      "filas": 85428,
+      "grupos": 82677,
+      "construction": 51376,
+      "production": 34052
+    }
+  },
+  "modelo": {
+    "tipo": "HistGradientBoostingClassifier",
+    "parametros": {
+      "categorical_features": "from_dtype",
+      "class_weight": null,
+      "early_stopping": false,
+      "interaction_cst": null,
+      "l2_regularization": 1.0,
+      "learning_rate": 0.1,
+      "loss": "log_loss",
+      "max_bins": 255,
+      "max_depth": null,
+      "max_features": 1.0,
+      "max_iter": 100,
+      "max_leaf_nodes": 15,
+      "min_samples_leaf": 20,
+      "monotonic_cst": null,
+      "n_iter_no_change": 10,
+      "random_state": 20261019,
+      "scoring": "loss",
+      "tol": 1e-07,
+      "validation_fraction": 0.1,
+      "verbose": 0,
+      "warm_start": false
+    }
+  },
+  "evaluacion": {
+    "roc_auc_origen": 0.49756850753073606,
+    "bootstrap": {
+      "metodo": "bootstrap percentil de grupos de predictores completos, modelo fijo",
+      "repeticiones": 500,
+      "semilla": 20261020,
+      "grupos_evaluacion": 82677,
+      "ic95": [
+        0.4936867730984718,
+        0.5013435147552693
+      ],
+      "desviacion_estandar": 0.0019252349162166957,
+      "limitacion": "No incorpora variabilidad entre particiones ni reajustes del modelo."
+    },
+    "log_loss": 0.6730118292798933,
+    "log_loss_referencia_constante": 0.6724501382957967,
+    "brier": 0.23999260980642495,
+    "brier_referencia_constante": 0.23972296443045674,
+    "segundos_ajuste_y_prediccion": 0.4654081660119118
+  },
+  "limites": [
+    "Un AUC próximo a 0.5 no demuestra igualdad de distribuciones; limita la evidencia obtenida con este clasificador y esta partición.",
+    "No se ajustaron hiperparámetros usando evaluación; se realizó una única partición predefinida.",
+    "El objetivo es origen del archivo. No se entrenó ni evaluó un detector de fraude y Class no interviene.",
+    "El orden de filas puede codificar construcción de los archivos: se excluye del modelo y no se interpreta como tiempo.",
+    "La partición aleatoria por grupos no es validación temporal; no existe una variable temporal observada."
+  ],
+  "estructura_numerica": {
+    "cuantizacion": {
+      "X1": {
+        "paso_examinado": 2.0,
+        "tolerancia_absoluta": 1e-08,
+        "fraccion_compatible": 1.0,
+        "residuo_absoluto_maximo": 9.094947017729282e-13,
+        "valores_con_residuo_float_no_cero": 34601,
+        "ceros_con_signo_negativo": 213,
+        "distintos_originales": 1867,
+        "distintos_canonicos": 1867,
+        "mcd_enteros_canonicos": 1
+      },
+      "X2": {
+        "paso_examinado": 2.0,
+        "tolerancia_absoluta": 1e-08,
+        "fraccion_compatible": 1.0,
+        "residuo_absoluto_maximo": 9.094947017729282e-13,
+        "valores_con_residuo_float_no_cero": 23615,
+        "ceros_con_signo_negativo": 622,
+        "distintos_originales": 2459,
+        "distintos_canonicos": 2459,
+        "mcd_enteros_canonicos": 1
+      },
+      "X3": {
+        "paso_examinado": 2.0,
+        "tolerancia_absoluta": 1e-08,
+        "fraccion_compatible": 1.0,
+        "residuo_absoluto_maximo": 9.094947017729282e-13,
+        "valores_con_residuo_float_no_cero": 24291,
+        "ceros_con_signo_negativo": 344,
+        "distintos_originales": 1537,
+        "distintos_canonicos": 1537,
+        "mcd_enteros_canonicos": 1
+      },
+      "X4": {
+        "paso_examinado": 2.0,
+        "tolerancia_absoluta": 1e-08,
+        "fraccion_compatible": 1.0,
+        "residuo_absoluto_maximo": 4.547473508864641e-13,
+        "valores_con_residuo_float_no_cero": 21919,
+        "ceros_con_signo_negativo": 449,
+        "distintos_originales": 1330,
+        "distintos_canonicos": 1330,
+        "mcd_enteros_canonicos": 1
+      },
+      "X5": {
+        "paso_examinado": 2.0,
+        "tolerancia_absoluta": 1e-08,
+        "fraccion_compatible": 1.0,
+        "residuo_absoluto_maximo": 9.094947017729282e-13,
+        "valores_con_residuo_float_no_cero": 21786,
+        "ceros_con_signo_negativo": 577,
+        "distintos_originales": 2014,
+        "distintos_canonicos": 2014,
+        "mcd_enteros_canonicos": 1
+      },
+      "X6": {
+        "paso_examinado": 2.0,
+        "tolerancia_absoluta": 1e-08,
+        "fraccion_compatible": 1.0,
+        "residuo_absoluto_maximo": 4.547473508864641e-13,
+        "valores_con_residuo_float_no_cero": 21208,
+        "ceros_con_signo_negativo": 594,
+        "distintos_originales": 1568,
+        "distintos_canonicos": 1568,
+        "mcd_enteros_canonicos": 1
+      },
+      "X7": {
+        "paso_examinado": 2.0,
+        "tolerancia_absoluta": 1e-08,
+        "fraccion_compatible": 1.0,
+        "residuo_absoluto_maximo": 9.094947017729282e-13,
+        "valores_con_residuo_float_no_cero": 20508,
+        "ceros_con_signo_negativo": 771,
+        "distintos_originales": 2022,
+        "distintos_canonicos": 2022,
+        "mcd_enteros_canonicos": 1
+      },
+      "X8": {
+        "paso_examinado": 2.0,
+        "tolerancia_absoluta": 1e-08,
+        "fraccion_compatible": 1.0,
+        "residuo_absoluto_maximo": 9.094947017729282e-13,
+        "valores_con_residuo_float_no_cero": 23116,
+        "ceros_con_signo_negativo": 1629,
+        "distintos_originales": 2171,
+        "distintos_canonicos": 2171,
+        "mcd_enteros_canonicos": 1
+      },
+      "X9": {
+        "paso_examinado": 2.0,
+        "tolerancia_absoluta": 1e-08,
+        "fraccion_compatible": 1.0,
+        "residuo_absoluto_maximo": 2.2737367544323206e-13,
+        "valores_con_residuo_float_no_cero": 22477,
+        "ceros_con_signo_negativo": 633,
+        "distintos_originales": 1239,
+        "distintos_canonicos": 1239,
+        "mcd_enteros_canonicos": 1
+      },
+      "X10": {
+        "paso_examinado": 2.0,
+        "tolerancia_absoluta": 1e-08,
+        "fraccion_compatible": 1.0,
+        "residuo_absoluto_maximo": 4.547473508864641e-13,
+        "valores_con_residuo_float_no_cero": 19721,
+        "ceros_con_signo_negativo": 886,
+        "distintos_originales": 1787,
+        "distintos_canonicos": 1787,
+        "mcd_enteros_canonicos": 1
+      },
+      "X11": {
+        "paso_examinado": 2.0,
+        "tolerancia_absoluta": 1e-08,
+        "fraccion_compatible": 1.0,
+        "residuo_absoluto_maximo": 2.2737367544323206e-13,
+        "valores_con_residuo_float_no_cero": 21704,
+        "ceros_con_signo_negativo": 455,
+        "distintos_originales": 953,
+        "distintos_canonicos": 953,
+        "mcd_enteros_canonicos": 1
+      },
+      "X12": {
+        "paso_examinado": 2.0,
+        "tolerancia_absoluta": 1e-08,
+        "fraccion_compatible": 1.0,
+        "residuo_absoluto_maximo": 4.547473508864641e-13,
+        "valores_con_residuo_float_no_cero": 21407,
+        "ceros_con_signo_negativo": 732,
+        "distintos_originales": 1132,
+        "distintos_canonicos": 1132,
+        "mcd_enteros_canonicos": 1
+      },
+      "X13": {
+        "paso_examinado": 2.0,
+        "tolerancia_absoluta": 1e-08,
+        "fraccion_compatible": 1.0,
+        "residuo_absoluto_maximo": 1.1368683772161603e-13,
+        "valores_con_residuo_float_no_cero": 21839,
+        "ceros_con_signo_negativo": 619,
+        "distintos_originales": 770,
+        "distintos_canonicos": 770,
+        "mcd_enteros_canonicos": 1
+      },
+      "X14": {
+        "paso_examinado": 2.0,
+        "tolerancia_absoluta": 1e-08,
+        "fraccion_compatible": 1.0,
+        "residuo_absoluto_maximo": 9.094947017729282e-13,
+        "valores_con_residuo_float_no_cero": 20723,
+        "ceros_con_signo_negativo": 838,
+        "distintos_originales": 1400,
+        "distintos_canonicos": 1400,
+        "mcd_enteros_canonicos": 1
+      },
+      "X15": {
+        "paso_examinado": 2.0,
+        "tolerancia_absoluta": 1e-08,
+        "fraccion_compatible": 1.0,
+        "residuo_absoluto_maximo": 2.2737367544323206e-13,
+        "valores_con_residuo_float_no_cero": 21965,
+        "ceros_con_signo_negativo": 591,
+        "distintos_originales": 757,
+        "distintos_canonicos": 757,
+        "mcd_enteros_canonicos": 1
+      },
+      "X16": {
+        "paso_examinado": 2.0,
+        "tolerancia_absoluta": 1e-08,
+        "fraccion_compatible": 1.0,
+        "residuo_absoluto_maximo": 2.2737367544323206e-13,
+        "valores_con_residuo_float_no_cero": 20259,
+        "ceros_con_signo_negativo": 740,
+        "distintos_originales": 1034,
+        "distintos_canonicos": 1034,
+        "mcd_enteros_canonicos": 1
+      },
+      "X17": {
+        "paso_examinado": 2.0,
+        "tolerancia_absoluta": 1e-08,
+        "fraccion_compatible": 1.0,
+        "residuo_absoluto_maximo": 9.094947017729282e-13,
+        "valores_con_residuo_float_no_cero": 19062,
+        "ceros_con_signo_negativo": 799,
+        "distintos_originales": 1208,
+        "distintos_canonicos": 1208,
+        "mcd_enteros_canonicos": 1
+      },
+      "X18": {
+        "paso_examinado": 2.0,
+        "tolerancia_absoluta": 1e-08,
+        "fraccion_compatible": 1.0,
+        "residuo_absoluto_maximo": 2.2737367544323206e-13,
+        "valores_con_residuo_float_no_cero": 20664,
+        "ceros_con_signo_negativo": 727,
+        "distintos_originales": 867,
+        "distintos_canonicos": 867,
+        "mcd_enteros_canonicos": 1
+      },
+      "X19": {
+        "paso_examinado": 2.0,
+        "tolerancia_absoluta": 1e-08,
+        "fraccion_compatible": 1.0,
+        "residuo_absoluto_maximo": 1.1368683772161603e-13,
+        "valores_con_residuo_float_no_cero": 21187,
+        "ceros_con_signo_negativo": 868,
+        "distintos_originales": 836,
+        "distintos_canonicos": 836,
+        "mcd_enteros_canonicos": 1
+      },
+      "X20": {
+        "paso_examinado": 2.0,
+        "tolerancia_absoluta": 1e-08,
+        "fraccion_compatible": 1.0,
+        "residuo_absoluto_maximo": 9.094947017729282e-13,
+        "valores_con_residuo_float_no_cero": 25366,
+        "ceros_con_signo_negativo": 1942,
+        "distintos_originales": 1619,
+        "distintos_canonicos": 1619,
+        "mcd_enteros_canonicos": 1
+      },
+      "Amount": {
+        "paso_examinado": 0.01,
+        "tolerancia_absoluta": 1e-08,
+        "fraccion_compatible": 1.0,
+        "residuo_absoluto_maximo": 3.637978807091713e-12,
+        "valores_con_residuo_float_no_cero": 27961,
+        "ceros_con_signo_negativo": 0,
+        "distintos_originales": 32767,
+        "distintos_canonicos": 32767,
+        "mcd_enteros_canonicos": 1
+      }
+    },
+    "estructura_lineal": {
+      "X1_a_X20": {
+        "rango_numerico_matriz_centrada_estandarizada": 20,
+        "numero_columnas": 20,
+        "autovalores_correlacion": [
+          0.9999309020101387,
+          0.9999426671451839,
+          0.9999644509573634,
+          0.9999691838830423,
+          0.9999737950835617,
+          0.9999772622811695,
+          0.9999801943081068,
+          0.9999858914322879,
+          0.9999933018427187,
+          0.999996303908553,
+          1.0000012576998756,
+          1.0000029981053733,
+          1.0000077739934319,
+          1.00001656811513,
+          1.0000250662235106,
+          1.0000300235446797,
+          1.0000323771602018,
+          1.0000384682269376,
+          1.0000549947016981,
+          1.0000765193770318
+        ],
+        "numero_condicion_matriz_estandarizada": 1.0000728110640025,
+        "mayor_correlacion_absoluta": {
+          "variables": [
+            "X6",
+            "X20"
+          ],
+          "pearson": 2.583614622210619e-05
+        },
+        "media_en_unidades_de_desviacion": {
+          "X1": 4.0333397836110275e-06,
+          "X2": -9.99346735548539e-07,
+          "X3": -3.6124491646863825e-06,
+          "X4": -1.4879099657635795e-06,
+          "X5": 9.920946738736722e-07,
+          "X6": -9.224150033205781e-07,
+          "X7": 1.6177838099377494e-06,
+          "X8": -6.379331309996613e-06,
+          "X9": 2.3330498038773583e-06,
+          "X10": -2.611955519591237e-06,
+          "X11": -7.086157726987238e-06,
+          "X12": -8.995691185789077e-06,
+          "X13": 8.502006458966919e-06,
+          "X14": 4.285437770171985e-06,
+          "X15": 2.2632230350217844e-06,
+          "X16": -6.571437399967886e-06,
+          "X17": 1.1947244911191925e-05,
+          "X18": -6.744323996241968e-06,
+          "X19": -1.0696886989313645e-05,
+          "X20": 9.837549533088447e-06
+        },
+        "desviaciones_muestrales": {
+          "X1": 391.7392111370092,
+          "X2": 330.2638172502003,
+          "X3": 303.25096427576136,
+          "X4": 283.17436429803536,
+          "X5": 276.05195387023275,
+          "X6": 266.4532504528282,
+          "X7": 247.41937599735562,
+          "X8": 238.8712666795793,
+          "X9": 219.7243491694388,
+          "X10": 217.7702644482875,
+          "X11": 204.14358724365113,
+          "X12": 199.84107797904352,
+          "X13": 199.0558513723309,
+          "X14": 191.72114110719252,
+          "X15": 183.06444082845843,
+          "X16": 175.25192997891918,
+          "X17": 169.86715482092666,
+          "X18": 167.63580601637952,
+          "X19": 162.80720091581566,
+          "X20": 154.18643089667177
+        },
+        "desviaciones_decrecientes_en_orden_columnas": true,
+        "columnas_identicas": []
+      },
+      "todos_21_predictores": {
+        "rango_numerico_matriz_centrada_estandarizada": 21,
+        "numero_columnas": 21,
+        "autovalores_correlacion": [
+          0.058686832747902096,
+          0.9999335710322086,
+          0.9999469015124325,
+          0.9999644658590413,
+          0.9999736136949796,
+          0.999973883220104,
+          0.9999772789023276,
+          0.9999815992443384,
+          0.9999860680543745,
+          0.9999943770132569,
+          0.9999966266755714,
+          1.0000013933666045,
+          1.000007528418842,
+          1.0000165372083487,
+          1.0000198292771347,
+          1.0000282802206624,
+          1.0000321468255033,
+          1.0000355190735077,
+          1.0000538365882996,
+          1.0000757034218724,
+          1.9413140076426831
+        ],
+        "numero_condicion_matriz_estandarizada": 5.751452775405513,
+        "mayor_correlacion_absoluta": {
+          "variables": [
+            "X2",
+            "Amount"
+          ],
+          "pearson": -0.5314039216597448
+        },
+        "media_en_unidades_de_desviacion": {
+          "X1": 4.0333397836110275e-06,
+          "X2": -9.99346735548539e-07,
+          "X3": -3.6124491646863825e-06,
+          "X4": -1.4879099657635795e-06,
+          "X5": 9.920946738736722e-07,
+          "X6": -9.224150033205781e-07,
+          "X7": 1.6177838099377494e-06,
+          "X8": -6.379331309996613e-06,
+          "X9": 2.3330498038773583e-06,
+          "X10": -2.611955519591237e-06,
+          "X11": -7.086157726987238e-06,
+          "X12": -8.995691185789077e-06,
+          "X13": 8.502006458966919e-06,
+          "X14": 4.285437770171985e-06,
+          "X15": 2.2632230350217844e-06,
+          "X16": -6.571437399967886e-06,
+          "X17": 1.1947244911191925e-05,
+          "X18": -6.744323996241968e-06,
+          "X19": -1.0696886989313645e-05,
+          "X20": 9.837549533088447e-06,
+          "Amount": 0.35322786330267736
+        },
+        "desviaciones_muestrales": {
+          "X1": 391.7392111370092,
+          "X2": 330.2638172502003,
+          "X3": 303.25096427576136,
+          "X4": 283.17436429803536,
+          "X5": 276.05195387023275,
+          "X6": 266.4532504528282,
+          "X7": 247.41937599735562,
+          "X8": 238.8712666795793,
+          "X9": 219.7243491694388,
+          "X10": 217.7702644482875,
+          "X11": 204.14358724365113,
+          "X12": 199.84107797904352,
+          "X13": 199.0558513723309,
+          "X14": 191.72114110719252,
+          "X15": 183.06444082845843,
+          "X16": 175.25192997891918,
+          "X17": 169.86715482092666,
+          "X18": 167.63580601637952,
+          "X19": 162.80720091581566,
+          "X20": 154.18643089667177,
+          "Amount": 375.18022850375166
+        },
+        "desviaciones_decrecientes_en_orden_columnas": false,
+        "columnas_identicas": [],
+        "relacion_lineal_amount_con_X": {
+          "r2_descriptivo_en_todo_el_conjunto": 0.8860705251538669,
+          "fraccion_varianza_amount_no_explicada_linealmente": 0.11392947484613314,
+          "interpretacion": "Ajuste descriptivo en los mismos datos, sin estimación de rendimiento predictivo fuera de muestra; Amount no es combinación lineal exacta de X1..X20."
+        }
+      }
+    },
+    "limites_interpretacion": [
+      "La cuantización describe los valores presentes; no identifica una transformación única ni permite recuperar valores previos.",
+      "Centrado y correlación lineal pequeña no implican independencia, normalidad o ausencia de dependencia no lineal.",
+      "No se atribuyen significado, unidades, algoritmo de transformación o procedencia a X1..X20."
+    ]
+  },
+  "segundos_totales": 5.80307029200776
+}

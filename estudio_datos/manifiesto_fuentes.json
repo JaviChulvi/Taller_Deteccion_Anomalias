@@ -1,0 +1,46 @@
+[
+  {
+    "archivo": ".DS_Store",
+    "bytes": 8196,
+    "sha256": "909e5b6f03b9727dc987ddab1c49ddd96cf39e59e3c2034c7e46e2480e0026d4",
+    "papel": "metadatos Finder, sin datos analíticos"
+  },
+  {
+    "archivo": "credit_card_construction.csv.zip",
+    "bytes": 6688969,
+    "sha256": "7e13f1ec9e776656180c538a8ef95bb38aae9e2878fe5b6f6b0e9abd3357d705",
+    "papel": "fuente",
+    "integridad_crc": true,
+    "miembros": [
+      {
+        "nombre": "credit_card_construction.csv",
+        "bytes": 26595750
+      }
+    ]
+  },
+  {
+    "archivo": "credit_card_production.csv.zip",
+    "bytes": 4463685,
+    "sha256": "5fc0c21f7c3bfd66969788d4cc86260af5dadbca796d272a534c6bcb66e64ebf",
+    "papel": "fuente",
+    "integridad_crc": true,
+    "miembros": [
+      {
+        "nombre": "credit_card_production.csv",
+        "bytes": 17624227
+      }
+    ]
+  },
+  {
+    "archivo": "taller_anomalías.pdf",
+    "bytes": 47550,
+    "sha256": "d546726cda6f96e32a6dd97b459f3392a1fa18eb4b56015a6fbdcf1a9d142ce8",
+    "papel": "fuente"
+  },
+  {
+    "archivo": "taller_detección_anomalías.ipynb",
+    "bytes": 337219,
+    "sha256": "9613c76dce8d00d768ed366207f7038d0a00cb83ab5d1528ff0edacbb57b76c9",
+    "papel": "fuente"
+  }
+]

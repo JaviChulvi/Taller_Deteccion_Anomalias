@@ -1,0 +1,233 @@
+[
+  {
+    "variable": "X1",
+    "ks": 0.0031188212246654884,
+    "p_ks": 0.5182797796911087,
+    "psi_decil_suavizado": 0.00024558904738143314,
+    "diferencia_medias_en_sd_construccion": -0.0037598316168992664,
+    "wasserstein_en_iqr_construccion": 0.004802727415074597,
+    "produccion_fuera_rango_const": 0,
+    "ratio_desviaciones": 1.005227104694154,
+    "p_ks_bh": 0.9279037122321607
+  },
+  {
+    "variable": "X2",
+    "ks": 0.0033128082863178587,
+    "p_ks": 0.44022524449330735,
+    "psi_decil_suavizado": 9.481828733407834e-05,
+    "diferencia_medias_en_sd_construccion": 0.00038270038443864095,
+    "wasserstein_en_iqr_construccion": 0.006499590821627859,
+    "produccion_fuera_rango_const": 1,
+    "ratio_desviaciones": 0.9982017182183367,
+    "p_ks_bh": 0.9279037122321607
+  },
+  {
+    "variable": "X3",
+    "ks": 0.0026283285494262953,
+    "p_ks": 0.7314338295014371,
+    "psi_decil_suavizado": 8.183725330371728e-05,
+    "diferencia_medias_en_sd_construccion": -0.0023740959811301655,
+    "wasserstein_en_iqr_construccion": 0.0038331420405214815,
+    "produccion_fuera_rango_const": 2,
+    "ratio_desviaciones": 1.009656824060962,
+    "p_ks_bh": 0.9279037122321607
+  },
+  {
+    "variable": "X4",
+    "ks": 0.0023696064490855706,
+    "p_ks": 0.8365169313664325,
+    "psi_decil_suavizado": 0.00018568969313491758,
+    "diferencia_medias_en_sd_construccion": 0.0008577852000411898,
+    "wasserstein_en_iqr_construccion": 0.0034716637937457695,
+    "produccion_fuera_rango_const": 1,
+    "ratio_desviaciones": 1.0053235008093868,
+    "p_ks_bh": 0.9759364199275046
+  },
+  {
+    "variable": "X5",
+    "ks": 0.003076910858289428,
+    "p_ks": 0.5358956182007177,
+    "psi_decil_suavizado": 0.00014704383933659566,
+    "diferencia_medias_en_sd_construccion": -0.0026194353136654736,
+    "wasserstein_en_iqr_construccion": 0.007780047216307885,
+    "produccion_fuera_rango_const": 4,
+    "ratio_desviaciones": 1.0481750028924357,
+    "p_ks_bh": 0.9279037122321607
+  },
+  {
+    "variable": "X6",
+    "ks": 0.0033949317389962985,
+    "p_ks": 0.4091879882221616,
+    "psi_decil_suavizado": 0.00011112233894716688,
+    "diferencia_medias_en_sd_construccion": -0.00046484413532829925,
+    "wasserstein_en_iqr_construccion": 0.007055725297493734,
+    "produccion_fuera_rango_const": 4,
+    "ratio_desviaciones": 1.023757235796932,
+    "p_ks_bh": 0.9279037122321607
+  },
+  {
+    "variable": "X7",
+    "ks": 0.002153167077061771,
+    "p_ks": 0.9085421287252039,
+    "psi_decil_suavizado": 0.00017918254632749475,
+    "diferencia_medias_en_sd_construccion": -5.2157424461601076e-05,
+    "wasserstein_en_iqr_construccion": 0.008421479579056007,
+    "produccion_fuera_rango_const": 5,
+    "ratio_desviaciones": 1.0642019622688303,
+    "p_ks_bh": 0.9976600800576392
+  },
+  {
+    "variable": "X8",
+    "ks": 0.005010450448571069,
+    "p_ks": 0.0644261235723611,
+    "psi_decil_suavizado": 0.0001536602272315292,
+    "diferencia_medias_en_sd_construccion": -0.0022978410620980113,
+    "wasserstein_en_iqr_construccion": 0.013129191851566517,
+    "produccion_fuera_rango_const": 0,
+    "ratio_desviaciones": 1.002945622086644,
+    "p_ks_bh": 0.9279037122321607
+  },
+  {
+    "variable": "X9",
+    "ks": 0.002640295498891443,
+    "p_ks": 0.7262751520980479,
+    "psi_decil_suavizado": 0.00011689448726855558,
+    "diferencia_medias_en_sd_construccion": 0.00024032827739673538,
+    "wasserstein_en_iqr_construccion": 0.003999604704908834,
+    "produccion_fuera_rango_const": 0,
+    "ratio_desviaciones": 1.004082032468136,
+    "p_ks_bh": 0.9279037122321607
+  },
+  {
+    "variable": "X10",
+    "ks": 0.0031351097608957046,
+    "p_ks": 0.5114975935088855,
+    "psi_decil_suavizado": 6.812549686834827e-05,
+    "diferencia_medias_en_sd_construccion": 0.0009488847807175762,
+    "wasserstein_en_iqr_construccion": 0.006856887029797944,
+    "produccion_fuera_rango_const": 1,
+    "ratio_desviaciones": 1.0112983534914515,
+    "p_ks_bh": 0.9279037122321607
+  },
+  {
+    "variable": "X11",
+    "ks": 0.002994445401775514,
+    "p_ks": 0.5711696673699187,
+    "psi_decil_suavizado": 0.0001353704045827429,
+    "diferencia_medias_en_sd_construccion": -0.0035075676520518145,
+    "wasserstein_en_iqr_construccion": 0.0034332856384106103,
+    "produccion_fuera_rango_const": 5,
+    "ratio_desviaciones": 0.9956765541362148,
+    "p_ks_bh": 0.9279037122321607
+  },
+  {
+    "variable": "X12",
+    "ks": 0.0028509264047539284,
+    "p_ks": 0.6339048255158723,
+    "psi_decil_suavizado": 0.00014050069779266423,
+    "diferencia_medias_en_sd_construccion": -0.00297190830993927,
+    "wasserstein_en_iqr_construccion": 0.004963852194337996,
+    "produccion_fuera_rango_const": 0,
+    "ratio_desviaciones": 1.0031258539896888,
+    "p_ks_bh": 0.9279037122321607
+  },
+  {
+    "variable": "X13",
+    "ks": 0.0033049591493287123,
+    "p_ks": 0.4432584510337092,
+    "psi_decil_suavizado": 0.00014666862520486704,
+    "diferencia_medias_en_sd_construccion": 0.0036282397860293546,
+    "wasserstein_en_iqr_construccion": 0.003336309966224853,
+    "produccion_fuera_rango_const": 4,
+    "ratio_desviaciones": 1.0029073778095763,
+    "p_ks_bh": 0.9279037122321607
+  },
+  {
+    "variable": "X14",
+    "ks": 0.0015085652031276986,
+    "p_ks": 0.9976600800576392,
+    "psi_decil_suavizado": 3.834344935672319e-05,
+    "diferencia_medias_en_sd_construccion": 0.002554364956525634,
+    "wasserstein_en_iqr_construccion": 0.004090035333785845,
+    "produccion_fuera_rango_const": 1,
+    "ratio_desviaciones": 0.9964321718314595,
+    "p_ks_bh": 0.9976600800576392
+  },
+  {
+    "variable": "X15",
+    "ks": 0.0019085104880205428,
+    "p_ks": 0.964195445580482,
+    "psi_decil_suavizado": 9.155405845908882e-05,
+    "diferencia_medias_en_sd_construccion": 9.981266997243552e-05,
+    "wasserstein_en_iqr_construccion": 0.0023364725720600075,
+    "produccion_fuera_rango_const": 3,
+    "ratio_desviaciones": 1.000343776735276,
+    "p_ks_bh": 0.9976600800576392
+  },
+  {
+    "variable": "X16",
+    "ks": 0.003305051096890388,
+    "p_ks": 0.4432228533118193,
+    "psi_decil_suavizado": 7.585354359008186e-05,
+    "diferencia_medias_en_sd_construccion": -0.002823422311320057,
+    "wasserstein_en_iqr_construccion": 0.005444171169427415,
+    "produccion_fuera_rango_const": 2,
+    "ratio_desviaciones": 1.0027612226225515,
+    "p_ks_bh": 0.9279037122321607
+  },
+  {
+    "variable": "X17",
+    "ks": 0.0026982873396983464,
+    "p_ks": 0.7010701850503496,
+    "psi_decil_suavizado": 0.00013229476305259556,
+    "diferencia_medias_en_sd_construccion": 0.004278902432591144,
+    "wasserstein_en_iqr_construccion": 0.005042230574646867,
+    "produccion_fuera_rango_const": 0,
+    "ratio_desviaciones": 0.9980749785094255,
+    "p_ks_bh": 0.9279037122321607
+  },
+  {
+    "variable": "X18",
+    "ks": 0.0027557034552140314,
+    "p_ks": 0.6758770072830653,
+    "psi_decil_suavizado": 0.00013004464098626282,
+    "diferencia_medias_en_sd_construccion": 0.0041386244250580075,
+    "wasserstein_en_iqr_construccion": 0.004664303883360183,
+    "produccion_fuera_rango_const": 0,
+    "ratio_desviaciones": 1.0046277023633756,
+    "p_ks_bh": 0.9279037122321607
+  },
+  {
+    "variable": "X19",
+    "ks": 0.0036101122513030326,
+    "p_ks": 0.3343023238240712,
+    "psi_decil_suavizado": 8.246309470265338e-05,
+    "diferencia_medias_en_sd_construccion": -0.004695565590687695,
+    "wasserstein_en_iqr_construccion": 0.006946846286640965,
+    "produccion_fuera_rango_const": 1,
+    "ratio_desviaciones": 1.0103858436926847,
+    "p_ks_bh": 0.9279037122321607
+  },
+  {
+    "variable": "X20",
+    "ks": 0.0039727691528644304,
+    "p_ks": 0.23022841975279462,
+    "psi_decil_suavizado": 0.00012181333540980762,
+    "diferencia_medias_en_sd_construccion": -0.0012900420621064555,
+    "wasserstein_en_iqr_construccion": 0.014442437365943398,
+    "produccion_fuera_rango_const": 3,
+    "ratio_desviaciones": 1.0278939799709783,
+    "p_ks_bh": 0.9279037122321607
+  },
+  {
+    "variable": "Amount",
+    "ks": 0.0025821642470890693,
+    "p_ks": 0.7511601479974634,
+    "psi_decil_suavizado": 0.00013521944213311352,
+    "diferencia_medias_en_sd_construccion": 0.002788289387271628,
+    "wasserstein_en_iqr_construccion": 0.016190208823066776,
+    "produccion_fuera_rango_const": 1,
+    "ratio_desviaciones": 1.0786143172022091,
+    "p_ks_bh": 0.9279037122321607
+  }
+]

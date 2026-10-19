@@ -1,0 +1,959 @@
+{
+  "versiones": {
+    "python": "3.12.14",
+    "numpy": "2.5.4",
+    "pandas": "2.2.3",
+    "scikit_learn": "1.9.1"
+  },
+  "metodo": "Igualdad numerica exacta por columnas mediante groupby/merge; no se comparan solamente hashes. -0.0 y 0.0 son iguales. NaN en predictores se agrupa conjuntamente.",
+  "advertencias": [
+    "Dos filas con predictores iguales no prueban identidad de transaccion; la discretizacion puede producir coincidencias.",
+    "Class de produccion no permite contrastar etiquetas: esta completamente ausente.",
+    "El numero de fila indica orden de archivo, no tiempo ni identidad de cliente.",
+    "El solape puede inflar la validacion; esta auditoria no entrena modelos y no cuantifica su efecto en metricas.",
+    "La particion agrupada es un analisis de sensibilidad por patron observable, no un sustituto de grupos de cliente o tiempo si existen."
+  ],
+  "split_original": {
+    "test_size": 0.3,
+    "random_state": 42,
+    "stratify": "Class"
+  },
+  "duplicados_fila_completa_construccion": 4167,
+  "duplicados_fila_completa_produccion": 2109,
+  "analisis": {
+    "X1_X20": {
+      "construccion": {
+        "filas": 170884,
+        "filas_con_etiqueta": 170884,
+        "filas_sin_etiqueta": 0,
+        "columnas_igualdad": [
+          "X1",
+          "X2",
+          "X3",
+          "X4",
+          "X5",
+          "X6",
+          "X7",
+          "X8",
+          "X9",
+          "X10",
+          "X11",
+          "X12",
+          "X13",
+          "X14",
+          "X15",
+          "X16",
+          "X17",
+          "X18",
+          "X19",
+          "X20"
+        ],
+        "patrones_unicos": 165241,
+        "filas_redundantes_tras_primera": 5643,
+        "grupos_duplicados": 3105,
+        "filas_en_grupos_duplicados": 8748,
+        "porcentaje_filas_en_grupos_duplicados": 5.119262189555488,
+        "maxima_multiplicidad": 49,
+        "histograma_multiplicidades": {
+          "1": 162136,
+          "2": 2208,
+          "3": 473,
+          "4": 179,
+          "5": 97,
+          "6": 38,
+          "7": 26,
+          "8": 14,
+          "9": 5,
+          "10": 10,
+          "11": 9,
+          "12": 3,
+          "13": 7,
+          "14": 5,
+          "15": 4,
+          "16": 5,
+          "17": 1,
+          "19": 1,
+          "20": 2,
+          "21": 4,
+          "22": 1,
+          "23": 2,
+          "24": 1,
+          "26": 2,
+          "28": 1,
+          "30": 1,
+          "32": 1,
+          "37": 1,
+          "38": 1,
+          "45": 1,
+          "46": 1,
+          "49": 1
+        },
+        "duplicados_por_clase": {
+          "0": {
+            "filas": 8732,
+            "total_clase": 170589,
+            "porcentaje_clase": 5.118735674633182
+          },
+          "1": {
+            "filas": 16,
+            "total_clase": 295,
+            "porcentaje_clase": 5.423728813559322
+          }
+        },
+        "grupos_con_etiquetas_contradictorias": 0,
+        "filas_con_etiquetas_contradictorias": 0,
+        "fraudes": 295,
+        "patrones_fraudulentos_unicos": 285,
+        "grupos_con_multiples_fraudes": 6,
+        "fraudes_redundantes_tras_primero": 10,
+        "distancias_entre_repeticiones_en_orden_fichero": {
+          "n": 5643,
+          "minimo": 2.0,
+          "mediana": 25807.0,
+          "maximo": 166680.0,
+          "repeticiones_en_filas_adyacentes": 0
+        },
+        "bloques_deciles_orden_fichero": [
+          {
+            "bloque": 1,
+            "primera_fila_base_cero": 0,
+            "ultima_fila_base_cero": 17088,
+            "filas": 17089,
+            "fraudes": 25,
+            "filas_pertenecientes_a_duplicados_globales": 841
+          },
+          {
+            "bloque": 2,
+            "primera_fila_base_cero": 17089,
+            "ultima_fila_base_cero": 34177,
+            "filas": 17089,
+            "fraudes": 26,
+            "filas_pertenecientes_a_duplicados_globales": 848
+          },
+          {
+            "bloque": 3,
+            "primera_fila_base_cero": 34178,
+            "ultima_fila_base_cero": 51266,
+            "filas": 17089,
+            "fraudes": 29,
+            "filas_pertenecientes_a_duplicados_globales": 859
+          },
+          {
+            "bloque": 4,
+            "primera_fila_base_cero": 51267,
+            "ultima_fila_base_cero": 68355,
+            "filas": 17089,
+            "fraudes": 40,
+            "filas_pertenecientes_a_duplicados_globales": 832
+          },
+          {
+            "bloque": 5,
+            "primera_fila_base_cero": 68356,
+            "ultima_fila_base_cero": 85443,
+            "filas": 17088,
+            "fraudes": 30,
+            "filas_pertenecientes_a_duplicados_globales": 943
+          },
+          {
+            "bloque": 6,
+            "primera_fila_base_cero": 85444,
+            "ultima_fila_base_cero": 102531,
+            "filas": 17088,
+            "fraudes": 25,
+            "filas_pertenecientes_a_duplicados_globales": 904
+          },
+          {
+            "bloque": 7,
+            "primera_fila_base_cero": 102532,
+            "ultima_fila_base_cero": 119619,
+            "filas": 17088,
+            "fraudes": 27,
+            "filas_pertenecientes_a_duplicados_globales": 844
+          },
+          {
+            "bloque": 8,
+            "primera_fila_base_cero": 119620,
+            "ultima_fila_base_cero": 136707,
+            "filas": 17088,
+            "fraudes": 31,
+            "filas_pertenecientes_a_duplicados_globales": 879
+          },
+          {
+            "bloque": 9,
+            "primera_fila_base_cero": 136708,
+            "ultima_fila_base_cero": 153795,
+            "filas": 17088,
+            "fraudes": 37,
+            "filas_pertenecientes_a_duplicados_globales": 916
+          },
+          {
+            "bloque": 10,
+            "primera_fila_base_cero": 153796,
+            "ultima_fila_base_cero": 170883,
+            "filas": 17088,
+            "fraudes": 25,
+            "filas_pertenecientes_a_duplicados_globales": 882
+          }
+        ]
+      },
+      "produccion": {
+        "filas": 113923,
+        "filas_con_etiqueta": 0,
+        "filas_sin_etiqueta": 113923,
+        "columnas_igualdad": [
+          "X1",
+          "X2",
+          "X3",
+          "X4",
+          "X5",
+          "X6",
+          "X7",
+          "X8",
+          "X9",
+          "X10",
+          "X11",
+          "X12",
+          "X13",
+          "X14",
+          "X15",
+          "X16",
+          "X17",
+          "X18",
+          "X19",
+          "X20"
+        ],
+        "patrones_unicos": 110965,
+        "filas_redundantes_tras_primera": 2958,
+        "grupos_duplicados": 1728,
+        "filas_en_grupos_duplicados": 4686,
+        "porcentaje_filas_en_grupos_duplicados": 4.11330460047576,
+        "maxima_multiplicidad": 34,
+        "histograma_multiplicidades": {
+          "1": 109237,
+          "2": 1279,
+          "3": 255,
+          "4": 67,
+          "5": 31,
+          "6": 28,
+          "7": 15,
+          "8": 10,
+          "9": 10,
+          "10": 5,
+          "11": 5,
+          "12": 4,
+          "13": 4,
+          "14": 4,
+          "15": 1,
+          "16": 2,
+          "17": 1,
+          "18": 2,
+          "19": 1,
+          "24": 1,
+          "28": 1,
+          "31": 1,
+          "34": 1
+        },
+        "duplicados_por_clase": {
+          "sin_etiqueta": {
+            "filas": 4686,
+            "total_clase": 113923,
+            "porcentaje_clase": 4.11330460047576
+          }
+        },
+        "grupos_con_etiquetas_contradictorias": null,
+        "filas_con_etiquetas_contradictorias": null,
+        "fraudes": null,
+        "patrones_fraudulentos_unicos": null,
+        "grupos_con_multiples_fraudes": null,
+        "fraudes_redundantes_tras_primero": null,
+        "distancias_entre_repeticiones_en_orden_fichero": {
+          "n": 2958,
+          "minimo": 7.0,
+          "mediana": 18835.0,
+          "maximo": 112279.0,
+          "repeticiones_en_filas_adyacentes": 0
+        },
+        "bloques_deciles_orden_fichero": [
+          {
+            "bloque": 1,
+            "primera_fila_base_cero": 0,
+            "ultima_fila_base_cero": 11392,
+            "filas": 11393,
+            "fraudes": null,
+            "filas_pertenecientes_a_duplicados_globales": 476
+          },
+          {
+            "bloque": 2,
+            "primera_fila_base_cero": 11393,
+            "ultima_fila_base_cero": 22785,
+            "filas": 11393,
+            "fraudes": null,
+            "filas_pertenecientes_a_duplicados_globales": 470
+          },
+          {
+            "bloque": 3,
+            "primera_fila_base_cero": 22786,
+            "ultima_fila_base_cero": 34178,
+            "filas": 11393,
+            "fraudes": null,
+            "filas_pertenecientes_a_duplicados_globales": 457
+          },
+          {
+            "bloque": 4,
+            "primera_fila_base_cero": 34179,
+            "ultima_fila_base_cero": 45570,
+            "filas": 11392,
+            "fraudes": null,
+            "filas_pertenecientes_a_duplicados_globales": 459
+          },
+          {
+            "bloque": 5,
+            "primera_fila_base_cero": 45571,
+            "ultima_fila_base_cero": 56962,
+            "filas": 11392,
+            "fraudes": null,
+            "filas_pertenecientes_a_duplicados_globales": 446
+          },
+          {
+            "bloque": 6,
+            "primera_fila_base_cero": 56963,
+            "ultima_fila_base_cero": 68354,
+            "filas": 11392,
+            "fraudes": null,
+            "filas_pertenecientes_a_duplicados_globales": 496
+          },
+          {
+            "bloque": 7,
+            "primera_fila_base_cero": 68355,
+            "ultima_fila_base_cero": 79746,
+            "filas": 11392,
+            "fraudes": null,
+            "filas_pertenecientes_a_duplicados_globales": 475
+          },
+          {
+            "bloque": 8,
+            "primera_fila_base_cero": 79747,
+            "ultima_fila_base_cero": 91138,
+            "filas": 11392,
+            "fraudes": null,
+            "filas_pertenecientes_a_duplicados_globales": 461
+          },
+          {
+            "bloque": 9,
+            "primera_fila_base_cero": 91139,
+            "ultima_fila_base_cero": 102530,
+            "filas": 11392,
+            "fraudes": null,
+            "filas_pertenecientes_a_duplicados_globales": 507
+          },
+          {
+            "bloque": 10,
+            "primera_fila_base_cero": 102531,
+            "ultima_fila_base_cero": 113922,
+            "filas": 11392,
+            "fraudes": null,
+            "filas_pertenecientes_a_duplicados_globales": 439
+          }
+        ]
+      },
+      "coincidencias_entre_datasets": {
+        "columnas_igualdad": [
+          "X1",
+          "X2",
+          "X3",
+          "X4",
+          "X5",
+          "X6",
+          "X7",
+          "X8",
+          "X9",
+          "X10",
+          "X11",
+          "X12",
+          "X13",
+          "X14",
+          "X15",
+          "X16",
+          "X17",
+          "X18",
+          "X19",
+          "X20"
+        ],
+        "patrones_presentes_en_ambos": 3728,
+        "filas_construccion_con_coincidencia": 7115,
+        "filas_produccion_con_coincidencia": 5847,
+        "porcentaje_produccion_con_coincidencia": 5.132413998929101,
+        "pares_de_filas_coincidentes": 25446,
+        "fraudes_construccion_con_coincidencia": 12,
+        "patrones_con_fraude_construccion": 6,
+        "filas_produccion_coincidentes_con_patron_fraudulento_construccion": 6,
+        "patrones_cruzados_con_etiquetas_contradictorias_construccion": 0
+      },
+      "split_aleatorio_notebook": {
+        "filas_entrenamiento": 119618,
+        "filas_validacion": 51266,
+        "fraccion_validacion": 0.3000046815383535,
+        "fraudes_entrenamiento": 206,
+        "fraudes_validacion": 89,
+        "tasa_fraude_entrenamiento": 0.0017221488404755138,
+        "tasa_fraude_validacion": 0.001736043381578434,
+        "grupos_entrenamiento": 116430,
+        "grupos_validacion": 50409,
+        "grupos_solapados": 1598,
+        "filas_validacion_con_predictores_en_entrenamiento": 2232,
+        "porcentaje_validacion_con_predictores_en_entrenamiento": 4.3537627277337805,
+        "coincidencias_validacion_por_clase": {
+          "0": {
+            "filas": 2227,
+            "total_clase": 51177,
+            "porcentaje_clase": 4.351564179221135
+          },
+          "1": {
+            "filas": 5,
+            "total_clase": 89,
+            "porcentaje_clase": 5.617977528089888
+          }
+        },
+        "grupos_fraudulentos_solapados": 4
+      },
+      "alternativa_agrupada": {
+        "metodo": "StratifiedGroupKFold(n_splits=10, shuffle=True, random_state=42); folds 0,1,2 para validacion y los otros siete para entrenamiento",
+        "filas_entrenamiento": 119619,
+        "filas_validacion": 51265,
+        "fraccion_validacion": 0.29999882961541163,
+        "fraudes_entrenamiento": 207,
+        "fraudes_validacion": 88,
+        "tasa_fraude_entrenamiento": 0.0017304943194642992,
+        "tasa_fraude_validacion": 0.001716570759777626,
+        "grupos_entrenamiento": 115672,
+        "grupos_validacion": 49569,
+        "grupos_solapados": 0,
+        "filas_validacion_con_predictores_en_entrenamiento": 0,
+        "porcentaje_validacion_con_predictores_en_entrenamiento": 0.0,
+        "coincidencias_validacion_por_clase": {
+          "0": {
+            "filas": 0,
+            "total_clase": 51177,
+            "porcentaje_clase": 0.0
+          },
+          "1": {
+            "filas": 0,
+            "total_clase": 88,
+            "porcentaje_clase": 0.0
+          }
+        },
+        "grupos_fraudulentos_solapados": 0
+      }
+    },
+    "X1_X20_Amount": {
+      "construccion": {
+        "filas": 170884,
+        "filas_con_etiqueta": 170884,
+        "filas_sin_etiqueta": 0,
+        "columnas_igualdad": [
+          "X1",
+          "X2",
+          "X3",
+          "X4",
+          "X5",
+          "X6",
+          "X7",
+          "X8",
+          "X9",
+          "X10",
+          "X11",
+          "X12",
+          "X13",
+          "X14",
+          "X15",
+          "X16",
+          "X17",
+          "X18",
+          "X19",
+          "X20",
+          "Amount"
+        ],
+        "patrones_unicos": 166717,
+        "filas_redundantes_tras_primera": 4167,
+        "grupos_duplicados": 2436,
+        "filas_en_grupos_duplicados": 6603,
+        "porcentaje_filas_en_grupos_duplicados": 3.8640247185225065,
+        "maxima_multiplicidad": 49,
+        "histograma_multiplicidades": {
+          "1": 164281,
+          "2": 1822,
+          "3": 363,
+          "4": 100,
+          "5": 45,
+          "6": 24,
+          "7": 17,
+          "8": 9,
+          "9": 10,
+          "10": 7,
+          "11": 8,
+          "12": 3,
+          "13": 5,
+          "14": 4,
+          "15": 1,
+          "16": 2,
+          "17": 2,
+          "18": 1,
+          "21": 1,
+          "22": 1,
+          "23": 1,
+          "24": 1,
+          "26": 2,
+          "28": 2,
+          "30": 1,
+          "38": 1,
+          "45": 1,
+          "46": 1,
+          "49": 1
+        },
+        "duplicados_por_clase": {
+          "0": {
+            "filas": 6587,
+            "total_clase": 170589,
+            "porcentaje_clase": 3.8613275181869873
+          },
+          "1": {
+            "filas": 16,
+            "total_clase": 295,
+            "porcentaje_clase": 5.423728813559322
+          }
+        },
+        "grupos_con_etiquetas_contradictorias": 0,
+        "filas_con_etiquetas_contradictorias": 0,
+        "fraudes": 295,
+        "patrones_fraudulentos_unicos": 285,
+        "grupos_con_multiples_fraudes": 6,
+        "fraudes_redundantes_tras_primero": 10,
+        "distancias_entre_repeticiones_en_orden_fichero": {
+          "n": 4167,
+          "minimo": 2.0,
+          "mediana": 26779.0,
+          "maximo": 166680.0,
+          "repeticiones_en_filas_adyacentes": 0
+        },
+        "bloques_deciles_orden_fichero": [
+          {
+            "bloque": 1,
+            "primera_fila_base_cero": 0,
+            "ultima_fila_base_cero": 17088,
+            "filas": 17089,
+            "fraudes": 25,
+            "filas_pertenecientes_a_duplicados_globales": 634
+          },
+          {
+            "bloque": 2,
+            "primera_fila_base_cero": 17089,
+            "ultima_fila_base_cero": 34177,
+            "filas": 17089,
+            "fraudes": 26,
+            "filas_pertenecientes_a_duplicados_globales": 642
+          },
+          {
+            "bloque": 3,
+            "primera_fila_base_cero": 34178,
+            "ultima_fila_base_cero": 51266,
+            "filas": 17089,
+            "fraudes": 29,
+            "filas_pertenecientes_a_duplicados_globales": 672
+          },
+          {
+            "bloque": 4,
+            "primera_fila_base_cero": 51267,
+            "ultima_fila_base_cero": 68355,
+            "filas": 17089,
+            "fraudes": 40,
+            "filas_pertenecientes_a_duplicados_globales": 624
+          },
+          {
+            "bloque": 5,
+            "primera_fila_base_cero": 68356,
+            "ultima_fila_base_cero": 85443,
+            "filas": 17088,
+            "fraudes": 30,
+            "filas_pertenecientes_a_duplicados_globales": 720
+          },
+          {
+            "bloque": 6,
+            "primera_fila_base_cero": 85444,
+            "ultima_fila_base_cero": 102531,
+            "filas": 17088,
+            "fraudes": 25,
+            "filas_pertenecientes_a_duplicados_globales": 684
+          },
+          {
+            "bloque": 7,
+            "primera_fila_base_cero": 102532,
+            "ultima_fila_base_cero": 119619,
+            "filas": 17088,
+            "fraudes": 27,
+            "filas_pertenecientes_a_duplicados_globales": 634
+          },
+          {
+            "bloque": 8,
+            "primera_fila_base_cero": 119620,
+            "ultima_fila_base_cero": 136707,
+            "filas": 17088,
+            "fraudes": 31,
+            "filas_pertenecientes_a_duplicados_globales": 636
+          },
+          {
+            "bloque": 9,
+            "primera_fila_base_cero": 136708,
+            "ultima_fila_base_cero": 153795,
+            "filas": 17088,
+            "fraudes": 37,
+            "filas_pertenecientes_a_duplicados_globales": 695
+          },
+          {
+            "bloque": 10,
+            "primera_fila_base_cero": 153796,
+            "ultima_fila_base_cero": 170883,
+            "filas": 17088,
+            "fraudes": 25,
+            "filas_pertenecientes_a_duplicados_globales": 662
+          }
+        ]
+      },
+      "produccion": {
+        "filas": 113923,
+        "filas_con_etiqueta": 0,
+        "filas_sin_etiqueta": 113923,
+        "columnas_igualdad": [
+          "X1",
+          "X2",
+          "X3",
+          "X4",
+          "X5",
+          "X6",
+          "X7",
+          "X8",
+          "X9",
+          "X10",
+          "X11",
+          "X12",
+          "X13",
+          "X14",
+          "X15",
+          "X16",
+          "X17",
+          "X18",
+          "X19",
+          "X20",
+          "Amount"
+        ],
+        "patrones_unicos": 111814,
+        "filas_redundantes_tras_primera": 2109,
+        "grupos_duplicados": 1299,
+        "filas_en_grupos_duplicados": 3408,
+        "porcentaje_filas_en_grupos_duplicados": 2.991494254891462,
+        "maxima_multiplicidad": 31,
+        "histograma_multiplicidades": {
+          "1": 110515,
+          "2": 1024,
+          "3": 144,
+          "4": 40,
+          "5": 23,
+          "6": 19,
+          "7": 13,
+          "8": 9,
+          "9": 6,
+          "10": 5,
+          "11": 3,
+          "12": 2,
+          "13": 1,
+          "14": 2,
+          "15": 1,
+          "16": 1,
+          "17": 1,
+          "18": 1,
+          "24": 1,
+          "25": 1,
+          "28": 1,
+          "31": 1
+        },
+        "duplicados_por_clase": {
+          "sin_etiqueta": {
+            "filas": 3408,
+            "total_clase": 113923,
+            "porcentaje_clase": 2.9914942548914616
+          }
+        },
+        "grupos_con_etiquetas_contradictorias": null,
+        "filas_con_etiquetas_contradictorias": null,
+        "fraudes": null,
+        "patrones_fraudulentos_unicos": null,
+        "grupos_con_multiples_fraudes": null,
+        "fraudes_redundantes_tras_primero": null,
+        "distancias_entre_repeticiones_en_orden_fichero": {
+          "n": 2109,
+          "minimo": 7.0,
+          "mediana": 20191.0,
+          "maximo": 112279.0,
+          "repeticiones_en_filas_adyacentes": 0
+        },
+        "bloques_deciles_orden_fichero": [
+          {
+            "bloque": 1,
+            "primera_fila_base_cero": 0,
+            "ultima_fila_base_cero": 11392,
+            "filas": 11393,
+            "fraudes": null,
+            "filas_pertenecientes_a_duplicados_globales": 355
+          },
+          {
+            "bloque": 2,
+            "primera_fila_base_cero": 11393,
+            "ultima_fila_base_cero": 22785,
+            "filas": 11393,
+            "fraudes": null,
+            "filas_pertenecientes_a_duplicados_globales": 348
+          },
+          {
+            "bloque": 3,
+            "primera_fila_base_cero": 22786,
+            "ultima_fila_base_cero": 34178,
+            "filas": 11393,
+            "fraudes": null,
+            "filas_pertenecientes_a_duplicados_globales": 332
+          },
+          {
+            "bloque": 4,
+            "primera_fila_base_cero": 34179,
+            "ultima_fila_base_cero": 45570,
+            "filas": 11392,
+            "fraudes": null,
+            "filas_pertenecientes_a_duplicados_globales": 330
+          },
+          {
+            "bloque": 5,
+            "primera_fila_base_cero": 45571,
+            "ultima_fila_base_cero": 56962,
+            "filas": 11392,
+            "fraudes": null,
+            "filas_pertenecientes_a_duplicados_globales": 319
+          },
+          {
+            "bloque": 6,
+            "primera_fila_base_cero": 56963,
+            "ultima_fila_base_cero": 68354,
+            "filas": 11392,
+            "fraudes": null,
+            "filas_pertenecientes_a_duplicados_globales": 377
+          },
+          {
+            "bloque": 7,
+            "primera_fila_base_cero": 68355,
+            "ultima_fila_base_cero": 79746,
+            "filas": 11392,
+            "fraudes": null,
+            "filas_pertenecientes_a_duplicados_globales": 347
+          },
+          {
+            "bloque": 8,
+            "primera_fila_base_cero": 79747,
+            "ultima_fila_base_cero": 91138,
+            "filas": 11392,
+            "fraudes": null,
+            "filas_pertenecientes_a_duplicados_globales": 331
+          },
+          {
+            "bloque": 9,
+            "primera_fila_base_cero": 91139,
+            "ultima_fila_base_cero": 102530,
+            "filas": 11392,
+            "fraudes": null,
+            "filas_pertenecientes_a_duplicados_globales": 358
+          },
+          {
+            "bloque": 10,
+            "primera_fila_base_cero": 102531,
+            "ultima_fila_base_cero": 113922,
+            "filas": 11392,
+            "fraudes": null,
+            "filas_pertenecientes_a_duplicados_globales": 311
+          }
+        ]
+      },
+      "coincidencias_entre_datasets": {
+        "columnas_igualdad": [
+          "X1",
+          "X2",
+          "X3",
+          "X4",
+          "X5",
+          "X6",
+          "X7",
+          "X8",
+          "X9",
+          "X10",
+          "X11",
+          "X12",
+          "X13",
+          "X14",
+          "X15",
+          "X16",
+          "X17",
+          "X18",
+          "X19",
+          "X20",
+          "Amount"
+        ],
+        "patrones_presentes_en_ambos": 2941,
+        "filas_construccion_con_coincidencia": 5215,
+        "filas_produccion_con_coincidencia": 4314,
+        "porcentaje_produccion_con_coincidencia": 3.7867682557516917,
+        "pares_de_filas_coincidentes": 18298,
+        "fraudes_construccion_con_coincidencia": 12,
+        "patrones_con_fraude_construccion": 6,
+        "filas_produccion_coincidentes_con_patron_fraudulento_construccion": 6,
+        "patrones_cruzados_con_etiquetas_contradictorias_construccion": 0
+      },
+      "split_aleatorio_notebook": {
+        "filas_entrenamiento": 119618,
+        "filas_validacion": 51266,
+        "fraccion_validacion": 0.3000046815383535,
+        "fraudes_entrenamiento": 206,
+        "fraudes_validacion": 89,
+        "tasa_fraude_entrenamiento": 0.0017221488404755138,
+        "tasa_fraude_validacion": 0.001736043381578434,
+        "grupos_entrenamiento": 117287,
+        "grupos_validacion": 50643,
+        "grupos_solapados": 1213,
+        "filas_validacion_con_predictores_en_entrenamiento": 1643,
+        "porcentaje_validacion_con_predictores_en_entrenamiento": 3.2048531190262555,
+        "coincidencias_validacion_por_clase": {
+          "0": {
+            "filas": 1638,
+            "total_clase": 51177,
+            "porcentaje_clase": 3.200656544932294
+          },
+          "1": {
+            "filas": 5,
+            "total_clase": 89,
+            "porcentaje_clase": 5.617977528089888
+          }
+        },
+        "grupos_fraudulentos_solapados": 4
+      },
+      "alternativa_agrupada": {
+        "metodo": "StratifiedGroupKFold(n_splits=10, shuffle=True, random_state=42); folds 0,1,2 para validacion y los otros siete para entrenamiento",
+        "filas_entrenamiento": 119617,
+        "filas_validacion": 51267,
+        "fraccion_validacion": 0.30001053346129536,
+        "fraudes_entrenamiento": 205,
+        "fraudes_validacion": 90,
+        "tasa_fraude_entrenamiento": 0.0017138032219500574,
+        "tasa_fraude_validacion": 0.001755515243724033,
+        "grupos_entrenamiento": 116701,
+        "grupos_validacion": 50016,
+        "grupos_solapados": 0,
+        "filas_validacion_con_predictores_en_entrenamiento": 0,
+        "porcentaje_validacion_con_predictores_en_entrenamiento": 0.0,
+        "coincidencias_validacion_por_clase": {
+          "0": {
+            "filas": 0,
+            "total_clase": 51177,
+            "porcentaje_clase": 0.0
+          },
+          "1": {
+            "filas": 0,
+            "total_clase": 90,
+            "porcentaje_clase": 0.0
+          }
+        },
+        "grupos_fraudulentos_solapados": 0
+      }
+    }
+  },
+  "efecto_Amount": {
+    "construccion": {
+      "patrones_X_con_varios_importes": 1178,
+      "filas_en_esos_patrones": 3727,
+      "fraudes_etiquetados_en_esos_patrones": 0,
+      "filas_sin_etiqueta_en_esos_patrones": 0,
+      "maximo_importes_distintos_en_un_patron_X": 9
+    },
+    "produccion": {
+      "patrones_X_con_varios_importes": 690,
+      "filas_en_esos_patrones": 2065,
+      "fraudes_etiquetados_en_esos_patrones": null,
+      "filas_sin_etiqueta_en_esos_patrones": 2065,
+      "maximo_importes_distintos_en_un_patron_X": 6
+    },
+    "combinado": {
+      "patrones_X_con_varios_importes": 2330,
+      "filas_en_esos_patrones": 8161,
+      "fraudes_etiquetados_en_esos_patrones": 0,
+      "filas_sin_etiqueta_en_esos_patrones": 3315,
+      "maximo_importes_distintos_en_un_patron_X": 10
+    }
+  },
+  "sensibilidad_cuantizacion": {
+    "metodo": "En copias en memoria: X pasa a round(X/2) y Amount a round(100*Amount), ambos int64, tras comprobar error maximo <1e-8. Se comparan IDs de grupo por orden de primera aparicion para todas las filas, no solo los recuentos.",
+    "errores": {
+      "construccion": {
+        "max_error_X_dividido_2": 4.547473508864641e-13,
+        "max_error_Amount_por_100": 2.3283064365386963e-10
+      },
+      "produccion": {
+        "max_error_X_dividido_2": 4.547473508864641e-13,
+        "max_error_Amount_por_100": 2.3283064365386963e-10
+      }
+    },
+    "equivalencia": {
+      "construccion": {
+        "X1_X20": {
+          "particion_en_grupos_identica": true,
+          "patrones_originales": 165241,
+          "patrones_canonicos": 165241,
+          "duplicados_redundantes_originales": 5643,
+          "duplicados_redundantes_canonicos": 5643
+        },
+        "X1_X20_Amount": {
+          "particion_en_grupos_identica": true,
+          "patrones_originales": 166717,
+          "patrones_canonicos": 166717,
+          "duplicados_redundantes_originales": 4167,
+          "duplicados_redundantes_canonicos": 4167
+        }
+      },
+      "produccion": {
+        "X1_X20": {
+          "particion_en_grupos_identica": true,
+          "patrones_originales": 110965,
+          "patrones_canonicos": 110965,
+          "duplicados_redundantes_originales": 2958,
+          "duplicados_redundantes_canonicos": 2958
+        },
+        "X1_X20_Amount": {
+          "particion_en_grupos_identica": true,
+          "patrones_originales": 111814,
+          "patrones_canonicos": 111814,
+          "duplicados_redundantes_originales": 2109,
+          "duplicados_redundantes_canonicos": 2109
+        }
+      },
+      "combinado": {
+        "X1_X20": {
+          "particion_en_grupos_identica": true,
+          "patrones_originales": 272478,
+          "patrones_canonicos": 272478,
+          "duplicados_redundantes_originales": 12329,
+          "duplicados_redundantes_canonicos": 12329
+        },
+        "X1_X20_Amount": {
+          "particion_en_grupos_identica": true,
+          "patrones_originales": 275590,
+          "patrones_canonicos": 275590,
+          "duplicados_redundantes_originales": 9217,
+          "duplicados_redundantes_canonicos": 9217
+        }
+      }
+    },
+    "interpretacion": "Cuando la particion combinada es identica, no cambian tampoco las coincidencias cruzadas ni los solapes de validacion; esta sensibilidad no equivale a buscar similitud aproximada entre transacciones."
+  }
+}

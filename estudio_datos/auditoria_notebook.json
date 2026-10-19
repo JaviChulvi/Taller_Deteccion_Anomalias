@@ -1,0 +1,407 @@
+{
+  "archivo": "/Users/jchulvi/projects/Taller_Deteccion_Anomalias/taller_detección_anomalías.ipynb",
+  "alcance": "Lectura estática de las 25 celdas, todas las fuentes, salidas textuales y JSON/HTML incrustados. No se ejecutó ni modificó el notebook. No se auditaron los CSV en esta subtarea.",
+  "n_celdas": 25,
+  "n_markdown": 3,
+  "n_codigo_con_contenido": 21,
+  "n_codigo_vacias": 1,
+  "errores_guardados": 0,
+  "ventana_ejecucion_guardada_utc": [
+    "2026-10-15T17:33:16.109Z",
+    "2026-10-15T18:16:33.815Z"
+  ],
+  "conteos_reconstruidos_solo_desde_salidas": {
+    "construccion": {
+      "total": 170884,
+      "normales": 170589,
+      "fraudes": 295
+    },
+    "train": {
+      "total": 119618,
+      "normales": 119412,
+      "fraudes": 206
+    },
+    "test": {
+      "total": 51266,
+      "normales": 51177,
+      "fraudes": 89
+    },
+    "produccion": {
+      "total": 113923,
+      "etiquetas": "No se determina toda Class por el display truncado; validar en CSV."
+    }
+  },
+  "imports": [
+    {
+      "celda": 4,
+      "import": "pandas",
+      "alias": "pd",
+      "usado": true
+    },
+    {
+      "celda": 4,
+      "import": "numpy",
+      "alias": "np",
+      "usado": false
+    },
+    {
+      "celda": 4,
+      "import": "tqdm.tqdm",
+      "alias": "tqdm",
+      "usado": false
+    },
+    {
+      "celda": 4,
+      "import": "matplotlib.ticker.MaxNLocator",
+      "alias": "MaxNLocator",
+      "usado": false
+    },
+    {
+      "celda": 4,
+      "import": "sklearn.metrics.roc_curve",
+      "alias": "roc_curve",
+      "usado": false
+    },
+    {
+      "celda": 4,
+      "import": "sklearn.metrics.precision_recall_curve",
+      "alias": "precision_recall_curve",
+      "usado": false
+    },
+    {
+      "celda": 4,
+      "import": "sklearn.metrics.roc_auc_score",
+      "alias": "roc_auc_score",
+      "usado": false
+    },
+    {
+      "celda": 4,
+      "import": "sklearn.metrics.average_precision_score",
+      "alias": "average_precision_score",
+      "usado": false
+    },
+    {
+      "celda": 4,
+      "import": "matplotlib.pyplot",
+      "alias": "plt",
+      "usado": false
+    },
+    {
+      "celda": 4,
+      "import": "IPython.display.clear_output",
+      "alias": "clear_output",
+      "usado": false
+    },
+    {
+      "celda": 11,
+      "import": "plotly.express",
+      "alias": "px",
+      "usado": true
+    },
+    {
+      "celda": 14,
+      "import": "sklearn.model_selection.train_test_split",
+      "alias": "train_test_split",
+      "usado": true
+    },
+    {
+      "celda": 21,
+      "import": "sklearn.mixture.GaussianMixture",
+      "alias": "GaussianMixture",
+      "usado": true
+    }
+  ],
+  "hallazgos": [
+    {
+      "prioridad": "alta",
+      "tipo": "hecho",
+      "celdas": [
+        2,
+        4,
+        23,
+        24,
+        25
+      ],
+      "hallazgo": "El objetivo principal no está evaluado: average_precision_score se importa, pero no se llama. No hay resultado de AUPR/AP, ROC-AUC, curva PR, incertidumbre ni comparación con referencia. No se puede afirmar que el modelo sea bueno a partir de la tabla ordenada."
+    },
+    {
+      "prioridad": "alta",
+      "tipo": "hecho",
+      "celdas": [
+        2,
+        22,
+        23,
+        24
+      ],
+      "hallazgo": "Orientación del score pendiente de corregir para el contrato: score_samples es log-densidad de normales (mayor=normalidad), mientras se exige mayor=fraude. El candidato coherente para evaluación/exportación es -gm_model.score_samples(X). Actualmente todavía no hay CSV que se pueda calificar como entregado incorrectamente."
+    },
+    {
+      "prioridad": "alta",
+      "tipo": "hecho",
+      "celdas": [
+        10,
+        25
+      ],
+      "hallazgo": "No hay inferencia sobre producción, preparación de sus 21 predictores ni creación/validación de CSV. df_prod solo se carga y visualiza."
+    },
+    {
+      "prioridad": "media",
+      "tipo": "hecho",
+      "celdas": [
+        14,
+        16,
+        17
+      ],
+      "hallazgo": "Solo hay una partición 70/30 estratificada. El test tiene 89 fraudes (conteo inferido exactamente de tamaño y porcentajes); la incertidumbre y sensibilidad al split no están cuantificadas."
+    },
+    {
+      "prioridad": "media",
+      "tipo": "hecho y riesgo condicional",
+      "celdas": [
+        14,
+        18,
+        19,
+        21
+      ],
+      "hallazgo": "No se observa fuga directa por Class: se elimina de X, y el ajuste usa únicamente los normales de train. Sin embargo, el split no controla grupos, duplicados ni tiempo. Solo si la auditoría de datos confirma observaciones relacionadas repartidas entre bloques cabe declarar ese riesgo concreto."
+    },
+    {
+      "prioridad": "media",
+      "tipo": "hecho",
+      "celdas": [
+        12
+      ],
+      "hallazgo": "La exploración visual representa únicamente X1/X2 y la muestra guardada incluye 16 fraudes. No es suficiente para estudiar las 21 características ni caracteriza robustamente la minoría; sample carece de semilla."
+    },
+    {
+      "prioridad": "media",
+      "tipo": "hecho",
+      "celdas": [
+        3,
+        6
+      ],
+      "hallazgo": "La vía de ejecución presupone IPython/Jupyter, wget, unzip y red. COLAB no detecta el entorno. No hay versionado/hash de descargas ni recuperación explícita ante fallos. Una ejecución consecutiva puede pedir sobrescritura durante unzip."
+    },
+    {
+      "prioridad": "media",
+      "tipo": "hecho e inferencia limitada",
+      "celdas": [
+        20,
+        21,
+        22,
+        23,
+        24
+      ],
+      "hallazgo": "Historial de ejecución no lineal y con huecos. Las salidas son aritméticamente coherentes, pero no demuestran una ejecución limpia de arriba abajo. No se ha ejecutado ni reajustado para verificar los scores."
+    },
+    {
+      "prioridad": "media",
+      "tipo": "hecho e inferencia limitada",
+      "celdas": [
+        4,
+        21
+      ],
+      "hallazgo": "No hay versiones fijadas en el notebook. language_info declara Python 3.6.5, mientras el HTML del estimador remite a sklearn 1.6; son pistas de metadatos heredados y no un manifiesto fiable del entorno."
+    },
+    {
+      "prioridad": "baja",
+      "tipo": "hecho",
+      "celdas": [
+        22
+      ],
+      "hallazgo": "La descripción de score_samples debe hablar de log-densidad del modelo de normales, no de probabilidad de fraude ni de probabilidad puntual en el continuo."
+    },
+    {
+      "prioridad": "baja",
+      "tipo": "hecho",
+      "celdas": [
+        24
+      ],
+      "hallazgo": "El resumen automático intrínseco de Colab adjunto a la tabla tiene std=0 para y. Contradice los datos de clase visibles y los porcentajes; ignorar ese metadata y recalcular estadísticas desde datos reales."
+    }
+  ],
+  "implementado": [
+    "Contrato de ranking y métrica descrito",
+    "Descarga histórica de construcción y producción",
+    "Carga de ambos CSV",
+    "Describe, frecuencias y desviaciones globales",
+    "Scatter X1/X2 sobre muestra aleatoria",
+    "Partición estratificada con semilla fija",
+    "Separación de Class y entrenamiento de GMM con normales train",
+    "Log-densidades de train/test y tablas de extremos"
+  ],
+  "pendiente": [
+    "Manifiesto de dependencias y ejecución local reproducible",
+    "Auditoría completa de tipos, nulos, infinitos, duplicados, colisiones y relación entre archivos",
+    "Exploración de todas las variables, clases y diferencias construcción-producción",
+    "Definir validación que contemple duplicados o grupos si procede",
+    "Evaluar AP con score orientado a fraude y referencia de prevalencia; preservar evaluación final separada de ajustes",
+    "Comparar alternativas y parámetros bajo el protocolo elegido; documentar convergencia",
+    "Entrenamiento final acordado sobre datos autorizados tras seleccionar configuración",
+    "Inferencia de producción sin Class y manteniendo orden original",
+    "CSV de una columna, 113923 scores finitos, sin índice extra; confirmar convención de cabecera del ejercicio",
+    "Comprobaciones de integridad y reproducibilidad del entregable"
+  ],
+  "celdas": [
+    {
+      "celda": 1,
+      "tipo": "markdown",
+      "execution_count": null,
+      "revision": "Título del ejercicio: detección de fraude en tarjetas de crédito."
+    },
+    {
+      "celda": 2,
+      "tipo": "markdown",
+      "execution_count": null,
+      "revision": "Contrato: maximizar AUPR; se cita average_precision_score. CSV de una columna y una fila por observación de producción, score alto indica mayor riesgo. El texto no precisa cabecera ni nombre de columna."
+    },
+    {
+      "celda": 3,
+      "tipo": "code",
+      "execution_count": 1,
+      "revision": "Activa siempre la vía de descarga COLAB=True; la ejecución local también entraría en ella mientras no se cambie el flag."
+    },
+    {
+      "celda": 4,
+      "tipo": "code",
+      "execution_count": 2,
+      "revision": "Importa pandas, numpy, tqdm, matplotlib, sklearn.metrics e IPython. Solo pandas se usa posteriormente de estos imports. Las métricas importadas nunca se calculan."
+    },
+    {
+      "celda": 5,
+      "tipo": "markdown",
+      "execution_count": null,
+      "revision": "Cabecera de carga de datos."
+    },
+    {
+      "celda": 6,
+      "tipo": "code",
+      "execution_count": 3,
+      "revision": "Descarga dos ZIP desde Google Drive mediante instrucciones IPython !wget y extrae con !unzip. No fija checksum ni versión de datos, no comprueba códigos de salida ni detecta archivos locales, y no ofrece una ruta configurable. La salida histórica indica descargas correctas. Reejecutar podría reemplazar ZIP y provocar preguntas de sobrescritura al extraer."
+    },
+    {
+      "celda": 7,
+      "tipo": "code",
+      "execution_count": 4,
+      "revision": "Carga construcción en ruta relativa. Salida guardada: 170884 x 22; X1-X20, Amount y Class."
+    },
+    {
+      "celda": 8,
+      "tipo": "code",
+      "execution_count": 5,
+      "revision": "Prevalencia histórica guardada: 0.172632% de fraude. Compatible exactamente, al redondeo mostrado, con 295/170884."
+    },
+    {
+      "celda": 9,
+      "tipo": "code",
+      "execution_count": 6,
+      "revision": "Describe numérico de construcción. Los count guardados son 170884 para las 22 columnas. No analiza tipos, duplicados, infinidades ni distribución por clase."
+    },
+    {
+      "celda": 10,
+      "tipo": "code",
+      "execution_count": 7,
+      "revision": "Carga producción en ruta relativa y la muestra: 113923 x 22, Class aparece NaN en las filas visibles. No vuelve a utilizarse df_prod en ninguna celda posterior. El display truncado no prueba por sí solo que toda Class sea nula."
+    },
+    {
+      "celda": 11,
+      "tipo": "code",
+      "execution_count": 8,
+      "revision": "Importa plotly.express."
+    },
+    {
+      "celda": 12,
+      "tipo": "code",
+      "execution_count": 9,
+      "revision": "Scatter de X1 y X2 en muestra de 10000 sin random_state, color numérico Class y hover Amount. Se ha decodificado el JSON incrustado: 9984 normales y 16 fraudes. La salida usa scattergl y carga Plotly JS 2.35.2 y MathJax por CDN."
+    },
+    {
+      "celda": 13,
+      "tipo": "code",
+      "execution_count": 10,
+      "revision": "Desviaciones estándar globales; coherentes con las filas std de describe en celda 9. Incluye Class en la exploración, pero no lo deja después como predictor."
+    },
+    {
+      "celda": 14,
+      "tipo": "code",
+      "execution_count": 22,
+      "revision": "Partición aleatoria estratificada, test_size=0.3 y random_state=42. No hay agrupación de duplicados/entidades ni variable temporal usada."
+    },
+    {
+      "celda": 15,
+      "tipo": "code",
+      "execution_count": 23,
+      "revision": "Repite prevalencia global ya calculada en celda 8."
+    },
+    {
+      "celda": 16,
+      "tipo": "code",
+      "execution_count": 24,
+      "revision": "Prevalencia train 0.172215%; compatible con 206 fraudes /119618 filas."
+    },
+    {
+      "celda": 17,
+      "tipo": "code",
+      "execution_count": 25,
+      "revision": "Prevalencia test 0.173604%; compatible con 89 fraudes /51266 filas."
+    },
+    {
+      "celda": 18,
+      "tipo": "code",
+      "execution_count": 26,
+      "revision": "Excluye Class de X_train y X_test; conserva la etiqueta en y_train y y_test."
+    },
+    {
+      "celda": 19,
+      "tipo": "code",
+      "execution_count": 27,
+      "revision": "Selecciona exclusivamente normales del entrenamiento por y_train==0; usa la etiqueta para aprender normalidad."
+    },
+    {
+      "celda": 20,
+      "tipo": "code",
+      "execution_count": 31,
+      "revision": "Shape guardada de normales de entrenamiento: 119412 x 21. execution_count=31, posterior al entrenamiento de la celda siguiente (28)."
+    },
+    {
+      "celda": 21,
+      "tipo": "code",
+      "execution_count": 28,
+      "revision": "Entrena GaussianMixture(n_components=5, random_state=42) sobre X_train0. No se prueban otros modelos/hiperparámetros, no se inspeccionan converged_/n_iter_ y no hay transformación de variables. La salida muestra estimador ajustado y su enlace de documentación apunta a sklearn 1.6."
+    },
+    {
+      "celda": 22,
+      "tipo": "code",
+      "execution_count": 33,
+      "revision": "Calcula score_samples para normales de entrenamiento y muestra extremos de array truncado. El comentario lo llama logaritmo de probabilidad del punto; en variables continuas es log-densidad, no probabilidad de fraude."
+    },
+    {
+      "celda": 23,
+      "tipo": "code",
+      "execution_count": 34,
+      "revision": "Obtiene scores de train (normales + fraudes) y muestra tabla ordenada ascendente. Los 5 mínimos visibles son fraude, pero solo son 5 filas y no cuantifican la calidad global. El score almacenado mide normalidad: valores mayores corresponden a mayor densidad del modelo normal."
+    },
+    {
+      "celda": 24,
+      "tipo": "code",
+      "execution_count": 35,
+      "revision": "Obtiene scores test y tabla ascendente. Los 5 mínimos visibles son fraude. No hay average_precision_score, curva PR ni otra métrica. El display informa 51266 filas; el metadata auxiliar de Colab resume y con std=0 pese a mostrar min=0/max=1 y a los 89 fraudes, por lo que ese resumen no debe usarse como estadístico."
+    },
+    {
+      "celda": 25,
+      "tipo": "code",
+      "execution_count": null,
+      "revision": "Celda final vacía y no ejecutada; no contiene evaluación ni exportación."
+    }
+  ],
+  "matices": [
+    "Entrenamiento de normalidad con etiqueta: no es un GMM puramente no supervisado sobre toda construcción, ni un clasificador supervisado que aprenda ambos tipos.",
+    "No se exige probabilidad calibrada: basta un score de ranking con orientación correcta.",
+    "No recomendar un umbral como requisito del CSV: el contrato pide scores continuos.",
+    "No afirmar que falta de estandarización sea necesariamente un bug del GMM: cualquier transformación se debe valorar en validación y ajustarse exclusivamente con train.",
+    "La exploración usa toda construcción antes del split, pero no hay ajuste explícito de transformaciones con test; no equiparar automáticamente ese EDA a fuga directa.",
+    "Las tablas ordenadas son diagnósticas: exportar una tabla ordenada alteraría la correspondencia de filas si no se restaura el orden original.",
+    "Los scores numéricamente repetidos no prueban por sí solos duplicidad de filas.",
+    "AP average_precision_score y área trapezoidal de curva PR no son idénticas en general: el criterio citado por el propio enunciado es el primero."
+  ]
+}

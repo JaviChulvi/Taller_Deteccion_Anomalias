@@ -1,0 +1,7 @@
+modelo,k,fraudes_detectados,precision,recall,score_corte,filas_empatadas_en_corte,empatadas_incluidas
+Regla univariante,100,68,0.68,0.7555555555555555,463.99999999999994,1,1
+Regla univariante,500,72,0.144,0.8,272.0,15,10
+Regla univariante,1000,72,0.072,0.8,242.0,54,40
+GMM 5 componentes,100,74,0.74,0.8222222222222222,283.85765665378364,1,1
+GMM 5 componentes,500,79,0.158,0.8777777777777778,56.709897546824436,1,1
+GMM 5 componentes,1000,81,0.081,0.9,44.160492995725704,1,1

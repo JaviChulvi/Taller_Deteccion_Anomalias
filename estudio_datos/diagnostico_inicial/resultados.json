@@ -1,0 +1,192 @@
+{
+  "fecha_utc": "2026-10-19T21:09:52.484848+00:00",
+  "versiones": {
+    "pandas": "2.2.3",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "matplotlib": "3.11.2",
+    "nbformat": "5.11.1",
+    "nbclient": "0.11.0",
+    "ipykernel": "7.4.0",
+    "threadpoolctl": "3.7.0"
+  },
+  "semilla": 42,
+  "predictores": [
+    "X1",
+    "X2",
+    "X3",
+    "X4",
+    "X5",
+    "X6",
+    "X7",
+    "X8",
+    "X9",
+    "X10",
+    "X11",
+    "X12",
+    "X13",
+    "X14",
+    "X15",
+    "X16",
+    "X17",
+    "X18",
+    "X19",
+    "X20",
+    "Amount"
+  ],
+  "datos": [
+    {
+      "conjunto": "construcción",
+      "filas": 170884,
+      "predictores": 21,
+      "nulos_predictores": 0,
+      "etiquetas_disponibles": 170884,
+      "patrones_repetidos_adicionales": 4167
+    },
+    {
+      "conjunto": "producción",
+      "filas": 113923,
+      "predictores": 21,
+      "nulos_predictores": 0,
+      "etiquetas_disponibles": 0,
+      "patrones_repetidos_adicionales": 2109
+    }
+  ],
+  "particion": [
+    {
+      "conjunto": "entrenamiento",
+      "filas": 119617,
+      "fraudes": 205,
+      "prevalencia": 0.0017138032219500574,
+      "grupos": 116701
+    },
+    {
+      "conjunto": "validación",
+      "filas": 51267,
+      "fraudes": 90,
+      "prevalencia": 0.001755515243724033,
+      "grupos": 50016
+    }
+  ],
+  "validacion_folds": [
+    0,
+    1,
+    2
+  ],
+  "grupos_compartidos": 0,
+  "variable_elegida": "X17",
+  "signo_elegido": -1,
+  "parametros_gmm": {
+    "n_components": 5,
+    "covariance_type": "full",
+    "n_init": 1,
+    "random_state": 42,
+    "reg_covar": 1e-06,
+    "tol": 0.001,
+    "max_iter": 200
+  },
+  "ajuste_gmm": {
+    "normales_utilizados": 119412,
+    "convergencia": true,
+    "iteraciones": 39,
+    "min_autovalor_covarianza": 3.350978526444154e-06,
+    "segundos_ajuste_y_scores": 2.1836453750001965,
+    "avisos": []
+  },
+  "metricas": [
+    {
+      "modelo": "Constante",
+      "AP_train": 0.0017138032219500574,
+      "AP_validacion": 0.001755515243724033,
+      "AP_sobre_prevalencia": 1.0
+    },
+    {
+      "modelo": "Regla univariante",
+      "AP_train": 0.6234150182181722,
+      "AP_validacion": 0.6698233503758686,
+      "AP_sobre_prevalencia": 381.5537078191073
+    },
+    {
+      "modelo": "GMM 5 componentes",
+      "AP_train": 0.6895383983079466,
+      "AP_validacion": 0.7471299221856689,
+      "AP_sobre_prevalencia": 425.59010800769653
+    }
+  ],
+  "cortes": [
+    {
+      "modelo": "Regla univariante",
+      "k": 100,
+      "fraudes_detectados": 68,
+      "precision": 0.68,
+      "recall": 0.7555555555555555,
+      "score_corte": 463.99999999999994,
+      "filas_empatadas_en_corte": 1,
+      "empatadas_incluidas": 1
+    },
+    {
+      "modelo": "Regla univariante",
+      "k": 500,
+      "fraudes_detectados": 72,
+      "precision": 0.144,
+      "recall": 0.8,
+      "score_corte": 272.0,
+      "filas_empatadas_en_corte": 15,
+      "empatadas_incluidas": 10
+    },
+    {
+      "modelo": "Regla univariante",
+      "k": 1000,
+      "fraudes_detectados": 72,
+      "precision": 0.072,
+      "recall": 0.8,
+      "score_corte": 242.0,
+      "filas_empatadas_en_corte": 54,
+      "empatadas_incluidas": 40
+    },
+    {
+      "modelo": "GMM 5 componentes",
+      "k": 100,
+      "fraudes_detectados": 74,
+      "precision": 0.74,
+      "recall": 0.8222222222222222,
+      "score_corte": 283.85765665378364,
+      "filas_empatadas_en_corte": 1,
+      "empatadas_incluidas": 1
+    },
+    {
+      "modelo": "GMM 5 componentes",
+      "k": 500,
+      "fraudes_detectados": 79,
+      "precision": 0.158,
+      "recall": 0.8777777777777778,
+      "score_corte": 56.709897546824436,
+      "filas_empatadas_en_corte": 1,
+      "empatadas_incluidas": 1
+    },
+    {
+      "modelo": "GMM 5 componentes",
+      "k": 1000,
+      "fraudes_detectados": 81,
+      "precision": 0.081,
+      "recall": 0.9,
+      "score_corte": 44.160492995725704,
+      "filas_empatadas_en_corte": 1,
+      "empatadas_incluidas": 1
+    }
+  ],
+  "bootstrap_gmm": {
+    "replicas_validas": 500,
+    "sin_positivos": 0,
+    "ic_percentil_95": [
+      0.6604219551906989,
+      0.8302402083054812
+    ]
+  },
+  "fuentes_sha256": {
+    "construccion": "7e13f1ec9e776656180c538a8ef95bb38aae9e2878fe5b6f6b0e9abd3357d705",
+    "produccion": "5fc0c21f7c3bfd66969788d4cc86260af5dadbca796d272a534c6bcb66e64ebf"
+  },
+  "conclusiones": "\n- **Datos:** 170,884 operaciones de construcción y 295 fraudes; 113,923 filas de producción sin etiquetas.\n- **Validación:** 51,267 filas y 90 fraudes; cero grupos compartidos con entrenamiento.\n- **Señal simple:** `-1 × X17`, elegida solo con train, obtiene AP **0.6698** en validación.\n- **GMM fijo:** AP **0.7471**, frente a la prevalencia **0.001756**. Intervalo bootstrap condicional 95 %: **[0.6604, 0.8302]**.\n- **Revisión de 500 casos:** el GMM coloca **79** fraudes entre los primeros 500; precisión **15.80%** y recall **87.78%**.\n- **Comparación:** El GMM supera a la regla univariante en esta partición. Los regímenes usan etiquetas de forma distinta: la regla selecciona dirección/variable y el GMM selecciona normales para aprender normalidad. La diferencia puntual no prueba superioridad general ni causalidad.\n- **Siguiente estudio:** repetir la comparación con cinco folds agrupados; incorporar Isolation Forest, PCA reconstructivo y un autoencoder denso, y una logística supervisada como control. La búsqueda de parámetros deberá ser interna a esos folds.\n- **Límite:** resultados exploratorios sobre una partición de datos previamente estudiados. El bootstrap no sustituye la estabilidad entre particiones ni una evaluación externa. No hay scores de producción ni modelo ganador definitivo.\n"
+}
