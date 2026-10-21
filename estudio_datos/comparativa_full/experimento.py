@@ -123,6 +123,13 @@ def preparar():
 
 def cargar():
     protocolo = json.loads((SALIDA / "protocolo.json").read_text())
+    if (platform.python_version() != protocolo["python"]
+            or versiones() != protocolo["versiones"]):
+        raise RuntimeError(
+            "El entorno Python/librerías no coincide con el protocolo. "
+            "Restaurar las versiones registradas o iniciar otro experimento "
+            "antes de cargar datos, reutilizar caché o entrenar."
+        )
     preparados = {n: digest_bytes((SALIDA / n).read_bytes()) for n in
                   ["X.npy", "y.npy", "grupos.npy", "X_produccion.npy", "particiones.npz"]}
     sello = SALIDA / "integridad_datos.json"
