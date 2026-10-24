@@ -1,0 +1,52 @@
+{
+  "familia": "lightgbm",
+  "regimen": "supervisado",
+  "filas_por_inferencia": 113923,
+  "repeticiones": [
+    {
+      "repeticion": 1,
+      "filas": 113923,
+      "segundos": 1.3779931669996586,
+      "delta_maximo_vs_csv": 0.0,
+      "scores_coinciden": true
+    },
+    {
+      "repeticion": 2,
+      "filas": 113923,
+      "segundos": 1.3236334579996765,
+      "delta_maximo_vs_csv": 0.0,
+      "scores_coinciden": true
+    },
+    {
+      "repeticion": 3,
+      "filas": 113923,
+      "segundos": 1.3402826669916976,
+      "delta_maximo_vs_csv": 0.0,
+      "scores_coinciden": true
+    },
+    {
+      "repeticion": 4,
+      "filas": 113923,
+      "segundos": 1.3222840829985216,
+      "delta_maximo_vs_csv": 0.0,
+      "scores_coinciden": true
+    },
+    {
+      "repeticion": 5,
+      "filas": 113923,
+      "segundos": 1.3233683339931304,
+      "delta_maximo_vs_csv": 0.0,
+      "scores_coinciden": true
+    }
+  ],
+  "segundos_mediana": 1.3236334579996765,
+  "segundos_q25": 1.3233683339931304,
+  "segundos_q75": 1.3402826669916976,
+  "segundos_iqr": 0.01691433299856726,
+  "modelo_sha256": "260ff22677971f9793ae2d631d14d64a3d1962ea40aea09885f58a1089b0178a",
+  "scores_sha256": "5a093f11bf0ba42e4d1f1e2066223dc51aced23da77405b946b52526d1b85823",
+  "auditoria_entrega_sha256": "99254beca7f976e796dab59cb4bb2b2a2103191a2450861a3e46e820998805df",
+  "orden_verificado_en_todas_las_filas": true,
+  "refits_adicionales": 0,
+  "alcance": "Cinco inferencias locales completas; carga real del Mac; no latencia de producción certificada."
+}

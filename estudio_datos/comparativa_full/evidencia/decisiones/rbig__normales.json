@@ -1,0 +1,646 @@
+[
+  {
+    "familia": "rbig",
+    "regimen": "normales",
+    "outer": 0,
+    "ganador": {
+      "config": 1,
+      "ap_media": 0.26736326853735076,
+      "ap_sd": 0.031965796888813194,
+      "recall_1pct": 0.7541923617872985,
+      "fit_s_media": 11.719450513997193
+    },
+    "busqueda": [
+      {
+        "config": 0,
+        "ap_media": 0.2665966260564123,
+        "ap_sd": 0.03302757939925857,
+        "recall_1pct": 0.7414800389483934,
+        "fit_s_media": 4.713811472329932
+      },
+      {
+        "config": 1,
+        "ap_media": 0.26736326853735076,
+        "ap_sd": 0.031965796888813194,
+        "recall_1pct": 0.7541923617872985,
+        "fit_s_media": 11.719450513997193
+      }
+    ],
+    "protocolo": "638141edb70c6551f61114f7f3526db2f8d67d838f706ae3216808a220628201",
+    "evaluacion_exterior": {
+      "estado": "completo",
+      "identidad": {
+        "protocolo": "638141edb70c6551f61114f7f3526db2f8d67d838f706ae3216808a220628201",
+        "familia": "rbig",
+        "regimen": "normales",
+        "outer": 0,
+        "inner": -1,
+        "config": 1,
+        "parametros": {
+          "n_layers": 50,
+          "bins": 128
+        },
+        "semilla": 20262020,
+        "train_indices": "6b7ca11677245ae99e20f7665713705b3a5e75a38cc2e54f1049ea95ac178e3c",
+        "eval_indices": "720e623b357d5145f33478d423d75722fe98bb53532e1153cb446505e4517f15",
+        "codigo": {
+          "modelos.py": "926a3eb0b0dcc3de4aa6b70f2f51a8cf5f413299155bc3c0c0c0ef028ac06951",
+          "experimento.py": "4b9e1fc5ac132f692730f8ffccac2b831034061fb9909968fe2b87c2f77028f3",
+          "modelo_rbig.py": "dde3281be39f86e38cd0c04829ff53b77145d9febe62cf01d1d55ea5c19a8018"
+        },
+        "datos": {
+          "X.npy": "797d4be9c7598ba85b766a7871e87e9ed0eab97715af09ec65c88ee028e28df3",
+          "y.npy": "7c793d6c0d9c8a583a4ed44af8c0cb6edf6c325b7f74f0cf2627a9eb64410197",
+          "grupos.npy": "300c85e51790caebd642c08c9dcfd6186c64ac7ba506397d3952773dab9f031c",
+          "X_produccion.npy": "6259fbef314607e7e0e97efc8cd84de186f79c7dea142eabb4fe6cddf9f2294f",
+          "particiones.npz": "bc7c03b2a02c299f6d4ec38a68d5e84213a898fafcef664107326a97529c5456"
+        }
+      },
+      "metricas": {
+        "ap": 0.31239749633696223,
+        "roc_auc": 0.9432334043066882,
+        "filas": 34177,
+        "fraudes": 59,
+        "precision_0.002": 0.42028985507246375,
+        "recall_0.002": 0.4915254237288136,
+        "k_0.002": 69,
+        "tp_0.002": 29,
+        "empatados_0.002": 1,
+        "precision_0.01": 0.12573099415204678,
+        "recall_0.01": 0.7288135593220338,
+        "k_0.01": 342,
+        "tp_0.01": 43,
+        "empatados_0.01": 1,
+        "precision_0.02": 0.06725146198830409,
+        "recall_0.02": 0.7796610169491526,
+        "k_0.02": 684,
+        "tp_0.02": 46,
+        "empatados_0.02": 1
+      },
+      "filas_fit": 136471,
+      "tiempos": {
+        "fit_s": 17.882515375007642,
+        "score_s": 3.6448548339976696
+      },
+      "entrenamiento": {
+        "filas_fit": 136471,
+        "predictores": 21,
+        "escalado": true,
+        "detalle": {
+          "modelo": "RBIG adaptado: histograma + Gaussianización + PCA",
+          "parametros": {
+            "n_layers": 50,
+            "bins": 128,
+            "pseudocount": 0.5,
+            "bound_ext": 0.3,
+            "rotation": "pca"
+          },
+          "filas_entrenamiento": 136471,
+          "columnas": 21,
+          "filas_por_capa": 136471,
+          "submuestreo": false,
+          "etiquetas_utilizadas": false,
+          "semilla": 20262020,
+          "rotacion_determinista": true,
+          "hilos": 2,
+          "segundos_ajuste": 17.861674208004843,
+          "fuente_url": "https://github.com/IPL-UV/rbig/tree/a9124fc07d8e851833802d604fe552b6327ab980",
+          "fuente_commit": "a9124fc07d8e851833802d604fe552b6327ab980",
+          "referencia_miax": "5_Inteligencia_Artificial_Generativa/2026_Anomalias/scripts_deep/AD_rbig_demo_clase.ipynb, celdas 2 y 6",
+          "adaptaciones": [
+            "Histograma de bins equidistantes y pseudocuentas normalizadas.",
+            "Colas exponenciales con masa explícita y CDF inversa sin clipping.",
+            "Logdensidad y jacobianos calculados sin exponentiar probabilidades.",
+            "Número fijo de capas elegido en validación, sin parada por entropía.",
+            "Marginales y rotaciones congeladas al predecir; score independiente del lote."
+          ]
+        }
+      },
+      "avisos": [],
+      "scores_sha256": "8b25a3ff64616c987daf6d1666f6146bcc753f8b3e1292d5e6cc9a4fdc53ca68",
+      "fecha_utc": "2026-10-20T13:15:49Z",
+      "pid": 18364
+    }
+  },
+  {
+    "familia": "rbig",
+    "regimen": "normales",
+    "outer": 1,
+    "ganador": {
+      "config": 1,
+      "ap_media": 0.27040508006212693,
+      "ap_sd": 0.022428799918099828,
+      "recall_1pct": 0.7542464567781023,
+      "fit_s_media": 11.72154147233717
+    },
+    "busqueda": [
+      {
+        "config": 0,
+        "ap_media": 0.2599628083440427,
+        "ap_sd": 0.020743587390400206,
+        "recall_1pct": 0.7375311046197122,
+        "fit_s_media": 4.6558275416658335
+      },
+      {
+        "config": 1,
+        "ap_media": 0.27040508006212693,
+        "ap_sd": 0.022428799918099828,
+        "recall_1pct": 0.7542464567781023,
+        "fit_s_media": 11.72154147233717
+      }
+    ],
+    "protocolo": "638141edb70c6551f61114f7f3526db2f8d67d838f706ae3216808a220628201",
+    "evaluacion_exterior": {
+      "estado": "completo",
+      "identidad": {
+        "protocolo": "638141edb70c6551f61114f7f3526db2f8d67d838f706ae3216808a220628201",
+        "familia": "rbig",
+        "regimen": "normales",
+        "outer": 1,
+        "inner": -1,
+        "config": 1,
+        "parametros": {
+          "n_layers": 50,
+          "bins": 128
+        },
+        "semilla": 20263020,
+        "train_indices": "b50833cd37db12b17d7a052829346bc5fb37ec97c969b88ed030ac73fbccd779",
+        "eval_indices": "7dc2340747aa37698ae3658c5dc11fc85b4105095cb8e96893d72cebffc37c7f",
+        "codigo": {
+          "modelos.py": "926a3eb0b0dcc3de4aa6b70f2f51a8cf5f413299155bc3c0c0c0ef028ac06951",
+          "experimento.py": "4b9e1fc5ac132f692730f8ffccac2b831034061fb9909968fe2b87c2f77028f3",
+          "modelo_rbig.py": "dde3281be39f86e38cd0c04829ff53b77145d9febe62cf01d1d55ea5c19a8018"
+        },
+        "datos": {
+          "X.npy": "797d4be9c7598ba85b766a7871e87e9ed0eab97715af09ec65c88ee028e28df3",
+          "y.npy": "7c793d6c0d9c8a583a4ed44af8c0cb6edf6c325b7f74f0cf2627a9eb64410197",
+          "grupos.npy": "300c85e51790caebd642c08c9dcfd6186c64ac7ba506397d3952773dab9f031c",
+          "X_produccion.npy": "6259fbef314607e7e0e97efc8cd84de186f79c7dea142eabb4fe6cddf9f2294f",
+          "particiones.npz": "bc7c03b2a02c299f6d4ec38a68d5e84213a898fafcef664107326a97529c5456"
+        }
+      },
+      "metricas": {
+        "ap": 0.29424453510994936,
+        "roc_auc": 0.9525693977332906,
+        "filas": 34177,
+        "fraudes": 59,
+        "precision_0.002": 0.36231884057971014,
+        "recall_0.002": 0.423728813559322,
+        "k_0.002": 69,
+        "tp_0.002": 25,
+        "empatados_0.002": 1,
+        "precision_0.01": 0.12280701754385964,
+        "recall_0.01": 0.711864406779661,
+        "k_0.01": 342,
+        "tp_0.01": 42,
+        "empatados_0.01": 1,
+        "precision_0.02": 0.07017543859649122,
+        "recall_0.02": 0.8135593220338984,
+        "k_0.02": 684,
+        "tp_0.02": 48,
+        "empatados_0.02": 1
+      },
+      "filas_fit": 136471,
+      "tiempos": {
+        "fit_s": 17.96076054101286,
+        "score_s": 3.654871083999751
+      },
+      "entrenamiento": {
+        "filas_fit": 136471,
+        "predictores": 21,
+        "escalado": true,
+        "detalle": {
+          "modelo": "RBIG adaptado: histograma + Gaussianización + PCA",
+          "parametros": {
+            "n_layers": 50,
+            "bins": 128,
+            "pseudocount": 0.5,
+            "bound_ext": 0.3,
+            "rotation": "pca"
+          },
+          "filas_entrenamiento": 136471,
+          "columnas": 21,
+          "filas_por_capa": 136471,
+          "submuestreo": false,
+          "etiquetas_utilizadas": false,
+          "semilla": 20263020,
+          "rotacion_determinista": true,
+          "hilos": 2,
+          "segundos_ajuste": 17.938885917013977,
+          "fuente_url": "https://github.com/IPL-UV/rbig/tree/a9124fc07d8e851833802d604fe552b6327ab980",
+          "fuente_commit": "a9124fc07d8e851833802d604fe552b6327ab980",
+          "referencia_miax": "5_Inteligencia_Artificial_Generativa/2026_Anomalias/scripts_deep/AD_rbig_demo_clase.ipynb, celdas 2 y 6",
+          "adaptaciones": [
+            "Histograma de bins equidistantes y pseudocuentas normalizadas.",
+            "Colas exponenciales con masa explícita y CDF inversa sin clipping.",
+            "Logdensidad y jacobianos calculados sin exponentiar probabilidades.",
+            "Número fijo de capas elegido en validación, sin parada por entropía.",
+            "Marginales y rotaciones congeladas al predecir; score independiente del lote."
+          ]
+        }
+      },
+      "avisos": [],
+      "scores_sha256": "1e7540cb4d45da21f4b9aa2fdb787e98f08a26bc78742124cdb91ac069c23e23",
+      "fecha_utc": "2026-10-20T13:17:21Z",
+      "pid": 18364
+    }
+  },
+  {
+    "familia": "rbig",
+    "regimen": "normales",
+    "outer": 2,
+    "ganador": {
+      "config": 1,
+      "ap_media": 0.31035607755007194,
+      "ap_sd": 0.02634531194781101,
+      "recall_1pct": 0.750351617440225,
+      "fit_s_media": 11.78200834733434
+    },
+    "busqueda": [
+      {
+        "config": 0,
+        "ap_media": 0.306126062764092,
+        "ap_sd": 0.03149534736070803,
+        "recall_1pct": 0.7418046088932165,
+        "fit_s_media": 4.6494460416724905
+      },
+      {
+        "config": 1,
+        "ap_media": 0.31035607755007194,
+        "ap_sd": 0.02634531194781101,
+        "recall_1pct": 0.750351617440225,
+        "fit_s_media": 11.78200834733434
+      }
+    ],
+    "protocolo": "638141edb70c6551f61114f7f3526db2f8d67d838f706ae3216808a220628201",
+    "evaluacion_exterior": {
+      "estado": "completo",
+      "identidad": {
+        "protocolo": "638141edb70c6551f61114f7f3526db2f8d67d838f706ae3216808a220628201",
+        "familia": "rbig",
+        "regimen": "normales",
+        "outer": 2,
+        "inner": -1,
+        "config": 1,
+        "parametros": {
+          "n_layers": 50,
+          "bins": 128
+        },
+        "semilla": 20264020,
+        "train_indices": "4d0a3300f177a4ed603098c1f3ae241b397aa2d8f48a5f9209488bfee05a82a4",
+        "eval_indices": "5db8e274dc0f1d5eec8bf40767e86c4599a9baa88d9b6fd25df4c53ff468d09b",
+        "codigo": {
+          "modelos.py": "926a3eb0b0dcc3de4aa6b70f2f51a8cf5f413299155bc3c0c0c0ef028ac06951",
+          "experimento.py": "4b9e1fc5ac132f692730f8ffccac2b831034061fb9909968fe2b87c2f77028f3",
+          "modelo_rbig.py": "dde3281be39f86e38cd0c04829ff53b77145d9febe62cf01d1d55ea5c19a8018"
+        },
+        "datos": {
+          "X.npy": "797d4be9c7598ba85b766a7871e87e9ed0eab97715af09ec65c88ee028e28df3",
+          "y.npy": "7c793d6c0d9c8a583a4ed44af8c0cb6edf6c325b7f74f0cf2627a9eb64410197",
+          "grupos.npy": "300c85e51790caebd642c08c9dcfd6186c64ac7ba506397d3952773dab9f031c",
+          "X_produccion.npy": "6259fbef314607e7e0e97efc8cd84de186f79c7dea142eabb4fe6cddf9f2294f",
+          "particiones.npz": "bc7c03b2a02c299f6d4ec38a68d5e84213a898fafcef664107326a97529c5456"
+        }
+      },
+      "metricas": {
+        "ap": 0.23226743796786295,
+        "roc_auc": 0.9459890449993592,
+        "filas": 34177,
+        "fraudes": 59,
+        "precision_0.002": 0.2898550724637681,
+        "recall_0.002": 0.3389830508474576,
+        "k_0.002": 69,
+        "tp_0.002": 20,
+        "empatados_0.002": 1,
+        "precision_0.01": 0.1286549707602339,
+        "recall_0.01": 0.7457627118644068,
+        "k_0.01": 342,
+        "tp_0.01": 44,
+        "empatados_0.01": 1,
+        "precision_0.02": 0.07163742690058479,
+        "recall_0.02": 0.8305084745762712,
+        "k_0.02": 684,
+        "tp_0.02": 49,
+        "empatados_0.02": 1
+      },
+      "filas_fit": 136471,
+      "tiempos": {
+        "fit_s": 17.939612125002895,
+        "score_s": 3.654698832993745
+      },
+      "entrenamiento": {
+        "filas_fit": 136471,
+        "predictores": 21,
+        "escalado": true,
+        "detalle": {
+          "modelo": "RBIG adaptado: histograma + Gaussianización + PCA",
+          "parametros": {
+            "n_layers": 50,
+            "bins": 128,
+            "pseudocount": 0.5,
+            "bound_ext": 0.3,
+            "rotation": "pca"
+          },
+          "filas_entrenamiento": 136471,
+          "columnas": 21,
+          "filas_por_capa": 136471,
+          "submuestreo": false,
+          "etiquetas_utilizadas": false,
+          "semilla": 20264020,
+          "rotacion_determinista": true,
+          "hilos": 2,
+          "segundos_ajuste": 17.917987958004232,
+          "fuente_url": "https://github.com/IPL-UV/rbig/tree/a9124fc07d8e851833802d604fe552b6327ab980",
+          "fuente_commit": "a9124fc07d8e851833802d604fe552b6327ab980",
+          "referencia_miax": "5_Inteligencia_Artificial_Generativa/2026_Anomalias/scripts_deep/AD_rbig_demo_clase.ipynb, celdas 2 y 6",
+          "adaptaciones": [
+            "Histograma de bins equidistantes y pseudocuentas normalizadas.",
+            "Colas exponenciales con masa explícita y CDF inversa sin clipping.",
+            "Logdensidad y jacobianos calculados sin exponentiar probabilidades.",
+            "Número fijo de capas elegido en validación, sin parada por entropía.",
+            "Marginales y rotaciones congeladas al predecir; score independiente del lote."
+          ]
+        }
+      },
+      "avisos": [],
+      "scores_sha256": "b331e84e6d6d7bbf09b5546404ae8b8bb4d21f6357997d35a2142c261642d696",
+      "fecha_utc": "2026-10-20T13:18:53Z",
+      "pid": 18364
+    }
+  },
+  {
+    "familia": "rbig",
+    "regimen": "normales",
+    "outer": 3,
+    "ganador": {
+      "config": 1,
+      "ap_media": 0.2711440259737032,
+      "ap_sd": 0.02913757694429087,
+      "recall_1pct": 0.7500811424862057,
+      "fit_s_media": 11.657751735668475
+    },
+    "busqueda": [
+      {
+        "config": 0,
+        "ap_media": 0.2665693394175614,
+        "ap_sd": 0.02741219176311929,
+        "recall_1pct": 0.7288218111002922,
+        "fit_s_media": 4.6243547363313455
+      },
+      {
+        "config": 1,
+        "ap_media": 0.2711440259737032,
+        "ap_sd": 0.02913757694429087,
+        "recall_1pct": 0.7500811424862057,
+        "fit_s_media": 11.657751735668475
+      }
+    ],
+    "protocolo": "638141edb70c6551f61114f7f3526db2f8d67d838f706ae3216808a220628201",
+    "evaluacion_exterior": {
+      "estado": "completo",
+      "identidad": {
+        "protocolo": "638141edb70c6551f61114f7f3526db2f8d67d838f706ae3216808a220628201",
+        "familia": "rbig",
+        "regimen": "normales",
+        "outer": 3,
+        "inner": -1,
+        "config": 1,
+        "parametros": {
+          "n_layers": 50,
+          "bins": 128
+        },
+        "semilla": 20265020,
+        "train_indices": "5c4b4285dc79a68da9792b5ff586fb64bfc6e0384f5d1a20e8cff81d7caca341",
+        "eval_indices": "e8794e5d52dd4ac1f616339e17e0321b6968118b4dc10a4d8fad9aee009dfc86",
+        "codigo": {
+          "modelos.py": "926a3eb0b0dcc3de4aa6b70f2f51a8cf5f413299155bc3c0c0c0ef028ac06951",
+          "experimento.py": "4b9e1fc5ac132f692730f8ffccac2b831034061fb9909968fe2b87c2f77028f3",
+          "modelo_rbig.py": "dde3281be39f86e38cd0c04829ff53b77145d9febe62cf01d1d55ea5c19a8018"
+        },
+        "datos": {
+          "X.npy": "797d4be9c7598ba85b766a7871e87e9ed0eab97715af09ec65c88ee028e28df3",
+          "y.npy": "7c793d6c0d9c8a583a4ed44af8c0cb6edf6c325b7f74f0cf2627a9eb64410197",
+          "grupos.npy": "300c85e51790caebd642c08c9dcfd6186c64ac7ba506397d3952773dab9f031c",
+          "X_produccion.npy": "6259fbef314607e7e0e97efc8cd84de186f79c7dea142eabb4fe6cddf9f2294f",
+          "particiones.npz": "bc7c03b2a02c299f6d4ec38a68d5e84213a898fafcef664107326a97529c5456"
+        }
+      },
+      "metricas": {
+        "ap": 0.28221946547814675,
+        "roc_auc": 0.9769613137257435,
+        "filas": 34177,
+        "fraudes": 59,
+        "precision_0.002": 0.391304347826087,
+        "recall_0.002": 0.4576271186440678,
+        "k_0.002": 69,
+        "tp_0.002": 27,
+        "empatados_0.002": 1,
+        "precision_0.01": 0.1286549707602339,
+        "recall_0.01": 0.7457627118644068,
+        "k_0.01": 342,
+        "tp_0.01": 44,
+        "empatados_0.01": 1,
+        "precision_0.02": 0.06871345029239766,
+        "recall_0.02": 0.7966101694915254,
+        "k_0.02": 684,
+        "tp_0.02": 47,
+        "empatados_0.02": 1
+      },
+      "filas_fit": 136471,
+      "tiempos": {
+        "fit_s": 18.0892026250076,
+        "score_s": 3.652074541998445
+      },
+      "entrenamiento": {
+        "filas_fit": 136471,
+        "predictores": 21,
+        "escalado": true,
+        "detalle": {
+          "modelo": "RBIG adaptado: histograma + Gaussianización + PCA",
+          "parametros": {
+            "n_layers": 50,
+            "bins": 128,
+            "pseudocount": 0.5,
+            "bound_ext": 0.3,
+            "rotation": "pca"
+          },
+          "filas_entrenamiento": 136471,
+          "columnas": 21,
+          "filas_por_capa": 136471,
+          "submuestreo": false,
+          "etiquetas_utilizadas": false,
+          "semilla": 20265020,
+          "rotacion_determinista": true,
+          "hilos": 2,
+          "segundos_ajuste": 18.067260541996802,
+          "fuente_url": "https://github.com/IPL-UV/rbig/tree/a9124fc07d8e851833802d604fe552b6327ab980",
+          "fuente_commit": "a9124fc07d8e851833802d604fe552b6327ab980",
+          "referencia_miax": "5_Inteligencia_Artificial_Generativa/2026_Anomalias/scripts_deep/AD_rbig_demo_clase.ipynb, celdas 2 y 6",
+          "adaptaciones": [
+            "Histograma de bins equidistantes y pseudocuentas normalizadas.",
+            "Colas exponenciales con masa explícita y CDF inversa sin clipping.",
+            "Logdensidad y jacobianos calculados sin exponentiar probabilidades.",
+            "Número fijo de capas elegido en validación, sin parada por entropía.",
+            "Marginales y rotaciones congeladas al predecir; score independiente del lote."
+          ]
+        }
+      },
+      "avisos": [],
+      "scores_sha256": "f8b255a186065585560f3e398639b63f37d1383f2947ff55c8a13650312e3efd",
+      "fecha_utc": "2026-10-20T13:20:25Z",
+      "pid": 18364
+    }
+  },
+  {
+    "familia": "rbig",
+    "regimen": "normales",
+    "outer": 4,
+    "ganador": {
+      "config": 1,
+      "ap_media": 0.2641750030941807,
+      "ap_sd": 0.017507337969230447,
+      "recall_1pct": 0.7329871253921887,
+      "fit_s_media": 11.723519499665903
+    },
+    "busqueda": [
+      {
+        "config": 0,
+        "ap_media": 0.2567738581474767,
+        "ap_sd": 0.008996156796755642,
+        "recall_1pct": 0.7203829925348914,
+        "fit_s_media": 4.624902583333703
+      },
+      {
+        "config": 1,
+        "ap_media": 0.2641750030941807,
+        "ap_sd": 0.017507337969230447,
+        "recall_1pct": 0.7329871253921887,
+        "fit_s_media": 11.723519499665903
+      }
+    ],
+    "protocolo": "638141edb70c6551f61114f7f3526db2f8d67d838f706ae3216808a220628201",
+    "evaluacion_exterior": {
+      "estado": "completo",
+      "identidad": {
+        "protocolo": "638141edb70c6551f61114f7f3526db2f8d67d838f706ae3216808a220628201",
+        "familia": "rbig",
+        "regimen": "normales",
+        "outer": 4,
+        "inner": -1,
+        "config": 1,
+        "parametros": {
+          "n_layers": 50,
+          "bins": 128
+        },
+        "semilla": 20266020,
+        "train_indices": "e242d3e28f4372dd9aa014e9b60f3576c58e22b4404faad219c28ace2810099e",
+        "eval_indices": "19cd5f0c9e0018735b2301c9d3da5f89a975c88e2f7da09ed63edc923bad7dfe",
+        "codigo": {
+          "modelos.py": "926a3eb0b0dcc3de4aa6b70f2f51a8cf5f413299155bc3c0c0c0ef028ac06951",
+          "experimento.py": "4b9e1fc5ac132f692730f8ffccac2b831034061fb9909968fe2b87c2f77028f3",
+          "modelo_rbig.py": "dde3281be39f86e38cd0c04829ff53b77145d9febe62cf01d1d55ea5c19a8018"
+        },
+        "datos": {
+          "X.npy": "797d4be9c7598ba85b766a7871e87e9ed0eab97715af09ec65c88ee028e28df3",
+          "y.npy": "7c793d6c0d9c8a583a4ed44af8c0cb6edf6c325b7f74f0cf2627a9eb64410197",
+          "grupos.npy": "300c85e51790caebd642c08c9dcfd6186c64ac7ba506397d3952773dab9f031c",
+          "X_produccion.npy": "6259fbef314607e7e0e97efc8cd84de186f79c7dea142eabb4fe6cddf9f2294f",
+          "particiones.npz": "bc7c03b2a02c299f6d4ec38a68d5e84213a898fafcef664107326a97529c5456"
+        }
+      },
+      "metricas": {
+        "ap": 0.28539433628465766,
+        "roc_auc": 0.9614372873407213,
+        "filas": 34176,
+        "fraudes": 59,
+        "precision_0.002": 0.36231884057971014,
+        "recall_0.002": 0.423728813559322,
+        "k_0.002": 69,
+        "tp_0.002": 25,
+        "empatados_0.002": 1,
+        "precision_0.01": 0.1286549707602339,
+        "recall_0.01": 0.7457627118644068,
+        "k_0.01": 342,
+        "tp_0.01": 44,
+        "empatados_0.01": 1,
+        "precision_0.02": 0.06725146198830409,
+        "recall_0.02": 0.7796610169491526,
+        "k_0.02": 684,
+        "tp_0.02": 46,
+        "empatados_0.02": 1
+      },
+      "filas_fit": 136472,
+      "tiempos": {
+        "fit_s": 18.015267332986696,
+        "score_s": 3.6679007920029107
+      },
+      "entrenamiento": {
+        "filas_fit": 136472,
+        "predictores": 21,
+        "escalado": true,
+        "detalle": {
+          "modelo": "RBIG adaptado: histograma + Gaussianización + PCA",
+          "parametros": {
+            "n_layers": 50,
+            "bins": 128,
+            "pseudocount": 0.5,
+            "bound_ext": 0.3,
+            "rotation": "pca"
+          },
+          "filas_entrenamiento": 136472,
+          "columnas": 21,
+          "filas_por_capa": 136472,
+          "submuestreo": false,
+          "etiquetas_utilizadas": false,
+          "semilla": 20266020,
+          "rotacion_determinista": true,
+          "hilos": 2,
+          "segundos_ajuste": 17.99322916699748,
+          "fuente_url": "https://github.com/IPL-UV/rbig/tree/a9124fc07d8e851833802d604fe552b6327ab980",
+          "fuente_commit": "a9124fc07d8e851833802d604fe552b6327ab980",
+          "referencia_miax": "5_Inteligencia_Artificial_Generativa/2026_Anomalias/scripts_deep/AD_rbig_demo_clase.ipynb, celdas 2 y 6",
+          "adaptaciones": [
+            "Histograma de bins equidistantes y pseudocuentas normalizadas.",
+            "Colas exponenciales con masa explícita y CDF inversa sin clipping.",
+            "Logdensidad y jacobianos calculados sin exponentiar probabilidades.",
+            "Número fijo de capas elegido en validación, sin parada por entropía.",
+            "Marginales y rotaciones congeladas al predecir; score independiente del lote."
+          ]
+        }
+      },
+      "avisos": [],
+      "scores_sha256": "567febf04d8e46e5a67371906e0087aa2df28f5e46005ced685f60802b7c2e23",
+      "fecha_utc": "2026-10-20T13:21:56Z",
+      "pid": 18364
+    }
+  },
+  {
+    "familia": "rbig",
+    "regimen": "normales",
+    "outer": -1,
+    "ganador": {
+      "config": 0,
+      "ap_media": 0.27045561894292863,
+      "ap_sd": 0.05585591470182264,
+      "recall_1pct": 0.7152820724249297,
+      "fit_s_media": 5.895864805667467
+    },
+    "busqueda": [
+      {
+        "config": 0,
+        "ap_media": 0.27045561894292863,
+        "ap_sd": 0.05585591470182264,
+        "recall_1pct": 0.7152820724249297,
+        "fit_s_media": 5.895864805667467
+      },
+      {
+        "config": 1,
+        "ap_media": 0.26921144750789483,
+        "ap_sd": 0.05021371038122371,
+        "recall_1pct": 0.7118807118807119,
+        "fit_s_media": 13.304354485997465
+      }
+    ],
+    "protocolo": "638141edb70c6551f61114f7f3526db2f8d67d838f706ae3216808a220628201"
+  }
+]

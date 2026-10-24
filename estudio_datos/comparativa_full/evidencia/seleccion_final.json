@@ -1,0 +1,67 @@
+{
+  "estado": "seleccionado_pendiente_refit_y_produccion",
+  "protocolo": "638141edb70c6551f61114f7f3526db2f8d67d838f706ae3216808a220628201",
+  "familia": "lightgbm",
+  "regimen": "supervisado",
+  "config": 3,
+  "parametros": {
+    "n_estimators": 500,
+    "learning_rate": 0.05,
+    "num_leaves": 15,
+    "min_child_samples": 50,
+    "reg_lambda": 1.0,
+    "class_weight": "balanced"
+  },
+  "regla": "AP media interior máxima; únicamente ante igualdad exacta: mayor recall@1%, menor tiempo medio de ajuste, nombre de familia, régimen e índice de configuración. ECOD por cohorte no es elegible.",
+  "criterios_interiores": {
+    "familia": "lightgbm",
+    "regimen": "supervisado",
+    "outer": -1,
+    "elegible": true,
+    "config": 3,
+    "ap_media": 0.8472026031450642,
+    "ap_sd": 0.02484643901186636,
+    "recall_1pct": 0.8882361025218168,
+    "fit_s_media": 3.385028083328507
+  },
+  "origen_seleccion": "outer=-1; tres folds interiores sobre construcción completa",
+  "metricas_exteriores_usadas_para_elegir": false,
+  "familias_excluidas_seleccion": [
+    "ecod_cohorte"
+  ],
+  "filas_refit_esperadas": 170884,
+  "filas_produccion_esperadas": 113923,
+  "fuentes": {
+    "protocolo.json": "f66d3bfcf2e39aaa787d3939dd7cf3acc58aeedf523d8e19c6c7e19f381d2366",
+    "integridad_datos.json": "df5ae9987b5c2de94eaf5e2305b329022efb611b780f5600c8df242fc4391831",
+    "analizar.py": "e41b6e0985885de1b09bab2a518bbff2ca3b825224fb65935efbd4fc6e434328",
+    "tabla_candidatos_interiores.csv": "86a46d90b1b1064d0c6d53d8432207e3015d839c1f5d9d79745178b99c7d0033",
+    "decisiones": {
+      "constante__referencia.json": "2541d8d371e341d239971984857f5e6c2166a2e0c46ceb5e19a60adab7ab3583",
+      "univariante__supervisado.json": "c4501a8936ed91d0c76372f93d49d9a6abd979b9b2347c47132bcd34c8a6bd53",
+      "gmm_fijo__normales.json": "d1b70d4989e371a38d0f374618c409c687d7ba145fbe3cc6d43b8e5750b376fe",
+      "gmm__normales.json": "d2cf81cbee3845e6b557bee471d086cd7fbd6749709e84f4f0453b5049681982",
+      "gmm__todos.json": "05e7e103e504d9d5b75bedf977dd9e1f9a58ec107e49a9fdb6e64564b382a8b1",
+      "isolation_forest__normales.json": "022da66d59a452b099eaabefbf04737608ca3a6dd02ca6c72c7ea77da794da68",
+      "isolation_forest__todos.json": "4c81c297ba34b0ca538471155b503fbdd4f6b097e28e98851cee07e9847d04ed",
+      "pca__normales.json": "46ff94ab537cbc84c29e9dca1477d1539a7274ef6534041d8fd5b8e53ba47f60",
+      "pca__todos.json": "bdaaf713f71ab318a7f16d91b60c4d8229a9000bd3cd91b282ab02e04f682c1a",
+      "lof__normales.json": "d83858a0d1f73231eedb7896e0f1dac2097b04bd2e3f39f513e4da5a61078c74",
+      "lof__todos.json": "179db080ffe663754dd6668ca06f8a7f9ec83650c39719caa7905d1d72a21124",
+      "knn__normales.json": "a102077416d950785c2ebdf60aeaa2af1ac3923d76a4994858b48cfacdccbdcf",
+      "knn__todos.json": "02245e27de5af69d6d59b970f1f0f6b69c260c79ddb0890a231d7cf60b1caa65",
+      "autoencoder__normales.json": "8d83511bd8b788185fb4cf37ae7b13e47e1502346b2d5c1ac88169e26f90026a",
+      "autoencoder__todos.json": "19318696b5c9ebfacd2cb4a03df0abf3cee85320137978ca7efda5ee81cdffa6",
+      "rbig__normales.json": "204164d8972358af0cec67c7cb6647de7ffdb4af4978d77538d238bce4e4a35a",
+      "rbig__todos.json": "bf3946cf6e177e20dcbeb10ab00e792f152e6ecb376eaaecdfccd0f67bdcb7a6",
+      "ecod_frozen__normales.json": "59c598165a4eefa8270024bb0c1c98e206924eead5c1db111b449917045234fe",
+      "ecod_frozen__todos.json": "a26f4cfe3a5db29714e8796e8f1a6a5aaf5a04e0aa50592b20dec55dc812535e",
+      "ecod_cohorte__normales.json": "87f96344df19ac98367de2efb93b544577308c383b01a51e3b6c4d0f1933b6e6",
+      "ecod_cohorte__todos.json": "cd1a5b4f2462c00560862636bdec727d521c395c02303adc6438bfa993f2f936",
+      "logistica__supervisado.json": "d04f7a570838ee0373303d8d54aa58afaf87c78ba7bb703cadc01aa443d5f9e2",
+      "random_forest__supervisado.json": "4e33d8e654aec3a030300b86ec4207d60199bdd046d2fa22a0440c66c6768435",
+      "lightgbm__supervisado.json": "c06bc923663feb1bb5f33c5d1035c1405e8ff2587f09d38a3c8b68925e545144"
+    }
+  },
+  "limites": "Validación interna exploratoria de datos previamente examinados; no es un test independiente. AP resumida por fold, sin concatenar scores crudos. La evaluación del procedimiento selecciona familia y configuración solo con los folds interiores de cada entrenamiento exterior."
+}

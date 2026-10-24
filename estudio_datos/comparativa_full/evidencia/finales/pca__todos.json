@@ -1,0 +1,49 @@
+{
+  "identidad": {
+    "protocolo": "638141edb70c6551f61114f7f3526db2f8d67d838f706ae3216808a220628201",
+    "datos": {
+      "X.npy": "797d4be9c7598ba85b766a7871e87e9ed0eab97715af09ec65c88ee028e28df3",
+      "y.npy": "7c793d6c0d9c8a583a4ed44af8c0cb6edf6c325b7f74f0cf2627a9eb64410197",
+      "grupos.npy": "300c85e51790caebd642c08c9dcfd6186c64ac7ba506397d3952773dab9f031c",
+      "X_produccion.npy": "6259fbef314607e7e0e97efc8cd84de186f79c7dea142eabb4fe6cddf9f2294f",
+      "particiones.npz": "bc7c03b2a02c299f6d4ec38a68d5e84213a898fafcef664107326a97529c5456"
+    },
+    "familia": "pca",
+    "regimen": "todos",
+    "config": 0,
+    "parametros": {
+      "n_components": 2
+    },
+    "semilla": 20361019,
+    "hilos": 2,
+    "codigo": {
+      "modelos.py": "926a3eb0b0dcc3de4aa6b70f2f51a8cf5f413299155bc3c0c0c0ef028ac06951",
+      "experimento.py": "4b9e1fc5ac132f692730f8ffccac2b831034061fb9909968fe2b87c2f77028f3"
+    },
+    "codigo_finalizacion": "bdcdaa68d9e0383f8791956c89ded61e35b1b6b2210abc0a65255b51582170ba",
+    "decision": "9f53ea3acc61d5611c6a7d6c83163fa249148ce7b8e152ebedd8d3ea6d7c85fc"
+  },
+  "filas_fit": 170884,
+  "filas_produccion": 113923,
+  "tiempos": {
+    "fit_s": 0.10305725000216626,
+    "score_s": 0.017647415996179916
+  },
+  "entrenamiento": {
+    "filas_fit": 170884,
+    "predictores": 21,
+    "escalado": true
+  },
+  "avisos": [],
+  "scores_sha256": "099e49e87244aeb4a22778171fe6300990022bfa316991e8b194b6404d9678dd",
+  "modelo_sha256": "8beeaf25d9828804dc02ae541d352471d80480ab4a8f076732a9d20570e1ca0e",
+  "invariante_lote": true,
+  "delta_serializacion": 0.0,
+  "delta_orden_lote": 0.0,
+  "tolerancia_verificacion": {
+    "rtol": 1e-06,
+    "atol": 1e-08
+  },
+  "alcance_invariancia": "Coincidencia numérica dentro de rtol/atol; no identidad bit a bit.",
+  "fecha_utc": "2026-10-20T13:53:28Z"
+}

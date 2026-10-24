@@ -1,0 +1,617 @@
+[
+  {
+    "familia": "pca",
+    "regimen": "todos",
+    "outer": 0,
+    "ganador": {
+      "config": 1,
+      "ap_media": 0.3206657798201622,
+      "ap_sd": 0.2124487101172098,
+      "recall_1pct": 0.6658011468138051,
+      "fit_s_media": 0.07418687499981995
+    },
+    "busqueda": [
+      {
+        "config": 0,
+        "ap_media": 0.2666260134540188,
+        "ap_sd": 0.1745116252246888,
+        "recall_1pct": 0.6404846911176024,
+        "fit_s_media": 0.049634694665049515
+      },
+      {
+        "config": 1,
+        "ap_media": 0.3206657798201622,
+        "ap_sd": 0.2124487101172098,
+        "recall_1pct": 0.6658011468138051,
+        "fit_s_media": 0.07418687499981995
+      },
+      {
+        "config": 2,
+        "ap_media": 0.3200946417377719,
+        "ap_sd": 0.2220970923491889,
+        "recall_1pct": 0.6488153197013956,
+        "fit_s_media": 0.05389916666899808
+      },
+      {
+        "config": 3,
+        "ap_media": 0.318974508296376,
+        "ap_sd": 0.22403237946979307,
+        "recall_1pct": 0.6487071297197878,
+        "fit_s_media": 0.039958180665659405
+      },
+      {
+        "config": 4,
+        "ap_media": 0.016040056747579235,
+        "ap_sd": 0.0031245350178732804,
+        "recall_1pct": 0.1484366547657687,
+        "fit_s_media": 0.04207273599361846
+      }
+    ],
+    "protocolo": "638141edb70c6551f61114f7f3526db2f8d67d838f706ae3216808a220628201",
+    "evaluacion_exterior": {
+      "estado": "completo",
+      "identidad": {
+        "protocolo": "638141edb70c6551f61114f7f3526db2f8d67d838f706ae3216808a220628201",
+        "familia": "pca",
+        "regimen": "todos",
+        "outer": 0,
+        "inner": -1,
+        "config": 1,
+        "parametros": {
+          "n_components": 5
+        },
+        "semilla": 20262020,
+        "train_indices": "04bce0ccacfcc9c1b62512722b4f8ec298cb3b051f5cc84753e5633208a36848",
+        "eval_indices": "720e623b357d5145f33478d423d75722fe98bb53532e1153cb446505e4517f15",
+        "codigo": {
+          "modelos.py": "926a3eb0b0dcc3de4aa6b70f2f51a8cf5f413299155bc3c0c0c0ef028ac06951",
+          "experimento.py": "4b9e1fc5ac132f692730f8ffccac2b831034061fb9909968fe2b87c2f77028f3"
+        },
+        "datos": {
+          "X.npy": "797d4be9c7598ba85b766a7871e87e9ed0eab97715af09ec65c88ee028e28df3",
+          "y.npy": "7c793d6c0d9c8a583a4ed44af8c0cb6edf6c325b7f74f0cf2627a9eb64410197",
+          "grupos.npy": "300c85e51790caebd642c08c9dcfd6186c64ac7ba506397d3952773dab9f031c",
+          "X_produccion.npy": "6259fbef314607e7e0e97efc8cd84de186f79c7dea142eabb4fe6cddf9f2294f",
+          "particiones.npz": "bc7c03b2a02c299f6d4ec38a68d5e84213a898fafcef664107326a97529c5456"
+        }
+      },
+      "metricas": {
+        "ap": 0.3440221617131885,
+        "roc_auc": 0.9437604882754866,
+        "filas": 34177,
+        "fraudes": 59,
+        "precision_0.002": 0.3188405797101449,
+        "recall_0.002": 0.3728813559322034,
+        "k_0.002": 69,
+        "tp_0.002": 22,
+        "empatados_0.002": 1,
+        "precision_0.01": 0.09941520467836257,
+        "recall_0.01": 0.576271186440678,
+        "k_0.01": 342,
+        "tp_0.01": 34,
+        "empatados_0.01": 1,
+        "precision_0.02": 0.06140350877192982,
+        "recall_0.02": 0.711864406779661,
+        "k_0.02": 684,
+        "tp_0.02": 42,
+        "empatados_0.02": 1
+      },
+      "filas_fit": 136707,
+      "tiempos": {
+        "fit_s": 0.13509787499788217,
+        "score_s": 0.007789208000758663
+      },
+      "entrenamiento": {
+        "filas_fit": 136707,
+        "predictores": 21,
+        "escalado": true
+      },
+      "avisos": [],
+      "scores_sha256": "885f59a7b21cddb374f0f431ef51293d5b4f83c132395bfc8eb6eda3e87a5ab3",
+      "fecha_utc": "2026-10-20T13:11:04Z",
+      "pid": 17976
+    }
+  },
+  {
+    "familia": "pca",
+    "regimen": "todos",
+    "outer": 1,
+    "ganador": {
+      "config": 0,
+      "ap_media": 0.2758764303328772,
+      "ap_sd": 0.11952346387404177,
+      "recall_1pct": 0.703343070431678,
+      "fit_s_media": 0.03938977766180566
+    },
+    "busqueda": [
+      {
+        "config": 0,
+        "ap_media": 0.2758764303328772,
+        "ap_sd": 0.11952346387404177,
+        "recall_1pct": 0.703343070431678,
+        "fit_s_media": 0.03938977766180566
+      },
+      {
+        "config": 1,
+        "ap_media": 0.19807322990152265,
+        "ap_sd": 0.16501613194323045,
+        "recall_1pct": 0.5589094449853943,
+        "fit_s_media": 0.038479888996031754
+      },
+      {
+        "config": 2,
+        "ap_media": 0.1709900011783452,
+        "ap_sd": 0.1516940189060434,
+        "recall_1pct": 0.5254246456778103,
+        "fit_s_media": 0.03671859766473062
+      },
+      {
+        "config": 3,
+        "ap_media": 0.14227743898656472,
+        "ap_sd": 0.13599428158228666,
+        "recall_1pct": 0.4616466515200693,
+        "fit_s_media": 0.041394111001864076
+      },
+      {
+        "config": 4,
+        "ap_media": 0.013500528062926386,
+        "ap_sd": 0.005561969342569952,
+        "recall_1pct": 0.11441090555014606,
+        "fit_s_media": 0.03941583299698929
+      }
+    ],
+    "protocolo": "638141edb70c6551f61114f7f3526db2f8d67d838f706ae3216808a220628201",
+    "evaluacion_exterior": {
+      "estado": "completo",
+      "identidad": {
+        "protocolo": "638141edb70c6551f61114f7f3526db2f8d67d838f706ae3216808a220628201",
+        "familia": "pca",
+        "regimen": "todos",
+        "outer": 1,
+        "inner": -1,
+        "config": 0,
+        "parametros": {
+          "n_components": 2
+        },
+        "semilla": 20263020,
+        "train_indices": "34d3c903dfe8e798004292d74cc277f3096542b4826e9a87c70a92721aa4cb10",
+        "eval_indices": "7dc2340747aa37698ae3658c5dc11fc85b4105095cb8e96893d72cebffc37c7f",
+        "codigo": {
+          "modelos.py": "926a3eb0b0dcc3de4aa6b70f2f51a8cf5f413299155bc3c0c0c0ef028ac06951",
+          "experimento.py": "4b9e1fc5ac132f692730f8ffccac2b831034061fb9909968fe2b87c2f77028f3"
+        },
+        "datos": {
+          "X.npy": "797d4be9c7598ba85b766a7871e87e9ed0eab97715af09ec65c88ee028e28df3",
+          "y.npy": "7c793d6c0d9c8a583a4ed44af8c0cb6edf6c325b7f74f0cf2627a9eb64410197",
+          "grupos.npy": "300c85e51790caebd642c08c9dcfd6186c64ac7ba506397d3952773dab9f031c",
+          "X_produccion.npy": "6259fbef314607e7e0e97efc8cd84de186f79c7dea142eabb4fe6cddf9f2294f",
+          "particiones.npz": "bc7c03b2a02c299f6d4ec38a68d5e84213a898fafcef664107326a97529c5456"
+        }
+      },
+      "metricas": {
+        "ap": 0.25056026445893975,
+        "roc_auc": 0.9547333730095253,
+        "filas": 34177,
+        "fraudes": 59,
+        "precision_0.002": 0.2898550724637681,
+        "recall_0.002": 0.3389830508474576,
+        "k_0.002": 69,
+        "tp_0.002": 20,
+        "empatados_0.002": 1,
+        "precision_0.01": 0.11403508771929824,
+        "recall_0.01": 0.6610169491525424,
+        "k_0.01": 342,
+        "tp_0.01": 39,
+        "empatados_0.01": 1,
+        "precision_0.02": 0.07163742690058479,
+        "recall_0.02": 0.8305084745762712,
+        "k_0.02": 684,
+        "tp_0.02": 49,
+        "empatados_0.02": 1
+      },
+      "filas_fit": 136707,
+      "tiempos": {
+        "fit_s": 0.05624425000860356,
+        "score_s": 0.0074682919948827475
+      },
+      "entrenamiento": {
+        "filas_fit": 136707,
+        "predictores": 21,
+        "escalado": true
+      },
+      "avisos": [],
+      "scores_sha256": "bf465bd3fbda26917539f8f309023b1b0f73ad55e9a4e964ed1a8225d8769a06",
+      "fecha_utc": "2026-10-20T13:11:06Z",
+      "pid": 17976
+    }
+  },
+  {
+    "familia": "pca",
+    "regimen": "todos",
+    "outer": 2,
+    "ganador": {
+      "config": 0,
+      "ap_media": 0.16133531280842528,
+      "ap_sd": 0.05284374283116005,
+      "recall_1pct": 0.5598290598290598,
+      "fit_s_media": 0.0383158749997771
+    },
+    "busqueda": [
+      {
+        "config": 0,
+        "ap_media": 0.16133531280842528,
+        "ap_sd": 0.05284374283116005,
+        "recall_1pct": 0.5598290598290598,
+        "fit_s_media": 0.0383158749997771
+      },
+      {
+        "config": 1,
+        "ap_media": 0.15004213383430154,
+        "ap_sd": 0.07432645521334832,
+        "recall_1pct": 0.5134155577193552,
+        "fit_s_media": 0.04199972232648482
+      },
+      {
+        "config": 2,
+        "ap_media": 0.14289582130746956,
+        "ap_sd": 0.07637501037656488,
+        "recall_1pct": 0.4921562263334415,
+        "fit_s_media": 0.04568456932611298
+      },
+      {
+        "config": 3,
+        "ap_media": 0.13211297663402274,
+        "ap_sd": 0.08731852783639572,
+        "recall_1pct": 0.4671643405820621,
+        "fit_s_media": 0.06009940266570387
+      },
+      {
+        "config": 4,
+        "ap_media": 0.018334150181135628,
+        "ap_sd": 0.006284763143497032,
+        "recall_1pct": 0.13967326625554474,
+        "fit_s_media": 0.03815077767164136
+      }
+    ],
+    "protocolo": "638141edb70c6551f61114f7f3526db2f8d67d838f706ae3216808a220628201",
+    "evaluacion_exterior": {
+      "estado": "completo",
+      "identidad": {
+        "protocolo": "638141edb70c6551f61114f7f3526db2f8d67d838f706ae3216808a220628201",
+        "familia": "pca",
+        "regimen": "todos",
+        "outer": 2,
+        "inner": -1,
+        "config": 0,
+        "parametros": {
+          "n_components": 2
+        },
+        "semilla": 20264020,
+        "train_indices": "3e60a16f9d94e448015fcde328c4d1c04792ae0395b6a8d6ef0c2bc1fdef6782",
+        "eval_indices": "5db8e274dc0f1d5eec8bf40767e86c4599a9baa88d9b6fd25df4c53ff468d09b",
+        "codigo": {
+          "modelos.py": "926a3eb0b0dcc3de4aa6b70f2f51a8cf5f413299155bc3c0c0c0ef028ac06951",
+          "experimento.py": "4b9e1fc5ac132f692730f8ffccac2b831034061fb9909968fe2b87c2f77028f3"
+        },
+        "datos": {
+          "X.npy": "797d4be9c7598ba85b766a7871e87e9ed0eab97715af09ec65c88ee028e28df3",
+          "y.npy": "7c793d6c0d9c8a583a4ed44af8c0cb6edf6c325b7f74f0cf2627a9eb64410197",
+          "grupos.npy": "300c85e51790caebd642c08c9dcfd6186c64ac7ba506397d3952773dab9f031c",
+          "X_produccion.npy": "6259fbef314607e7e0e97efc8cd84de186f79c7dea142eabb4fe6cddf9f2294f",
+          "particiones.npz": "bc7c03b2a02c299f6d4ec38a68d5e84213a898fafcef664107326a97529c5456"
+        }
+      },
+      "metricas": {
+        "ap": 0.105591945607635,
+        "roc_auc": 0.943400322509814,
+        "filas": 34177,
+        "fraudes": 59,
+        "precision_0.002": 0.17391304347826086,
+        "recall_0.002": 0.2033898305084746,
+        "k_0.002": 69,
+        "tp_0.002": 12,
+        "empatados_0.002": 1,
+        "precision_0.01": 0.09941520467836257,
+        "recall_0.01": 0.576271186440678,
+        "k_0.01": 342,
+        "tp_0.01": 34,
+        "empatados_0.01": 1,
+        "precision_0.02": 0.06725146198830409,
+        "recall_0.02": 0.7796610169491526,
+        "k_0.02": 684,
+        "tp_0.02": 46,
+        "empatados_0.02": 1
+      },
+      "filas_fit": 136707,
+      "tiempos": {
+        "fit_s": 0.07729554199613631,
+        "score_s": 0.015457290995982476
+      },
+      "entrenamiento": {
+        "filas_fit": 136707,
+        "predictores": 21,
+        "escalado": true
+      },
+      "avisos": [],
+      "scores_sha256": "3ca4adec12b928cd2e60868ba6dde0c10bb66e41b9d3b3483748cf39162b440a",
+      "fecha_utc": "2026-10-20T13:11:09Z",
+      "pid": 17976
+    }
+  },
+  {
+    "familia": "pca",
+    "regimen": "todos",
+    "outer": 3,
+    "ganador": {
+      "config": 0,
+      "ap_media": 0.21006828858708929,
+      "ap_sd": 0.16675597803968345,
+      "recall_1pct": 0.6266904684626203,
+      "fit_s_media": 0.04175233333080541
+    },
+    "busqueda": [
+      {
+        "config": 0,
+        "ap_media": 0.21006828858708929,
+        "ap_sd": 0.16675597803968345,
+        "recall_1pct": 0.6266904684626203,
+        "fit_s_media": 0.04175233333080541
+      },
+      {
+        "config": 1,
+        "ap_media": 0.18444665490400436,
+        "ap_sd": 0.1796801810388,
+        "recall_1pct": 0.5464135021097046,
+        "fit_s_media": 0.03961384699505288
+      },
+      {
+        "config": 2,
+        "ap_media": 0.19613698297544857,
+        "ap_sd": 0.20202603574497474,
+        "recall_1pct": 0.5506870063832089,
+        "fit_s_media": 0.04074006967130117
+      },
+      {
+        "config": 3,
+        "ap_media": 0.19709990552690917,
+        "ap_sd": 0.20715855520577503,
+        "recall_1pct": 0.5591799199394135,
+        "fit_s_media": 0.0412170696654357
+      },
+      {
+        "config": 4,
+        "ap_media": 0.01375364579918296,
+        "ap_sd": 0.0032137792242971884,
+        "recall_1pct": 0.11863031483284647,
+        "fit_s_media": 0.04444909732652983
+      }
+    ],
+    "protocolo": "638141edb70c6551f61114f7f3526db2f8d67d838f706ae3216808a220628201",
+    "evaluacion_exterior": {
+      "estado": "completo",
+      "identidad": {
+        "protocolo": "638141edb70c6551f61114f7f3526db2f8d67d838f706ae3216808a220628201",
+        "familia": "pca",
+        "regimen": "todos",
+        "outer": 3,
+        "inner": -1,
+        "config": 0,
+        "parametros": {
+          "n_components": 2
+        },
+        "semilla": 20265020,
+        "train_indices": "e9cadccfe45c112852fd319b5037503aae8c19b27a40c74e4e1888a1f0a9d584",
+        "eval_indices": "e8794e5d52dd4ac1f616339e17e0321b6968118b4dc10a4d8fad9aee009dfc86",
+        "codigo": {
+          "modelos.py": "926a3eb0b0dcc3de4aa6b70f2f51a8cf5f413299155bc3c0c0c0ef028ac06951",
+          "experimento.py": "4b9e1fc5ac132f692730f8ffccac2b831034061fb9909968fe2b87c2f77028f3"
+        },
+        "datos": {
+          "X.npy": "797d4be9c7598ba85b766a7871e87e9ed0eab97715af09ec65c88ee028e28df3",
+          "y.npy": "7c793d6c0d9c8a583a4ed44af8c0cb6edf6c325b7f74f0cf2627a9eb64410197",
+          "grupos.npy": "300c85e51790caebd642c08c9dcfd6186c64ac7ba506397d3952773dab9f031c",
+          "X_produccion.npy": "6259fbef314607e7e0e97efc8cd84de186f79c7dea142eabb4fe6cddf9f2294f",
+          "particiones.npz": "bc7c03b2a02c299f6d4ec38a68d5e84213a898fafcef664107326a97529c5456"
+        }
+      },
+      "metricas": {
+        "ap": 0.41536419788736445,
+        "roc_auc": 0.976472978625528,
+        "filas": 34177,
+        "fraudes": 59,
+        "precision_0.002": 0.42028985507246375,
+        "recall_0.002": 0.4915254237288136,
+        "k_0.002": 69,
+        "tp_0.002": 29,
+        "empatados_0.002": 1,
+        "precision_0.01": 0.13157894736842105,
+        "recall_0.01": 0.7627118644067796,
+        "k_0.01": 342,
+        "tp_0.01": 45,
+        "empatados_0.01": 1,
+        "precision_0.02": 0.07748538011695906,
+        "recall_0.02": 0.8983050847457628,
+        "k_0.02": 684,
+        "tp_0.02": 53,
+        "empatados_0.02": 1
+      },
+      "filas_fit": 136707,
+      "tiempos": {
+        "fit_s": 0.06457754199800547,
+        "score_s": 0.00649658300972078
+      },
+      "entrenamiento": {
+        "filas_fit": 136707,
+        "predictores": 21,
+        "escalado": true
+      },
+      "avisos": [],
+      "scores_sha256": "433fd96acafe2e0e789a5e9e45143170583465f9ed77b7c02eb3cbfc4dba1436",
+      "fecha_utc": "2026-10-20T13:11:11Z",
+      "pid": 17976
+    }
+  },
+  {
+    "familia": "pca",
+    "regimen": "todos",
+    "outer": 4,
+    "ganador": {
+      "config": 0,
+      "ap_media": 0.31604042932004767,
+      "ap_sd": 0.1646024178211306,
+      "recall_1pct": 0.7415341339391972,
+      "fit_s_media": 0.05903280533190506
+    },
+    "busqueda": [
+      {
+        "config": 0,
+        "ap_media": 0.31604042932004767,
+        "ap_sd": 0.1646024178211306,
+        "recall_1pct": 0.7415341339391972,
+        "fit_s_media": 0.05903280533190506
+      },
+      {
+        "config": 1,
+        "ap_media": 0.25930791020898564,
+        "ap_sd": 0.15876455836940623,
+        "recall_1pct": 0.6785134696527102,
+        "fit_s_media": 0.041432902993013464
+      },
+      {
+        "config": 2,
+        "ap_media": 0.2531608126749017,
+        "ap_sd": 0.1820415137653685,
+        "recall_1pct": 0.6616358325219085,
+        "fit_s_media": 0.039919888663765356
+      },
+      {
+        "config": 3,
+        "ap_media": 0.23981451118261318,
+        "ap_sd": 0.1860364749799378,
+        "recall_1pct": 0.6364275668073137,
+        "fit_s_media": 0.040054917000816204
+      },
+      {
+        "config": 4,
+        "ap_media": 0.018036789176514908,
+        "ap_sd": 0.004855968974556205,
+        "recall_1pct": 0.13988964621876013,
+        "fit_s_media": 0.04358947199458877
+      }
+    ],
+    "protocolo": "638141edb70c6551f61114f7f3526db2f8d67d838f706ae3216808a220628201",
+    "evaluacion_exterior": {
+      "estado": "completo",
+      "identidad": {
+        "protocolo": "638141edb70c6551f61114f7f3526db2f8d67d838f706ae3216808a220628201",
+        "familia": "pca",
+        "regimen": "todos",
+        "outer": 4,
+        "inner": -1,
+        "config": 0,
+        "parametros": {
+          "n_components": 2
+        },
+        "semilla": 20266020,
+        "train_indices": "39bf7f13dd40ae52fe3032d69e4b2ecb7c259150fe82a1a8befb550263f46db7",
+        "eval_indices": "19cd5f0c9e0018735b2301c9d3da5f89a975c88e2f7da09ed63edc923bad7dfe",
+        "codigo": {
+          "modelos.py": "926a3eb0b0dcc3de4aa6b70f2f51a8cf5f413299155bc3c0c0c0ef028ac06951",
+          "experimento.py": "4b9e1fc5ac132f692730f8ffccac2b831034061fb9909968fe2b87c2f77028f3"
+        },
+        "datos": {
+          "X.npy": "797d4be9c7598ba85b766a7871e87e9ed0eab97715af09ec65c88ee028e28df3",
+          "y.npy": "7c793d6c0d9c8a583a4ed44af8c0cb6edf6c325b7f74f0cf2627a9eb64410197",
+          "grupos.npy": "300c85e51790caebd642c08c9dcfd6186c64ac7ba506397d3952773dab9f031c",
+          "X_produccion.npy": "6259fbef314607e7e0e97efc8cd84de186f79c7dea142eabb4fe6cddf9f2294f",
+          "particiones.npz": "bc7c03b2a02c299f6d4ec38a68d5e84213a898fafcef664107326a97529c5456"
+        }
+      },
+      "metricas": {
+        "ap": 0.2613406968436911,
+        "roc_auc": 0.9672025924746498,
+        "filas": 34176,
+        "fraudes": 59,
+        "precision_0.002": 0.3188405797101449,
+        "recall_0.002": 0.3728813559322034,
+        "k_0.002": 69,
+        "tp_0.002": 22,
+        "empatados_0.002": 1,
+        "precision_0.01": 0.10818713450292397,
+        "recall_0.01": 0.6271186440677966,
+        "k_0.01": 342,
+        "tp_0.01": 37,
+        "empatados_0.01": 1,
+        "precision_0.02": 0.07456140350877193,
+        "recall_0.02": 0.864406779661017,
+        "k_0.02": 684,
+        "tp_0.02": 51,
+        "empatados_0.02": 1
+      },
+      "filas_fit": 136708,
+      "tiempos": {
+        "fit_s": 0.07016245799604803,
+        "score_s": 0.008125499996822327
+      },
+      "entrenamiento": {
+        "filas_fit": 136708,
+        "predictores": 21,
+        "escalado": true
+      },
+      "avisos": [],
+      "scores_sha256": "0c705501e18ffad03f1b2692bf48e2e59f849b9117e458bf9e79310a01cc6be6",
+      "fecha_utc": "2026-10-20T13:11:13Z",
+      "pid": 17976
+    }
+  },
+  {
+    "familia": "pca",
+    "regimen": "todos",
+    "outer": -1,
+    "ganador": {
+      "config": 0,
+      "ap_media": 0.2757185919018701,
+      "ap_sd": 0.15514039904102603,
+      "recall_1pct": 0.6640211640211641,
+      "fit_s_media": 0.04714295800658874
+    },
+    "busqueda": [
+      {
+        "config": 0,
+        "ap_media": 0.2757185919018701,
+        "ap_sd": 0.15514039904102603,
+        "recall_1pct": 0.6640211640211641,
+        "fit_s_media": 0.04714295800658874
+      },
+      {
+        "config": 1,
+        "ap_media": 0.24650844117113133,
+        "ap_sd": 0.15514281073270608,
+        "recall_1pct": 0.6028653885796743,
+        "fit_s_media": 0.05505399966690069
+      },
+      {
+        "config": 2,
+        "ap_media": 0.2449627316261409,
+        "ap_sd": 0.1622721283187837,
+        "recall_1pct": 0.5688517831374974,
+        "fit_s_media": 0.051225874994997866
+      },
+      {
+        "config": 3,
+        "ap_media": 0.24154439213948617,
+        "ap_sd": 0.1644042441384841,
+        "recall_1pct": 0.555280698137841,
+        "fit_s_media": 0.049406013999638766
+      },
+      {
+        "config": 4,
+        "ap_media": 0.01510541624013339,
+        "ap_sd": 0.0028163217190677295,
+        "recall_1pct": 0.14244485673057103,
+        "fit_s_media": 0.04818423599742042
+      }
+    ],
+    "protocolo": "638141edb70c6551f61114f7f3526db2f8d67d838f706ae3216808a220628201"
+  }
+]

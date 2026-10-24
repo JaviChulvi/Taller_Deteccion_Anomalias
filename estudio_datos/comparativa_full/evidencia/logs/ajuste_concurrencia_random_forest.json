@@ -1,0 +1,7 @@
+{
+  "fecha": 1792503193.9611049,
+  "accion": "reanudación con cinco procesos para las cinco búsquedas restantes",
+  "motivo": "Diez hilos disponibles en once núcleos; evitar una última búsqueda serial mientras tres procesos quedan inactivos",
+  "metodo": "SIGINT cooperativo; cada ajuste activo se conserva antes de reanudar",
+  "pid_previo": 20341
+}
