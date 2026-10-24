@@ -4,6 +4,8 @@ Esta carpeta contiene la comparación ejecutada de 15 familias/variantes sobre l
 
 Los comandos siguientes se ejecutan desde la **raíz del proyecto**, donde están los ZIP originales y `.venv`. Los notebooks canónicos son [02_comparativa_modelos.ipynb](../../02_comparativa_modelos.ipynb) y [03_modelo_final_y_entrega.ipynb](../../03_modelo_final_y_entrega.ipynb). El notebook original del taller y el diagnóstico previo se conservan como documentos separados.
 
+Las métricas y salidas de entrenamiento conservadas corresponden a la ejecución original, anterior a las correcciones de reanudación y vecinos. Estas correcciones se validan por separado; no se han vuelto a entrenar los 1.542 ajustes ni se han reescrito sus huellas para atribuirlos al código nuevo. Las copias históricas seleccionadas están en `evidencia/`; los artefactos completos permanecen en el checkout local original. Una ejecución nueva genera sus propios `resultados/` con las nuevas identidades de código. Solo las presentaciones de tiempos modificadas del notebook 02 se han vuelto a ejecutar con los registros históricos; su alcance consta en los metadatos de esas celdas. El hash del notebook 02 en las auditorías históricas identifica la versión original del commit `01f0d61`, no esta versión corregida.
+
 ## Resultado de la comparación
 
 La selección interior sobre construcción completa eligió **LightGBM supervisado**, configuración 3: 500 árboles, `learning_rate=0.05`, `num_leaves=15`, `min_child_samples=50`, `reg_lambda=1` y ponderación `balanced`. Su AP media interior fue **0,847203**.
@@ -152,7 +154,7 @@ En `normales`, el ajuste recibe solo las filas `Class=0` de su partición; esta 
 - **Autoencoder** adapta la reconstrucción a 21 variables estandarizadas, salida lineal y MSE por fila. Selecciona épocas mediante una reserva interna de aproximadamente el 10 % de grupos, considera épocas desde la 20 y después reajusta desde cero con todas las filas recibidas. Utiliza CPU y cálculo interno `float32`; el vector de salida se devuelve como `float64`.
 - **LOF/kNN** usan vecinos euclídeos exactos en `float64`, buscando hasta 60 vecinos y reutilizando prefijos para cada `k`. LOF funciona en modo de novedad; kNN usa la distancia media a sus vecinos. Ante distancias empatadas, la elección del prefijo puede diferir de una búsqueda independiente para cada `k`. Sus costes compartidos no se deben sumar como trabajos independientes.
 
-En los ajustes de validación con geometría compartida de LOF/kNN, `fit_s` incluye el escalado y las búsquedas de vecinos de **entrenamiento y consulta**. `score_s` mide solo la agregación del score a partir de esos vecinos; no representa por sí solo el coste de inferencia sobre nuevas filas. El notebook 02 muestra por separado `train_neighbors_seconds` y `query_neighbors_seconds`, junto con `geometry_seconds`, para los diez ajustes exteriores de LOF (dos regímenes por cinco folds), leyendo sus metadatos guardados. No repite la misma geometría en kNN. Este desglose corresponde a la validación compartida; los tiempos de los refits finales y las cinco inferencias del notebook 03 se registran por separado.
+En los ajustes de validación con geometría compartida de LOF/kNN, `fit_s` incluye el escalado y las búsquedas de vecinos de **entrenamiento y consulta**. `score_s` mide solo la agregación del score a partir de esos vecinos; no representa por sí solo el coste de inferencia sobre nuevas filas. El notebook 02 muestra el desglose para los diez ajustes exteriores de LOF, sin duplicarlo en kNN. También admite ajustes individuales y mezclas de ambas rutas: en los individuales, `fit_s` y `score_s` son los tiempos completos de ajuste y consulta, y los desgloses no registrados aparecen como `NaN`. Los tiempos de los refits finales y las cinco inferencias del notebook 03 se registran por separado.
 
 Las implementaciones, parámetros y referencias están en [modelos.py](modelos.py), [modelo_ecod.py](modelo_ecod.py), [modelo_rbig.py](modelo_rbig.py), [modelo_ae.py](modelo_ae.py) y [modelos_vecinos.py](modelos_vecinos.py).
 
@@ -160,7 +162,13 @@ Las implementaciones, parámetros y referencias están en [modelos.py](modelos.p
 
 [experimento.py](experimento.py) registra hashes de los ZIP originales, arrays preparados, particiones y código relevante. Cada ajuste identifica familia, régimen, parámetros, semilla, índices de entrenamiento/evaluación y protocolo. La caché exige identidad coincidente, estado completo y hash válido del archivo de scores. Los cambios de protocolo no se aceptan silenciosamente sobre los resultados existentes; las versiones nuevas deben conservarse como otro experimento.
 
-No se deben editar los módulos de entrenamiento mientras haya procesos activos: se comprueba que el código relevante no haya cambiado desde su importación. El finalizador también contrasta versiones, decisiones auditadas e integridad de los artefactos. Se fijan semillas y controles de hilos; no se promete identidad bit a bit entre arquitecturas, librerías o equipos distintos. El tiempo usado para desempatar métricas exactamente iguales también puede variar entre ejecuciones.
+No se deben editar los módulos de entrenamiento mientras haya procesos activos: se comprueba que el código relevante no haya cambiado desde su importación. `cargar()` rechaza versiones de Python o librerías distintas del protocolo antes de leer los arrays, consultar cachés o entrenar; la comprobación cubre los lanzadores individuales, por particiones y de refit. El finalizador también contrasta decisiones auditadas e integridad de los artefactos. Se fijan semillas y controles de hilos; no se promete identidad bit a bit entre arquitecturas, librerías o equipos distintos. El tiempo usado para desempatar métricas exactamente iguales también puede variar entre ejecuciones.
+
+Las regresiones se comprueban con datos sintéticos y archivos temporales, sin modificar los resultados históricos:
+
+```bash
+env -u PYTHONPATH .venv/bin/python -m unittest discover -s estudio_datos/comparativa_full/tests -v
+```
 
 | Ruta relativa a esta carpeta | Contenido y alcance |
 | --- | --- |

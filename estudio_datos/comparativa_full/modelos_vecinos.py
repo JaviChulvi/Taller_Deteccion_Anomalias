@@ -205,8 +205,8 @@ class NeighborDetector:
         self.train_density_ = None
         with threadpool_limits(limits=self.threads_):
             self._index = _indice(X, self.max_k_, self.threads_)
-            distancias, indices = self._index.kneighbors()
             if self.family_ == "lof":
+                distancias, indices = self._index.kneighbors()
                 self.distance_k_, self.train_density_ = _densidades_entrenamiento(
                     distancias, indices, self.k_
                 )

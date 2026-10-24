@@ -10,7 +10,6 @@ from concurrent.futures import ProcessPoolExecutor
 import json
 import multiprocessing
 from pathlib import Path
-import platform
 import time
 import warnings
 
@@ -19,14 +18,13 @@ import numpy as np
 import pandas as pd
 
 from .experimento import (RAIZ, SALIDA, cargar, codigo_modelo, digest_bytes, digest_json,
-                          escribir_json, versiones, SEMILLA)
+                          escribir_json, SEMILLA)
 from .modelos import CONFIGURACIONES, Modelo, regimenes
 
 
 def ajustar_final(familia, regimen, hilos=2):
     X, y, grupos, particiones, protocolo = cargar()
     particiones.close()
-    assert versiones() == protocolo["versiones"] and platform.python_version() == protocolo["python"]
     seleccion = json.loads((SALIDA / "seleccion_final.json").read_text())
     assert seleccion["protocolo"] == protocolo["id"]
     ruta_decision = SALIDA / "decisiones" / f"{familia}__{regimen}.json"
