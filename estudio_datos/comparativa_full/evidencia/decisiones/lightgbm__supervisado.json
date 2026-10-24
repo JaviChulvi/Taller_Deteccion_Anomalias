@@ -1,0 +1,684 @@
+[
+  {
+    "familia": "lightgbm",
+    "regimen": "supervisado",
+    "outer": 0,
+    "ganador": {
+      "config": 1,
+      "ap_media": 0.8555395231714494,
+      "ap_sd": 0.03163517339208361,
+      "recall_1pct": 0.8898085037325544,
+      "fit_s_media": 1.3140747363310463
+    },
+    "busqueda": [
+      {
+        "config": 0,
+        "ap_media": 0.849666174093095,
+        "ap_sd": 0.034918092284651384,
+        "recall_1pct": 0.9024667315806556,
+        "fit_s_media": 1.600159138669066
+      },
+      {
+        "config": 1,
+        "ap_media": 0.8555395231714494,
+        "ap_sd": 0.03163517339208361,
+        "recall_1pct": 0.8898085037325544,
+        "fit_s_media": 1.3140747363310463
+      },
+      {
+        "config": 2,
+        "ap_media": 0.8518108911384759,
+        "ap_sd": 0.04358851765877106,
+        "recall_1pct": 0.9067402358541599,
+        "fit_s_media": 2.2687765553322
+      },
+      {
+        "config": 3,
+        "ap_media": 0.8478881547847262,
+        "ap_sd": 0.044581156499852365,
+        "recall_1pct": 0.898301417288759,
+        "fit_s_media": 2.9821542779973242
+      },
+      {
+        "config": 4,
+        "ap_media": 0.8544820172704327,
+        "ap_sd": 0.04188242534254625,
+        "recall_1pct": 0.9025208265714594,
+        "fit_s_media": 3.325774764001835
+      },
+      {
+        "config": 5,
+        "ap_media": 0.8505306535513343,
+        "ap_sd": 0.040269569948822304,
+        "recall_1pct": 0.8898085037325544,
+        "fit_s_media": 3.556034847002593
+      }
+    ],
+    "protocolo": "638141edb70c6551f61114f7f3526db2f8d67d838f706ae3216808a220628201",
+    "evaluacion_exterior": {
+      "estado": "completo",
+      "identidad": {
+        "protocolo": "638141edb70c6551f61114f7f3526db2f8d67d838f706ae3216808a220628201",
+        "familia": "lightgbm",
+        "regimen": "supervisado",
+        "outer": 0,
+        "inner": -1,
+        "config": 1,
+        "parametros": {
+          "n_estimators": 500,
+          "learning_rate": 0.05,
+          "num_leaves": 7,
+          "min_child_samples": 50,
+          "reg_lambda": 1.0,
+          "class_weight": "balanced"
+        },
+        "semilla": 20262020,
+        "train_indices": "04bce0ccacfcc9c1b62512722b4f8ec298cb3b051f5cc84753e5633208a36848",
+        "eval_indices": "720e623b357d5145f33478d423d75722fe98bb53532e1153cb446505e4517f15",
+        "codigo": {
+          "modelos.py": "926a3eb0b0dcc3de4aa6b70f2f51a8cf5f413299155bc3c0c0c0ef028ac06951",
+          "experimento.py": "4b9e1fc5ac132f692730f8ffccac2b831034061fb9909968fe2b87c2f77028f3"
+        },
+        "datos": {
+          "X.npy": "797d4be9c7598ba85b766a7871e87e9ed0eab97715af09ec65c88ee028e28df3",
+          "y.npy": "7c793d6c0d9c8a583a4ed44af8c0cb6edf6c325b7f74f0cf2627a9eb64410197",
+          "grupos.npy": "300c85e51790caebd642c08c9dcfd6186c64ac7ba506397d3952773dab9f031c",
+          "X_produccion.npy": "6259fbef314607e7e0e97efc8cd84de186f79c7dea142eabb4fe6cddf9f2294f",
+          "particiones.npz": "bc7c03b2a02c299f6d4ec38a68d5e84213a898fafcef664107326a97529c5456"
+        }
+      },
+      "metricas": {
+        "ap": 0.7670457585172658,
+        "roc_auc": 0.9613862556769577,
+        "filas": 34177,
+        "fraudes": 59,
+        "precision_0.002": 0.6811594202898551,
+        "recall_0.002": 0.7966101694915254,
+        "k_0.002": 69,
+        "tp_0.002": 47,
+        "empatados_0.002": 1,
+        "precision_0.01": 0.14035087719298245,
+        "recall_0.01": 0.8135593220338984,
+        "k_0.01": 342,
+        "tp_0.01": 48,
+        "empatados_0.01": 1,
+        "precision_0.02": 0.07456140350877193,
+        "recall_0.02": 0.864406779661017,
+        "k_0.02": 684,
+        "tp_0.02": 51,
+        "empatados_0.02": 1
+      },
+      "filas_fit": 136707,
+      "tiempos": {
+        "fit_s": 2.811248458994669,
+        "score_s": 0.2950659160123905
+      },
+      "entrenamiento": {
+        "filas_fit": 136707,
+        "predictores": 21,
+        "escalado": false
+      },
+      "avisos": [],
+      "scores_sha256": "414d77d4beda22501de969fbde9ff295874c5a07a9bd0c5962353d81ecb2c25d",
+      "fecha_utc": "2026-10-20T13:24:24Z",
+      "pid": 19305
+    }
+  },
+  {
+    "familia": "lightgbm",
+    "regimen": "supervisado",
+    "outer": 1,
+    "ganador": {
+      "config": 5,
+      "ap_media": 0.8371652152700806,
+      "ap_sd": 0.04922240393807577,
+      "recall_1pct": 0.885589094449854,
+      "fit_s_media": 3.52050374999817
+    },
+    "busqueda": [
+      {
+        "config": 0,
+        "ap_media": 0.8255351713540439,
+        "ap_sd": 0.04567738929122893,
+        "recall_1pct": 0.8898625987233583,
+        "fit_s_media": 1.9713491946604336
+      },
+      {
+        "config": 1,
+        "ap_media": 0.8287800063731315,
+        "ap_sd": 0.054285931979924124,
+        "recall_1pct": 0.8940820080060586,
+        "fit_s_media": 2.0897603330037477
+      },
+      {
+        "config": 2,
+        "ap_media": 0.8265798003380089,
+        "ap_sd": 0.053496088719483484,
+        "recall_1pct": 0.8940820080060586,
+        "fit_s_media": 2.735368195004412
+      },
+      {
+        "config": 3,
+        "ap_media": 0.8307156123749472,
+        "ap_sd": 0.04611692379828436,
+        "recall_1pct": 0.8898085037325544,
+        "fit_s_media": 2.905752055332414
+      },
+      {
+        "config": 4,
+        "ap_media": 0.8220216122679468,
+        "ap_sd": 0.05731758105205357,
+        "recall_1pct": 0.885589094449854,
+        "fit_s_media": 3.376590653002495
+      },
+      {
+        "config": 5,
+        "ap_media": 0.8371652152700806,
+        "ap_sd": 0.04922240393807577,
+        "recall_1pct": 0.885589094449854,
+        "fit_s_media": 3.52050374999817
+      }
+    ],
+    "protocolo": "638141edb70c6551f61114f7f3526db2f8d67d838f706ae3216808a220628201",
+    "evaluacion_exterior": {
+      "estado": "completo",
+      "identidad": {
+        "protocolo": "638141edb70c6551f61114f7f3526db2f8d67d838f706ae3216808a220628201",
+        "familia": "lightgbm",
+        "regimen": "supervisado",
+        "outer": 1,
+        "inner": -1,
+        "config": 5,
+        "parametros": {
+          "n_estimators": 500,
+          "learning_rate": 0.05,
+          "num_leaves": 31,
+          "min_child_samples": 50,
+          "reg_lambda": 1.0,
+          "class_weight": "balanced"
+        },
+        "semilla": 20263020,
+        "train_indices": "34d3c903dfe8e798004292d74cc277f3096542b4826e9a87c70a92721aa4cb10",
+        "eval_indices": "7dc2340747aa37698ae3658c5dc11fc85b4105095cb8e96893d72cebffc37c7f",
+        "codigo": {
+          "modelos.py": "926a3eb0b0dcc3de4aa6b70f2f51a8cf5f413299155bc3c0c0c0ef028ac06951",
+          "experimento.py": "4b9e1fc5ac132f692730f8ffccac2b831034061fb9909968fe2b87c2f77028f3"
+        },
+        "datos": {
+          "X.npy": "797d4be9c7598ba85b766a7871e87e9ed0eab97715af09ec65c88ee028e28df3",
+          "y.npy": "7c793d6c0d9c8a583a4ed44af8c0cb6edf6c325b7f74f0cf2627a9eb64410197",
+          "grupos.npy": "300c85e51790caebd642c08c9dcfd6186c64ac7ba506397d3952773dab9f031c",
+          "X_produccion.npy": "6259fbef314607e7e0e97efc8cd84de186f79c7dea142eabb4fe6cddf9f2294f",
+          "particiones.npz": "bc7c03b2a02c299f6d4ec38a68d5e84213a898fafcef664107326a97529c5456"
+        }
+      },
+      "metricas": {
+        "ap": 0.8690906715361942,
+        "roc_auc": 0.9564144777695754,
+        "filas": 34177,
+        "fraudes": 59,
+        "precision_0.002": 0.7391304347826086,
+        "recall_0.002": 0.864406779661017,
+        "k_0.002": 69,
+        "tp_0.002": 51,
+        "empatados_0.002": 1,
+        "precision_0.01": 0.15204678362573099,
+        "recall_0.01": 0.8813559322033898,
+        "k_0.01": 342,
+        "tp_0.01": 52,
+        "empatados_0.01": 1,
+        "precision_0.02": 0.07602339181286549,
+        "recall_0.02": 0.8813559322033898,
+        "k_0.02": 684,
+        "tp_0.02": 52,
+        "empatados_0.02": 1
+      },
+      "filas_fit": 136707,
+      "tiempos": {
+        "fit_s": 4.983184708005865,
+        "score_s": 0.6794568749901373
+      },
+      "entrenamiento": {
+        "filas_fit": 136707,
+        "predictores": 21,
+        "escalado": false
+      },
+      "avisos": [],
+      "scores_sha256": "7f3a4bfd0c92b86e0464159b9abf90bfcf9751c0f93b53116b4c9bff84e9c71f",
+      "fecha_utc": "2026-10-20T13:25:32Z",
+      "pid": 19305
+    }
+  },
+  {
+    "familia": "lightgbm",
+    "regimen": "supervisado",
+    "outer": 2,
+    "ganador": {
+      "config": 5,
+      "ap_media": 0.8521759164381207,
+      "ap_sd": 0.01941381960250614,
+      "recall_1pct": 0.8856431894406578,
+      "fit_s_media": 3.4022108053274374
+    },
+    "busqueda": [
+      {
+        "config": 0,
+        "ap_media": 0.838550084214725,
+        "ap_sd": 0.02131318359540588,
+        "recall_1pct": 0.885589094449854,
+        "fit_s_media": 1.942213777670986
+      },
+      {
+        "config": 1,
+        "ap_media": 0.8330382382668677,
+        "ap_sd": 0.01185504479194664,
+        "recall_1pct": 0.8686573623282484,
+        "fit_s_media": 2.015625486334708
+      },
+      {
+        "config": 2,
+        "ap_media": 0.8433414737815284,
+        "ap_sd": 0.019953304369091204,
+        "recall_1pct": 0.8772043708752569,
+        "fit_s_media": 2.703563597329776
+      },
+      {
+        "config": 3,
+        "ap_media": 0.8419668624158704,
+        "ap_sd": 0.015379153049025894,
+        "recall_1pct": 0.877150275884453,
+        "fit_s_media": 2.815996166667901
+      },
+      {
+        "config": 4,
+        "ap_media": 0.8467076826559926,
+        "ap_sd": 0.022666004821123076,
+        "recall_1pct": 0.8856972844314616,
+        "fit_s_media": 3.4952369306702167
+      },
+      {
+        "config": 5,
+        "ap_media": 0.8521759164381207,
+        "ap_sd": 0.01941381960250614,
+        "recall_1pct": 0.8856431894406578,
+        "fit_s_media": 3.4022108053274374
+      }
+    ],
+    "protocolo": "638141edb70c6551f61114f7f3526db2f8d67d838f706ae3216808a220628201",
+    "evaluacion_exterior": {
+      "estado": "completo",
+      "identidad": {
+        "protocolo": "638141edb70c6551f61114f7f3526db2f8d67d838f706ae3216808a220628201",
+        "familia": "lightgbm",
+        "regimen": "supervisado",
+        "outer": 2,
+        "inner": -1,
+        "config": 5,
+        "parametros": {
+          "n_estimators": 500,
+          "learning_rate": 0.05,
+          "num_leaves": 31,
+          "min_child_samples": 50,
+          "reg_lambda": 1.0,
+          "class_weight": "balanced"
+        },
+        "semilla": 20264020,
+        "train_indices": "3e60a16f9d94e448015fcde328c4d1c04792ae0395b6a8d6ef0c2bc1fdef6782",
+        "eval_indices": "5db8e274dc0f1d5eec8bf40767e86c4599a9baa88d9b6fd25df4c53ff468d09b",
+        "codigo": {
+          "modelos.py": "926a3eb0b0dcc3de4aa6b70f2f51a8cf5f413299155bc3c0c0c0ef028ac06951",
+          "experimento.py": "4b9e1fc5ac132f692730f8ffccac2b831034061fb9909968fe2b87c2f77028f3"
+        },
+        "datos": {
+          "X.npy": "797d4be9c7598ba85b766a7871e87e9ed0eab97715af09ec65c88ee028e28df3",
+          "y.npy": "7c793d6c0d9c8a583a4ed44af8c0cb6edf6c325b7f74f0cf2627a9eb64410197",
+          "grupos.npy": "300c85e51790caebd642c08c9dcfd6186c64ac7ba506397d3952773dab9f031c",
+          "X_produccion.npy": "6259fbef314607e7e0e97efc8cd84de186f79c7dea142eabb4fe6cddf9f2294f",
+          "particiones.npz": "bc7c03b2a02c299f6d4ec38a68d5e84213a898fafcef664107326a97529c5456"
+        }
+      },
+      "metricas": {
+        "ap": 0.8702313743018623,
+        "roc_auc": 0.9701993877678765,
+        "filas": 34177,
+        "fraudes": 59,
+        "precision_0.002": 0.7101449275362319,
+        "recall_0.002": 0.8305084745762712,
+        "k_0.002": 69,
+        "tp_0.002": 49,
+        "empatados_0.002": 1,
+        "precision_0.01": 0.15789473684210525,
+        "recall_0.01": 0.9152542372881356,
+        "k_0.01": 342,
+        "tp_0.01": 54,
+        "empatados_0.01": 1,
+        "precision_0.02": 0.0804093567251462,
+        "recall_0.02": 0.9322033898305084,
+        "k_0.02": 684,
+        "tp_0.02": 55,
+        "empatados_0.02": 1
+      },
+      "filas_fit": 136707,
+      "tiempos": {
+        "fit_s": 4.983907666988671,
+        "score_s": 0.6081311250018189
+      },
+      "entrenamiento": {
+        "filas_fit": 136707,
+        "predictores": 21,
+        "escalado": false
+      },
+      "avisos": [],
+      "scores_sha256": "2348269f854bab1d9121205ca933d6738dd6deedaba2254d18a826c1d915943b",
+      "fecha_utc": "2026-10-20T13:26:39Z",
+      "pid": 19305
+    }
+  },
+  {
+    "familia": "lightgbm",
+    "regimen": "supervisado",
+    "outer": 3,
+    "ganador": {
+      "config": 5,
+      "ap_media": 0.8335080278230436,
+      "ap_sd": 0.03289167555314108,
+      "recall_1pct": 0.877150275884453,
+      "fit_s_media": 3.4394521806631624
+    },
+    "busqueda": [
+      {
+        "config": 0,
+        "ap_media": 0.829954941581836,
+        "ap_sd": 0.03968806451040416,
+        "recall_1pct": 0.8687114573190522,
+        "fit_s_media": 1.9597966110013658
+      },
+      {
+        "config": 1,
+        "ap_media": 0.823218727402509,
+        "ap_sd": 0.0455734873103368,
+        "recall_1pct": 0.8475603159147463,
+        "fit_s_media": 2.007490847002676
+      },
+      {
+        "config": 2,
+        "ap_media": 0.8233969408876637,
+        "ap_sd": 0.04119774587586315,
+        "recall_1pct": 0.8644379530455479,
+        "fit_s_media": 2.745189388670648
+      },
+      {
+        "config": 3,
+        "ap_media": 0.8331824354453911,
+        "ap_sd": 0.03152798322696401,
+        "recall_1pct": 0.8644379530455479,
+        "fit_s_media": 2.8705628193420125
+      },
+      {
+        "config": 4,
+        "ap_media": 0.8321759531881806,
+        "ap_sd": 0.037390967352560964,
+        "recall_1pct": 0.8729308666017527,
+        "fit_s_media": 3.5333952916650255
+      },
+      {
+        "config": 5,
+        "ap_media": 0.8335080278230436,
+        "ap_sd": 0.03289167555314108,
+        "recall_1pct": 0.877150275884453,
+        "fit_s_media": 3.4394521806631624
+      }
+    ],
+    "protocolo": "638141edb70c6551f61114f7f3526db2f8d67d838f706ae3216808a220628201",
+    "evaluacion_exterior": {
+      "estado": "completo",
+      "identidad": {
+        "protocolo": "638141edb70c6551f61114f7f3526db2f8d67d838f706ae3216808a220628201",
+        "familia": "lightgbm",
+        "regimen": "supervisado",
+        "outer": 3,
+        "inner": -1,
+        "config": 5,
+        "parametros": {
+          "n_estimators": 500,
+          "learning_rate": 0.05,
+          "num_leaves": 31,
+          "min_child_samples": 50,
+          "reg_lambda": 1.0,
+          "class_weight": "balanced"
+        },
+        "semilla": 20265020,
+        "train_indices": "e9cadccfe45c112852fd319b5037503aae8c19b27a40c74e4e1888a1f0a9d584",
+        "eval_indices": "e8794e5d52dd4ac1f616339e17e0321b6968118b4dc10a4d8fad9aee009dfc86",
+        "codigo": {
+          "modelos.py": "926a3eb0b0dcc3de4aa6b70f2f51a8cf5f413299155bc3c0c0c0ef028ac06951",
+          "experimento.py": "4b9e1fc5ac132f692730f8ffccac2b831034061fb9909968fe2b87c2f77028f3"
+        },
+        "datos": {
+          "X.npy": "797d4be9c7598ba85b766a7871e87e9ed0eab97715af09ec65c88ee028e28df3",
+          "y.npy": "7c793d6c0d9c8a583a4ed44af8c0cb6edf6c325b7f74f0cf2627a9eb64410197",
+          "grupos.npy": "300c85e51790caebd642c08c9dcfd6186c64ac7ba506397d3952773dab9f031c",
+          "X_produccion.npy": "6259fbef314607e7e0e97efc8cd84de186f79c7dea142eabb4fe6cddf9f2294f",
+          "particiones.npz": "bc7c03b2a02c299f6d4ec38a68d5e84213a898fafcef664107326a97529c5456"
+        }
+      },
+      "metricas": {
+        "ap": 0.8693293450542711,
+        "roc_auc": 0.9884314756065936,
+        "filas": 34177,
+        "fraudes": 59,
+        "precision_0.002": 0.782608695652174,
+        "recall_0.002": 0.9152542372881356,
+        "k_0.002": 69,
+        "tp_0.002": 54,
+        "empatados_0.002": 1,
+        "precision_0.01": 0.16374269005847952,
+        "recall_0.01": 0.9491525423728814,
+        "k_0.01": 342,
+        "tp_0.01": 56,
+        "empatados_0.01": 1,
+        "precision_0.02": 0.08187134502923976,
+        "recall_0.02": 0.9491525423728814,
+        "k_0.02": 684,
+        "tp_0.02": 56,
+        "empatados_0.02": 1
+      },
+      "filas_fit": 136707,
+      "tiempos": {
+        "fit_s": 4.997455582997645,
+        "score_s": 0.6632974590029335
+      },
+      "entrenamiento": {
+        "filas_fit": 136707,
+        "predictores": 21,
+        "escalado": false
+      },
+      "avisos": [],
+      "scores_sha256": "5bd06f901f5c436cad53d992383f9caa5e98a953a217c8138971886189b4f89f",
+      "fecha_utc": "2026-10-20T13:27:46Z",
+      "pid": 19305
+    }
+  },
+  {
+    "familia": "lightgbm",
+    "regimen": "supervisado",
+    "outer": 4,
+    "ganador": {
+      "config": 3,
+      "ap_media": 0.8418800384656197,
+      "ap_sd": 0.01528556874209437,
+      "recall_1pct": 0.8898085037325544,
+      "fit_s_media": 3.052584597331588
+    },
+    "busqueda": [
+      {
+        "config": 0,
+        "ap_media": 0.8344401004999781,
+        "ap_sd": 0.01752696052090995,
+        "recall_1pct": 0.8898085037325544,
+        "fit_s_media": 1.946236111340113
+      },
+      {
+        "config": 1,
+        "ap_media": 0.8397641042957544,
+        "ap_sd": 0.01401410701057599,
+        "recall_1pct": 0.8898625987233583,
+        "fit_s_media": 2.0842480136683057
+      },
+      {
+        "config": 2,
+        "ap_media": 0.8417430404868139,
+        "ap_sd": 0.018237980777559774,
+        "recall_1pct": 0.8898625987233583,
+        "fit_s_media": 2.7247916250004587
+      },
+      {
+        "config": 3,
+        "ap_media": 0.8418800384656197,
+        "ap_sd": 0.01528556874209437,
+        "recall_1pct": 0.8898085037325544,
+        "fit_s_media": 3.052584597331588
+      },
+      {
+        "config": 4,
+        "ap_media": 0.8342502682869454,
+        "ap_sd": 0.020100365152133936,
+        "recall_1pct": 0.8940820080060586,
+        "fit_s_media": 3.3582473193334104
+      },
+      {
+        "config": 5,
+        "ap_media": 0.8395433743702739,
+        "ap_sd": 0.016751450403491037,
+        "recall_1pct": 0.8856431894406578,
+        "fit_s_media": 3.4124412499998775
+      }
+    ],
+    "protocolo": "638141edb70c6551f61114f7f3526db2f8d67d838f706ae3216808a220628201",
+    "evaluacion_exterior": {
+      "estado": "completo",
+      "identidad": {
+        "protocolo": "638141edb70c6551f61114f7f3526db2f8d67d838f706ae3216808a220628201",
+        "familia": "lightgbm",
+        "regimen": "supervisado",
+        "outer": 4,
+        "inner": -1,
+        "config": 3,
+        "parametros": {
+          "n_estimators": 500,
+          "learning_rate": 0.05,
+          "num_leaves": 15,
+          "min_child_samples": 50,
+          "reg_lambda": 1.0,
+          "class_weight": "balanced"
+        },
+        "semilla": 20266020,
+        "train_indices": "39bf7f13dd40ae52fe3032d69e4b2ecb7c259150fe82a1a8befb550263f46db7",
+        "eval_indices": "19cd5f0c9e0018735b2301c9d3da5f89a975c88e2f7da09ed63edc923bad7dfe",
+        "codigo": {
+          "modelos.py": "926a3eb0b0dcc3de4aa6b70f2f51a8cf5f413299155bc3c0c0c0ef028ac06951",
+          "experimento.py": "4b9e1fc5ac132f692730f8ffccac2b831034061fb9909968fe2b87c2f77028f3"
+        },
+        "datos": {
+          "X.npy": "797d4be9c7598ba85b766a7871e87e9ed0eab97715af09ec65c88ee028e28df3",
+          "y.npy": "7c793d6c0d9c8a583a4ed44af8c0cb6edf6c325b7f74f0cf2627a9eb64410197",
+          "grupos.npy": "300c85e51790caebd642c08c9dcfd6186c64ac7ba506397d3952773dab9f031c",
+          "X_produccion.npy": "6259fbef314607e7e0e97efc8cd84de186f79c7dea142eabb4fe6cddf9f2294f",
+          "particiones.npz": "bc7c03b2a02c299f6d4ec38a68d5e84213a898fafcef664107326a97529c5456"
+        }
+      },
+      "metricas": {
+        "ap": 0.8311245238932937,
+        "roc_auc": 0.9832828506887814,
+        "filas": 34176,
+        "fraudes": 59,
+        "precision_0.002": 0.7101449275362319,
+        "recall_0.002": 0.8305084745762712,
+        "k_0.002": 69,
+        "tp_0.002": 49,
+        "empatados_0.002": 1,
+        "precision_0.01": 0.14912280701754385,
+        "recall_0.01": 0.864406779661017,
+        "k_0.01": 342,
+        "tp_0.01": 51,
+        "empatados_0.01": 1,
+        "precision_0.02": 0.07602339181286549,
+        "recall_0.02": 0.8813559322033898,
+        "k_0.02": 684,
+        "tp_0.02": 52,
+        "empatados_0.02": 1
+      },
+      "filas_fit": 136708,
+      "tiempos": {
+        "fit_s": 3.8461999999999534,
+        "score_s": 0.51889525000297
+      },
+      "entrenamiento": {
+        "filas_fit": 136708,
+        "predictores": 21,
+        "escalado": false
+      },
+      "avisos": [],
+      "scores_sha256": "3dc665f00e915137d3e223af4694e4b3dbf702c6274bef604cd31d1963276ad1",
+      "fecha_utc": "2026-10-20T13:28:52Z",
+      "pid": 19305
+    }
+  },
+  {
+    "familia": "lightgbm",
+    "regimen": "supervisado",
+    "outer": -1,
+    "ganador": {
+      "config": 3,
+      "ap_media": 0.8472026031450642,
+      "ap_sd": 0.02484643901186636,
+      "recall_1pct": 0.8882361025218168,
+      "fit_s_media": 3.385028083328507
+    },
+    "busqueda": [
+      {
+        "config": 0,
+        "ap_media": 0.828701277345819,
+        "ap_sd": 0.029646437956319445,
+        "recall_1pct": 0.8881673881673882,
+        "fit_s_media": 2.308426347003357
+      },
+      {
+        "config": 1,
+        "ap_media": 0.8360287051066052,
+        "ap_sd": 0.023917292048716406,
+        "recall_1pct": 0.8848003848003848,
+        "fit_s_media": 2.4255189720036774
+      },
+      {
+        "config": 2,
+        "ap_media": 0.838285582899824,
+        "ap_sd": 0.0264865521169786,
+        "recall_1pct": 0.8950044664330378,
+        "fit_s_media": 3.3913697363313986
+      },
+      {
+        "config": 3,
+        "ap_media": 0.8472026031450642,
+        "ap_sd": 0.02484643901186636,
+        "recall_1pct": 0.8882361025218168,
+        "fit_s_media": 3.385028083328507
+      },
+      {
+        "config": 4,
+        "ap_media": 0.8404786584100413,
+        "ap_sd": 0.023657056487539366,
+        "recall_1pct": 0.8882017453446025,
+        "fit_s_media": 4.009465457997673
+      },
+      {
+        "config": 5,
+        "ap_media": 0.8467183439460331,
+        "ap_sd": 0.026219852447926503,
+        "recall_1pct": 0.884834741977599,
+        "fit_s_media": 4.194846222337219
+      }
+    ],
+    "protocolo": "638141edb70c6551f61114f7f3526db2f8d67d838f706ae3216808a220628201"
+  }
+]

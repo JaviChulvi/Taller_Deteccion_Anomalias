@@ -1,0 +1,158 @@
+{
+  "estado": "verificado",
+  "alcance": "Auditoría independiente CV y notebook02; no acredita refits finales ni entrega de producción.",
+  "familias_regimenes": 24,
+  "ajustes_npz_verificados": 1542,
+  "evaluaciones_exteriores": 120,
+  "recalculo_ap": "Implementación independiente con ordenación descendente y agregación de empates; todos los1542 NPZ.",
+  "max_diferencia_ap": 5.551115123125783e-16,
+  "filas_oof_por_familia": 170884,
+  "seleccion_final": {
+    "familia": "lightgbm",
+    "regimen": "supervisado",
+    "config": 3,
+    "parametros": {
+      "n_estimators": 500,
+      "learning_rate": 0.05,
+      "num_leaves": 15,
+      "min_child_samples": 50,
+      "reg_lambda": 1.0,
+      "class_weight": "balanced"
+    }
+  },
+  "seleccion_interior_ap": 0.8472026031450642,
+  "elegibilidad": "ECOD cohorte excluido; máximo interior reconstruido para cada fold y búsqueda final.",
+  "familia_elegida_ap_por_fold": [
+    0.7670457585172658,
+    0.8690906715361942,
+    0.8702313743018623,
+    0.8693293450542711,
+    0.8311245238932937
+  ],
+  "familia_elegida_ap_media": 0.8413643346605774,
+  "familia_elegida_ap_sd": 0.044755452251737125,
+  "procedimiento_seleccion_por_fold": [
+    {
+      "familia": "lightgbm",
+      "regimen": "supervisado",
+      "outer": 0,
+      "config": 1,
+      "ap_media": 0.8555395231714494,
+      "recall_1pct": 0.8898085037325544,
+      "fit_s_media": 1.3140747363310463
+    },
+    {
+      "familia": "lightgbm",
+      "regimen": "supervisado",
+      "outer": 1,
+      "config": 5,
+      "ap_media": 0.8371652152700806,
+      "recall_1pct": 0.885589094449854,
+      "fit_s_media": 3.52050374999817
+    },
+    {
+      "familia": "lightgbm",
+      "regimen": "supervisado",
+      "outer": 2,
+      "config": 5,
+      "ap_media": 0.8521759164381207,
+      "recall_1pct": 0.8856431894406578,
+      "fit_s_media": 3.4022108053274374
+    },
+    {
+      "familia": "lightgbm",
+      "regimen": "supervisado",
+      "outer": 3,
+      "config": 5,
+      "ap_media": 0.8335080278230436,
+      "recall_1pct": 0.877150275884453,
+      "fit_s_media": 3.4394521806631624
+    },
+    {
+      "familia": "lightgbm",
+      "regimen": "supervisado",
+      "outer": 4,
+      "config": 3,
+      "ap_media": 0.8418800384656197,
+      "recall_1pct": 0.8898085037325544,
+      "fit_s_media": 3.052584597331588
+    }
+  ],
+  "procedimiento_ap_por_fold": [
+    0.7670457585172658,
+    0.8690906715361942,
+    0.8702313743018623,
+    0.8693293450542711,
+    0.8311245238932937
+  ],
+  "procedimiento_ap_media": 0.8413643346605774,
+  "procedimiento_ap_sd": 0.044755452251737125,
+  "baseline_gmm_ap_por_fold": [
+    0.6045896891148179,
+    0.7105282240136496,
+    0.6409793613270244,
+    0.7495821474772397,
+    0.5344976058892595
+  ],
+  "baseline_gmm_ap_media": 0.6480354055643982,
+  "delta_pareada_procedimiento_gmm_media": 0.1933289290961792,
+  "notebook02": {
+    "celdas": 25,
+    "codigo_ejecutado": 17,
+    "errores": 0,
+    "figuras": [
+      {
+        "celda": 14,
+        "tamano": [
+          1089,
+          754
+        ],
+        "ruta": "/tmp/comparativa_cv_auditoria_figuras/celda_14.png"
+      },
+      {
+        "celda": 15,
+        "tamano": [
+          867,
+          754
+        ],
+        "ruta": "/tmp/comparativa_cv_auditoria_figuras/celda_15.png"
+      },
+      {
+        "celda": 18,
+        "tamano": [
+          1419,
+          867
+        ],
+        "ruta": "/tmp/comparativa_cv_auditoria_figuras/celda_18.png"
+      },
+      {
+        "celda": 20,
+        "tamano": [
+          866,
+          754
+        ],
+        "ruta": "/tmp/comparativa_cv_auditoria_figuras/celda_20.png"
+      },
+      {
+        "celda": 21,
+        "tamano": [
+          1089,
+          754
+        ],
+        "ruta": "/tmp/comparativa_cv_auditoria_figuras/celda_21.png"
+      },
+      {
+        "celda": 22,
+        "tamano": [
+          1089,
+          754
+        ],
+        "ruta": "/tmp/comparativa_cv_auditoria_figuras/celda_22.png"
+      }
+    ],
+    "sha256": "a8734d6e8ace806a79b9742b2d8b6efb2bd2c473c37068e7dd4fab443f5e431e"
+  },
+  "produccion_verificada": false,
+  "problemas_materiales": [],
+  "segundos_auditoria": 34.77198391700222
+}

@@ -1,0 +1,55 @@
+{
+  "identidad": {
+    "protocolo": "638141edb70c6551f61114f7f3526db2f8d67d838f706ae3216808a220628201",
+    "datos": {
+      "X.npy": "797d4be9c7598ba85b766a7871e87e9ed0eab97715af09ec65c88ee028e28df3",
+      "y.npy": "7c793d6c0d9c8a583a4ed44af8c0cb6edf6c325b7f74f0cf2627a9eb64410197",
+      "grupos.npy": "300c85e51790caebd642c08c9dcfd6186c64ac7ba506397d3952773dab9f031c",
+      "X_produccion.npy": "6259fbef314607e7e0e97efc8cd84de186f79c7dea142eabb4fe6cddf9f2294f",
+      "particiones.npz": "bc7c03b2a02c299f6d4ec38a68d5e84213a898fafcef664107326a97529c5456"
+    },
+    "familia": "gmm_fijo",
+    "regimen": "normales",
+    "config": 0,
+    "parametros": {
+      "n_components": 5,
+      "covariance_type": "full",
+      "n_init": 1,
+      "reg_covar": 1e-06,
+      "max_iter": 1000
+    },
+    "semilla": 20361019,
+    "hilos": 2,
+    "codigo": {
+      "modelos.py": "926a3eb0b0dcc3de4aa6b70f2f51a8cf5f413299155bc3c0c0c0ef028ac06951",
+      "experimento.py": "4b9e1fc5ac132f692730f8ffccac2b831034061fb9909968fe2b87c2f77028f3"
+    },
+    "codigo_finalizacion": "bdcdaa68d9e0383f8791956c89ded61e35b1b6b2210abc0a65255b51582170ba",
+    "decision": "c973473e1506c23b15fa772e9afc569edb9bd0fce8dae3704814937747bb8f87"
+  },
+  "filas_fit": 170589,
+  "filas_produccion": 113923,
+  "tiempos": {
+    "fit_s": 3.3698599159979494,
+    "score_s": 0.04848683399904985
+  },
+  "entrenamiento": {
+    "filas_fit": 170589,
+    "predictores": 21,
+    "escalado": true,
+    "convergencia": true,
+    "iteraciones": 28
+  },
+  "avisos": [],
+  "scores_sha256": "7735680ff5e6cd784dd8b41371c99476c4f83a1482199aa1cf6915bc6d6e3dfd",
+  "modelo_sha256": "03286162db01c28ef1b11d5907e65b5283dca5ff25f661d7e6906bfa5ac802a5",
+  "invariante_lote": true,
+  "delta_serializacion": 0.0,
+  "delta_orden_lote": 0.0,
+  "tolerancia_verificacion": {
+    "rtol": 1e-06,
+    "atol": 1e-08
+  },
+  "alcance_invariancia": "Coincidencia numérica dentro de rtol/atol; no identidad bit a bit.",
+  "fecha_utc": "2026-10-20T13:53:28Z"
+}

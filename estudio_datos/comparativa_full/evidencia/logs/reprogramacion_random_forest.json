@@ -1,0 +1,7 @@
+{
+  "fecha": 1792503085.372752,
+  "accion": "reanudar Random Forest por particiones paralelas",
+  "pid_previo": 19236,
+  "ajustes_conservados": 20,
+  "motivo": "Aprovechar cuatro trabajos tras finalizar las demás familias; misma rejilla, filas, semillas y funciones de entrenamiento."
+}

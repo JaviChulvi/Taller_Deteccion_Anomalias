@@ -1,0 +1,524 @@
+[
+  {
+    "familia": "ecod_cohorte",
+    "regimen": "todos",
+    "outer": 0,
+    "ganador": {
+      "config": 0,
+      "ap_media": 0.3339386375625006,
+      "ap_sd": 0.05030269951508767,
+      "recall_1pct": 0.7879476360489018,
+      "fit_s_media": 0.4670454166625859
+    },
+    "busqueda": [
+      {
+        "config": 0,
+        "ap_media": 0.3339386375625006,
+        "ap_sd": 0.05030269951508767,
+        "recall_1pct": 0.7879476360489018,
+        "fit_s_media": 0.4670454166625859
+      }
+    ],
+    "protocolo": "638141edb70c6551f61114f7f3526db2f8d67d838f706ae3216808a220628201",
+    "evaluacion_exterior": {
+      "estado": "completo",
+      "identidad": {
+        "protocolo": "638141edb70c6551f61114f7f3526db2f8d67d838f706ae3216808a220628201",
+        "familia": "ecod_cohorte",
+        "regimen": "todos",
+        "outer": 0,
+        "inner": -1,
+        "config": 0,
+        "parametros": {},
+        "semilla": 20262020,
+        "train_indices": "04bce0ccacfcc9c1b62512722b4f8ec298cb3b051f5cc84753e5633208a36848",
+        "eval_indices": "720e623b357d5145f33478d423d75722fe98bb53532e1153cb446505e4517f15",
+        "codigo": {
+          "modelos.py": "926a3eb0b0dcc3de4aa6b70f2f51a8cf5f413299155bc3c0c0c0ef028ac06951",
+          "experimento.py": "4b9e1fc5ac132f692730f8ffccac2b831034061fb9909968fe2b87c2f77028f3",
+          "modelo_ecod.py": "757c4b90a294bd505e7449065478d657bc307ee6c2d1d0a44f1f22d80651852c"
+        },
+        "datos": {
+          "X.npy": "797d4be9c7598ba85b766a7871e87e9ed0eab97715af09ec65c88ee028e28df3",
+          "y.npy": "7c793d6c0d9c8a583a4ed44af8c0cb6edf6c325b7f74f0cf2627a9eb64410197",
+          "grupos.npy": "300c85e51790caebd642c08c9dcfd6186c64ac7ba506397d3952773dab9f031c",
+          "X_produccion.npy": "6259fbef314607e7e0e97efc8cd84de186f79c7dea142eabb4fe6cddf9f2294f",
+          "particiones.npz": "bc7c03b2a02c299f6d4ec38a68d5e84213a898fafcef664107326a97529c5456"
+        }
+      },
+      "metricas": {
+        "ap": 0.4122043922891702,
+        "roc_auc": 0.9437788691490451,
+        "filas": 34177,
+        "fraudes": 59,
+        "precision_0.002": 0.391304347826087,
+        "recall_0.002": 0.4576271186440678,
+        "k_0.002": 69,
+        "tp_0.002": 27,
+        "empatados_0.002": 1,
+        "precision_0.01": 0.12573099415204678,
+        "recall_0.01": 0.7288135593220338,
+        "k_0.01": 342,
+        "tp_0.01": 43,
+        "empatados_0.01": 1,
+        "precision_0.02": 0.06725146198830409,
+        "recall_0.02": 0.7796610169491526,
+        "k_0.02": 684,
+        "tp_0.02": 46,
+        "empatados_0.02": 1
+      },
+      "filas_fit": 136707,
+      "tiempos": {
+        "fit_s": 0.31582025000534486,
+        "score_s": 0.4255951249942882
+      },
+      "entrenamiento": {
+        "filas_fit": 136707,
+        "predictores": 21,
+        "escalado": false,
+        "detalle": {
+          "modelo": "ECOD oficial PyOD",
+          "pyod_version": "3.6.7",
+          "protocolo": "cohorte_train_mas_consulta",
+          "seleccion_principal_elegible": false,
+          "depende_del_lote_consulta": true,
+          "usa_etiquetas": false,
+          "filas_fit": 136707,
+          "n_features": 21,
+          "contamination": 0.1,
+          "contamination_solo_umbral": true,
+          "n_jobs": 2,
+          "determinista": true,
+          "random_state_no_utilizado": 20262020,
+          "segundos_fit": 0.3119970419938909
+        }
+      },
+      "avisos": [],
+      "scores_sha256": "37d122556ab72d2b7a61abad68f252bb741b82e73705f9e287b34b73442d5f5f",
+      "fecha_utc": "2026-10-20T13:22:52Z",
+      "pid": 19156
+    }
+  },
+  {
+    "familia": "ecod_cohorte",
+    "regimen": "todos",
+    "outer": 1,
+    "ganador": {
+      "config": 0,
+      "ap_media": 0.3468408568539918,
+      "ap_sd": 0.05210878343404968,
+      "recall_1pct": 0.7753975981824083,
+      "fit_s_media": 0.21625516699471822
+    },
+    "busqueda": [
+      {
+        "config": 0,
+        "ap_media": 0.3468408568539918,
+        "ap_sd": 0.05210878343404968,
+        "recall_1pct": 0.7753975981824083,
+        "fit_s_media": 0.21625516699471822
+      }
+    ],
+    "protocolo": "638141edb70c6551f61114f7f3526db2f8d67d838f706ae3216808a220628201",
+    "evaluacion_exterior": {
+      "estado": "completo",
+      "identidad": {
+        "protocolo": "638141edb70c6551f61114f7f3526db2f8d67d838f706ae3216808a220628201",
+        "familia": "ecod_cohorte",
+        "regimen": "todos",
+        "outer": 1,
+        "inner": -1,
+        "config": 0,
+        "parametros": {},
+        "semilla": 20263020,
+        "train_indices": "34d3c903dfe8e798004292d74cc277f3096542b4826e9a87c70a92721aa4cb10",
+        "eval_indices": "7dc2340747aa37698ae3658c5dc11fc85b4105095cb8e96893d72cebffc37c7f",
+        "codigo": {
+          "modelos.py": "926a3eb0b0dcc3de4aa6b70f2f51a8cf5f413299155bc3c0c0c0ef028ac06951",
+          "experimento.py": "4b9e1fc5ac132f692730f8ffccac2b831034061fb9909968fe2b87c2f77028f3",
+          "modelo_ecod.py": "757c4b90a294bd505e7449065478d657bc307ee6c2d1d0a44f1f22d80651852c"
+        },
+        "datos": {
+          "X.npy": "797d4be9c7598ba85b766a7871e87e9ed0eab97715af09ec65c88ee028e28df3",
+          "y.npy": "7c793d6c0d9c8a583a4ed44af8c0cb6edf6c325b7f74f0cf2627a9eb64410197",
+          "grupos.npy": "300c85e51790caebd642c08c9dcfd6186c64ac7ba506397d3952773dab9f031c",
+          "X_produccion.npy": "6259fbef314607e7e0e97efc8cd84de186f79c7dea142eabb4fe6cddf9f2294f",
+          "particiones.npz": "bc7c03b2a02c299f6d4ec38a68d5e84213a898fafcef664107326a97529c5456"
+        }
+      },
+      "metricas": {
+        "ap": 0.3646007571099246,
+        "roc_auc": 0.9580126202084291,
+        "filas": 34177,
+        "fraudes": 59,
+        "precision_0.002": 0.37681159420289856,
+        "recall_0.002": 0.4406779661016949,
+        "k_0.002": 69,
+        "tp_0.002": 26,
+        "empatados_0.002": 1,
+        "precision_0.01": 0.13157894736842105,
+        "recall_0.01": 0.7627118644067796,
+        "k_0.01": 342,
+        "tp_0.01": 45,
+        "empatados_0.01": 1,
+        "precision_0.02": 0.07163742690058479,
+        "recall_0.02": 0.8305084745762712,
+        "k_0.02": 684,
+        "tp_0.02": 49,
+        "empatados_0.02": 1
+      },
+      "filas_fit": 136707,
+      "tiempos": {
+        "fit_s": 0.31968616700032726,
+        "score_s": 0.3934224999975413
+      },
+      "entrenamiento": {
+        "filas_fit": 136707,
+        "predictores": 21,
+        "escalado": false,
+        "detalle": {
+          "modelo": "ECOD oficial PyOD",
+          "pyod_version": "3.6.7",
+          "protocolo": "cohorte_train_mas_consulta",
+          "seleccion_principal_elegible": false,
+          "depende_del_lote_consulta": true,
+          "usa_etiquetas": false,
+          "filas_fit": 136707,
+          "n_features": 21,
+          "contamination": 0.1,
+          "contamination_solo_umbral": true,
+          "n_jobs": 2,
+          "determinista": true,
+          "random_state_no_utilizado": 20263020,
+          "segundos_fit": 0.3160091659956379
+        }
+      },
+      "avisos": [],
+      "scores_sha256": "d6e78a19e958b5ddc13efde8e68659958e7d4be6e2b613150be13e331098d55c",
+      "fecha_utc": "2026-10-20T13:22:55Z",
+      "pid": 19156
+    }
+  },
+  {
+    "familia": "ecod_cohorte",
+    "regimen": "todos",
+    "outer": 2,
+    "ganador": {
+      "config": 0,
+      "ap_media": 0.36047581298855474,
+      "ap_sd": 0.01823908668288085,
+      "recall_1pct": 0.7630639402791303,
+      "fit_s_media": 0.21366275000036694
+    },
+    "busqueda": [
+      {
+        "config": 0,
+        "ap_media": 0.36047581298855474,
+        "ap_sd": 0.01823908668288085,
+        "recall_1pct": 0.7630639402791303,
+        "fit_s_media": 0.21366275000036694
+      }
+    ],
+    "protocolo": "638141edb70c6551f61114f7f3526db2f8d67d838f706ae3216808a220628201",
+    "evaluacion_exterior": {
+      "estado": "completo",
+      "identidad": {
+        "protocolo": "638141edb70c6551f61114f7f3526db2f8d67d838f706ae3216808a220628201",
+        "familia": "ecod_cohorte",
+        "regimen": "todos",
+        "outer": 2,
+        "inner": -1,
+        "config": 0,
+        "parametros": {},
+        "semilla": 20264020,
+        "train_indices": "3e60a16f9d94e448015fcde328c4d1c04792ae0395b6a8d6ef0c2bc1fdef6782",
+        "eval_indices": "5db8e274dc0f1d5eec8bf40767e86c4599a9baa88d9b6fd25df4c53ff468d09b",
+        "codigo": {
+          "modelos.py": "926a3eb0b0dcc3de4aa6b70f2f51a8cf5f413299155bc3c0c0c0ef028ac06951",
+          "experimento.py": "4b9e1fc5ac132f692730f8ffccac2b831034061fb9909968fe2b87c2f77028f3",
+          "modelo_ecod.py": "757c4b90a294bd505e7449065478d657bc307ee6c2d1d0a44f1f22d80651852c"
+        },
+        "datos": {
+          "X.npy": "797d4be9c7598ba85b766a7871e87e9ed0eab97715af09ec65c88ee028e28df3",
+          "y.npy": "7c793d6c0d9c8a583a4ed44af8c0cb6edf6c325b7f74f0cf2627a9eb64410197",
+          "grupos.npy": "300c85e51790caebd642c08c9dcfd6186c64ac7ba506397d3952773dab9f031c",
+          "X_produccion.npy": "6259fbef314607e7e0e97efc8cd84de186f79c7dea142eabb4fe6cddf9f2294f",
+          "particiones.npz": "bc7c03b2a02c299f6d4ec38a68d5e84213a898fafcef664107326a97529c5456"
+        }
+      },
+      "metricas": {
+        "ap": 0.30967909044853115,
+        "roc_auc": 0.9405835778320705,
+        "filas": 34177,
+        "fraudes": 59,
+        "precision_0.002": 0.2753623188405797,
+        "recall_0.002": 0.3220338983050847,
+        "k_0.002": 69,
+        "tp_0.002": 19,
+        "empatados_0.002": 1,
+        "precision_0.01": 0.14035087719298245,
+        "recall_0.01": 0.8135593220338984,
+        "k_0.01": 342,
+        "tp_0.01": 48,
+        "empatados_0.01": 1,
+        "precision_0.02": 0.07309941520467836,
+        "recall_0.02": 0.847457627118644,
+        "k_0.02": 684,
+        "tp_0.02": 50,
+        "empatados_0.02": 1
+      },
+      "filas_fit": 136707,
+      "tiempos": {
+        "fit_s": 0.31592799999634735,
+        "score_s": 0.4038765840086853
+      },
+      "entrenamiento": {
+        "filas_fit": 136707,
+        "predictores": 21,
+        "escalado": false,
+        "detalle": {
+          "modelo": "ECOD oficial PyOD",
+          "pyod_version": "3.6.7",
+          "protocolo": "cohorte_train_mas_consulta",
+          "seleccion_principal_elegible": false,
+          "depende_del_lote_consulta": true,
+          "usa_etiquetas": false,
+          "filas_fit": 136707,
+          "n_features": 21,
+          "contamination": 0.1,
+          "contamination_solo_umbral": true,
+          "n_jobs": 2,
+          "determinista": true,
+          "random_state_no_utilizado": 20264020,
+          "segundos_fit": 0.3121634580020327
+        }
+      },
+      "avisos": [],
+      "scores_sha256": "75c6d31d8743c2baa0497265475ddc644c0c15e6542b08b72107e3567fca98c6",
+      "fecha_utc": "2026-10-20T13:22:57Z",
+      "pid": 19156
+    }
+  },
+  {
+    "familia": "ecod_cohorte",
+    "regimen": "todos",
+    "outer": 3,
+    "ganador": {
+      "config": 0,
+      "ap_media": 0.3491619680945599,
+      "ap_sd": 0.04348992236215286,
+      "recall_1pct": 0.75435464675971,
+      "fit_s_media": 0.216331624998323
+    },
+    "busqueda": [
+      {
+        "config": 0,
+        "ap_media": 0.3491619680945599,
+        "ap_sd": 0.04348992236215286,
+        "recall_1pct": 0.75435464675971,
+        "fit_s_media": 0.216331624998323
+      }
+    ],
+    "protocolo": "638141edb70c6551f61114f7f3526db2f8d67d838f706ae3216808a220628201",
+    "evaluacion_exterior": {
+      "estado": "completo",
+      "identidad": {
+        "protocolo": "638141edb70c6551f61114f7f3526db2f8d67d838f706ae3216808a220628201",
+        "familia": "ecod_cohorte",
+        "regimen": "todos",
+        "outer": 3,
+        "inner": -1,
+        "config": 0,
+        "parametros": {},
+        "semilla": 20265020,
+        "train_indices": "e9cadccfe45c112852fd319b5037503aae8c19b27a40c74e4e1888a1f0a9d584",
+        "eval_indices": "e8794e5d52dd4ac1f616339e17e0321b6968118b4dc10a4d8fad9aee009dfc86",
+        "codigo": {
+          "modelos.py": "926a3eb0b0dcc3de4aa6b70f2f51a8cf5f413299155bc3c0c0c0ef028ac06951",
+          "experimento.py": "4b9e1fc5ac132f692730f8ffccac2b831034061fb9909968fe2b87c2f77028f3",
+          "modelo_ecod.py": "757c4b90a294bd505e7449065478d657bc307ee6c2d1d0a44f1f22d80651852c"
+        },
+        "datos": {
+          "X.npy": "797d4be9c7598ba85b766a7871e87e9ed0eab97715af09ec65c88ee028e28df3",
+          "y.npy": "7c793d6c0d9c8a583a4ed44af8c0cb6edf6c325b7f74f0cf2627a9eb64410197",
+          "grupos.npy": "300c85e51790caebd642c08c9dcfd6186c64ac7ba506397d3952773dab9f031c",
+          "X_produccion.npy": "6259fbef314607e7e0e97efc8cd84de186f79c7dea142eabb4fe6cddf9f2294f",
+          "particiones.npz": "bc7c03b2a02c299f6d4ec38a68d5e84213a898fafcef664107326a97529c5456"
+        }
+      },
+      "metricas": {
+        "ap": 0.37764374337131235,
+        "roc_auc": 0.9804203954173005,
+        "filas": 34177,
+        "fraudes": 59,
+        "precision_0.002": 0.42028985507246375,
+        "recall_0.002": 0.4915254237288136,
+        "k_0.002": 69,
+        "tp_0.002": 29,
+        "empatados_0.002": 1,
+        "precision_0.01": 0.14327485380116958,
+        "recall_0.01": 0.8305084745762712,
+        "k_0.01": 342,
+        "tp_0.01": 49,
+        "empatados_0.01": 1,
+        "precision_0.02": 0.07309941520467836,
+        "recall_0.02": 0.847457627118644,
+        "k_0.02": 684,
+        "tp_0.02": 50,
+        "empatados_0.02": 1
+      },
+      "filas_fit": 136707,
+      "tiempos": {
+        "fit_s": 0.3217910829989705,
+        "score_s": 0.3995533339912072
+      },
+      "entrenamiento": {
+        "filas_fit": 136707,
+        "predictores": 21,
+        "escalado": false,
+        "detalle": {
+          "modelo": "ECOD oficial PyOD",
+          "pyod_version": "3.6.7",
+          "protocolo": "cohorte_train_mas_consulta",
+          "seleccion_principal_elegible": false,
+          "depende_del_lote_consulta": true,
+          "usa_etiquetas": false,
+          "filas_fit": 136707,
+          "n_features": 21,
+          "contamination": 0.1,
+          "contamination_solo_umbral": true,
+          "n_jobs": 2,
+          "determinista": true,
+          "random_state_no_utilizado": 20265020,
+          "segundos_fit": 0.31803112500347197
+        }
+      },
+      "avisos": [],
+      "scores_sha256": "2f5ebe0e8e6449a7e994571a9e1cb1c579287cdefc52d1ea706c4c5e6aa58c26",
+      "fecha_utc": "2026-10-20T13:23:00Z",
+      "pid": 19156
+    }
+  },
+  {
+    "familia": "ecod_cohorte",
+    "regimen": "todos",
+    "outer": 4,
+    "ganador": {
+      "config": 0,
+      "ap_media": 0.36282571355226995,
+      "ap_sd": 0.033942557581273146,
+      "recall_1pct": 0.7795629124743049,
+      "fit_s_media": 0.21451166667005359
+    },
+    "busqueda": [
+      {
+        "config": 0,
+        "ap_media": 0.36282571355226995,
+        "ap_sd": 0.033942557581273146,
+        "recall_1pct": 0.7795629124743049,
+        "fit_s_media": 0.21451166667005359
+      }
+    ],
+    "protocolo": "638141edb70c6551f61114f7f3526db2f8d67d838f706ae3216808a220628201",
+    "evaluacion_exterior": {
+      "estado": "completo",
+      "identidad": {
+        "protocolo": "638141edb70c6551f61114f7f3526db2f8d67d838f706ae3216808a220628201",
+        "familia": "ecod_cohorte",
+        "regimen": "todos",
+        "outer": 4,
+        "inner": -1,
+        "config": 0,
+        "parametros": {},
+        "semilla": 20266020,
+        "train_indices": "39bf7f13dd40ae52fe3032d69e4b2ecb7c259150fe82a1a8befb550263f46db7",
+        "eval_indices": "19cd5f0c9e0018735b2301c9d3da5f89a975c88e2f7da09ed63edc923bad7dfe",
+        "codigo": {
+          "modelos.py": "926a3eb0b0dcc3de4aa6b70f2f51a8cf5f413299155bc3c0c0c0ef028ac06951",
+          "experimento.py": "4b9e1fc5ac132f692730f8ffccac2b831034061fb9909968fe2b87c2f77028f3",
+          "modelo_ecod.py": "757c4b90a294bd505e7449065478d657bc307ee6c2d1d0a44f1f22d80651852c"
+        },
+        "datos": {
+          "X.npy": "797d4be9c7598ba85b766a7871e87e9ed0eab97715af09ec65c88ee028e28df3",
+          "y.npy": "7c793d6c0d9c8a583a4ed44af8c0cb6edf6c325b7f74f0cf2627a9eb64410197",
+          "grupos.npy": "300c85e51790caebd642c08c9dcfd6186c64ac7ba506397d3952773dab9f031c",
+          "X_produccion.npy": "6259fbef314607e7e0e97efc8cd84de186f79c7dea142eabb4fe6cddf9f2294f",
+          "particiones.npz": "bc7c03b2a02c299f6d4ec38a68d5e84213a898fafcef664107326a97529c5456"
+        }
+      },
+      "metricas": {
+        "ap": 0.30972311902210725,
+        "roc_auc": 0.9694093555427162,
+        "filas": 34176,
+        "fraudes": 59,
+        "precision_0.002": 0.37681159420289856,
+        "recall_0.002": 0.4406779661016949,
+        "k_0.002": 69,
+        "tp_0.002": 26,
+        "empatados_0.002": 1,
+        "precision_0.01": 0.1286549707602339,
+        "recall_0.01": 0.7457627118644068,
+        "k_0.01": 342,
+        "tp_0.01": 44,
+        "empatados_0.01": 1,
+        "precision_0.02": 0.07309941520467836,
+        "recall_0.02": 0.847457627118644,
+        "k_0.02": 684,
+        "tp_0.02": 50,
+        "empatados_0.02": 1
+      },
+      "filas_fit": 136708,
+      "tiempos": {
+        "fit_s": 0.31595387500419747,
+        "score_s": 0.3990638749965001
+      },
+      "entrenamiento": {
+        "filas_fit": 136708,
+        "predictores": 21,
+        "escalado": false,
+        "detalle": {
+          "modelo": "ECOD oficial PyOD",
+          "pyod_version": "3.6.7",
+          "protocolo": "cohorte_train_mas_consulta",
+          "seleccion_principal_elegible": false,
+          "depende_del_lote_consulta": true,
+          "usa_etiquetas": false,
+          "filas_fit": 136708,
+          "n_features": 21,
+          "contamination": 0.1,
+          "contamination_solo_umbral": true,
+          "n_jobs": 2,
+          "determinista": true,
+          "random_state_no_utilizado": 20266020,
+          "segundos_fit": 0.31135774998983834
+        }
+      },
+      "avisos": [],
+      "scores_sha256": "fce88063b88cd9a27b8d2ee657abe4d67017f00db00155b60eb13304182373d9",
+      "fecha_utc": "2026-10-20T13:23:03Z",
+      "pid": 19156
+    }
+  },
+  {
+    "familia": "ecod_cohorte",
+    "regimen": "todos",
+    "outer": -1,
+    "ganador": {
+      "config": 0,
+      "ap_media": 0.3490098663626738,
+      "ap_sd": 0.08211749527582773,
+      "recall_1pct": 0.7763691335119907,
+      "fit_s_media": 0.26592430533492006
+    },
+    "busqueda": [
+      {
+        "config": 0,
+        "ap_media": 0.3490098663626738,
+        "ap_sd": 0.08211749527582773,
+        "recall_1pct": 0.7763691335119907,
+        "fit_s_media": 0.26592430533492006
+      }
+    ],
+    "protocolo": "638141edb70c6551f61114f7f3526db2f8d67d838f706ae3216808a220628201"
+  }
+]

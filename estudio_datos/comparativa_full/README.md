@@ -20,11 +20,17 @@ La selección interior sobre construcción completa eligió **LightGBM supervisa
 
 El procedimiento anidado también escogió LightGBM en los cinco entrenamientos exteriores y alcanzó AP **0,841364**, con mejora pareada media de **0,193329** frente al GMM fijo. Al revisar aproximadamente el 1 % de operaciones de cada fold recuperó el **88,47 %** de los fraudes de validación. La diferencia media frente a Random Forest es pequeña; estos resultados no demuestran superioridad universal ni significación estadística.
 
-Las fuentes completas son [tabla_resumen_familia_regimen.csv](resultados/tabla_resumen_familia_regimen.csv), [seleccion_final.json](resultados/seleccion_final.json) y [auditoria_independiente_cv.json](resultados/auditoria_independiente_cv.json). La AP se estimó en validación interna, no en producción. Los 321 ajustes GMM declararon convergencia; 75 de las 82 búsquedas internas del AE alcanzaron el presupuesto de 200 épocas. Ese límite queda explícito y no se interpreta como convergencia del AE.
+Las fuentes completas son [tabla_resumen_familia_regimen.csv](evidencia/tabla_resumen_familia_regimen.csv), [seleccion_final.json](evidencia/seleccion_final.json) y [auditoria_independiente_cv.json](evidencia/auditoria_independiente_cv.json). La AP se estimó en validación interna, no en producción. Los 321 ajustes GMM declararon convergencia; 75 de las 82 búsquedas internas del AE alcanzaron el presupuesto de 200 épocas. Ese límite queda explícito y no se interpreta como convergencia del AE.
 
-Los **24 refits finales están completos**, con sus modelos, scores y metadatos guardados. El LightGBM elegido se reajustó con las **170.884 filas** de construcción. La [entrega](../../entrega_scores.csv) contiene **113.923 scores**, verificados en el orden original. Ambos notebooks conservan todas sus salidas: 17 celdas de código en el 02 y 9 en el 03, sin errores. Cinco inferencias completas del modelo recargado coincidieron con el CSV; la mediana local fue **1,324 segundos** y el IQR **0,017 segundos**, excluyendo la carga del modelo. Véanse [auditoria_entrega.json](resultados/auditoria_entrega.json) y [tiempos_inferencia_entrega.json](resultados/tiempos_inferencia_entrega.json).
+Los **24 refits finales están completos**, con sus modelos, scores y metadatos guardados. El LightGBM elegido se reajustó con las **170.884 filas** de construcción. La [entrega](../../entrega_scores.csv) contiene **113.923 scores**, verificados en el orden original. Ambos notebooks conservan todas sus salidas: 17 celdas de código en el 02 y 9 en el 03, sin errores. Cinco inferencias completas del modelo recargado coincidieron con el CSV; la mediana local fue **1,324 segundos** y el IQR **0,017 segundos**, excluyendo la carga del modelo. Véanse [auditoria_entrega.json](evidencia/auditoria_entrega.json) y [tiempos_inferencia_entrega.json](evidencia/tiempos_inferencia_entrega.json).
 
 ## Entorno
+
+### Archivos publicados y resultados locales
+
+Git conserva los notebooks ejecutados, el código, la entrega y una [selección de evidencia histórica](evidencia/README.md). Los enlaces a tablas y auditorías de este documento apuntan a esas copias en `evidencia/`. La tabla de rutas más abajo describe el directorio de ejecución `resultados/`, que se regenera y no se incluye en Git.
+
+En una copia nueva, ejecutar primero el notebook 02 y después el 03. No copiar `evidencia/` a `resultados/`: la evidencia no contiene los modelos, arrays ni scores intermedios necesarios para reanudar. Las salidas de los notebooks conservan las rutas de su ejecución original.
 
 El protocolo registrado utiliza **CPython 3.12.14**, CPU y las versiones fijadas en [requirements.txt](requirements.txt), obtenido del entorno local. Para reproducirlo en una copia nueva, con Python 3.12.14 disponible como `python3.12`:
 
@@ -184,7 +190,7 @@ env -u PYTHONPATH .venv/bin/python -m unittest discover -s estudio_datos/compara
 
 La entrega es [`entrega_scores.csv`](../../entrega_scores.csv), en la raíz: **una columna `score`, sin índice y con 113.923 filas de datos**, en el orden original de producción. Se copia del CSV de la combinación elegida después de verificar los 24 refits. Un score mayor significa más sospecha; no implica una probabilidad calibrada.
 
-La verificación de serialización y orden de lote utiliza `rtol=1e-6`, `atol=1e-8`; kNN usa `atol=1e-7`. En una de las 258 consultas comprobadas, el cálculo euclídeo por productos escalares varió `3,82e-8` al invertir el lote. La comprobación por resta directa confirmó redondeo, con vecinos y ranking idénticos en esa muestra. Se conservan el [diagnóstico numérico](resultados/logs/diagnostico_precision_knn.json), la incidencia inicial y las tolerancias y diferencias de cada refit. No se alteraron el algoritmo ni los scores de validación. La invariancia numérica no significa identidad bit a bit.
+La verificación de serialización y orden de lote utiliza `rtol=1e-6`, `atol=1e-8`; kNN usa `atol=1e-7`. En una de las 258 consultas comprobadas, el cálculo euclídeo por productos escalares varió `3,82e-8` al invertir el lote. La comprobación por resta directa confirmó redondeo, con vecinos y ranking idénticos en esa muestra. Se conservan el [diagnóstico numérico](evidencia/logs/diagnostico_precision_knn.json), la incidencia inicial y las tolerancias y diferencias de cada refit. No se alteraron el algoritmo ni los scores de validación. La invariancia numérica no significa identidad bit a bit.
 
 La auditoría de validación y la de entrega son documentos separados. `seleccion_final.json` conserva la decisión previa al refit; la finalización se acredita en `estado_entrega.json` y `auditoria_entrega.json`. Los CSV, modelos y auditorías solo existen cuando termina su fase correspondiente.
 

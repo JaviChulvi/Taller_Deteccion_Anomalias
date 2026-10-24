@@ -1,0 +1,763 @@
+[
+  {
+    "familia": "logistica",
+    "regimen": "supervisado",
+    "outer": 0,
+    "ganador": {
+      "config": 0,
+      "ap_media": 0.7498659845865561,
+      "ap_sd": 0.059834345842448386,
+      "recall_1pct": 0.8940820080060586,
+      "fit_s_media": 0.0637514723299925
+    },
+    "busqueda": [
+      {
+        "config": 0,
+        "ap_media": 0.7498659845865561,
+        "ap_sd": 0.059834345842448386,
+        "recall_1pct": 0.8940820080060586,
+        "fit_s_media": 0.0637514723299925
+      },
+      {
+        "config": 1,
+        "ap_media": 0.7248785505881892,
+        "ap_sd": 0.08810057525969545,
+        "recall_1pct": 0.8940820080060586,
+        "fit_s_media": 0.09227527766294467
+      },
+      {
+        "config": 2,
+        "ap_media": 0.7429504688014522,
+        "ap_sd": 0.0532923910850239,
+        "recall_1pct": 0.9025749215622634,
+        "fit_s_media": 0.06554887500048305
+      },
+      {
+        "config": 3,
+        "ap_media": 0.729321608386385,
+        "ap_sd": 0.08186084260797095,
+        "recall_1pct": 0.8940820080060586,
+        "fit_s_media": 0.09960583333061852
+      },
+      {
+        "config": 4,
+        "ap_media": 0.745289982596612,
+        "ap_sd": 0.04521671327724448,
+        "recall_1pct": 0.8940279130152547,
+        "fit_s_media": 0.07081719433093288
+      },
+      {
+        "config": 5,
+        "ap_media": 0.7304595997125771,
+        "ap_sd": 0.07849037584089306,
+        "recall_1pct": 0.8940820080060586,
+        "fit_s_media": 0.10060879166606658
+      },
+      {
+        "config": 6,
+        "ap_media": 0.7435675937063436,
+        "ap_sd": 0.04234362002020729,
+        "recall_1pct": 0.8940279130152547,
+        "fit_s_media": 0.06804702767112758
+      },
+      {
+        "config": 7,
+        "ap_media": 0.7304056270040439,
+        "ap_sd": 0.07850537248168796,
+        "recall_1pct": 0.8940820080060586,
+        "fit_s_media": 0.10360165267290238
+      }
+    ],
+    "protocolo": "638141edb70c6551f61114f7f3526db2f8d67d838f706ae3216808a220628201",
+    "evaluacion_exterior": {
+      "estado": "completo",
+      "identidad": {
+        "protocolo": "638141edb70c6551f61114f7f3526db2f8d67d838f706ae3216808a220628201",
+        "familia": "logistica",
+        "regimen": "supervisado",
+        "outer": 0,
+        "inner": -1,
+        "config": 0,
+        "parametros": {
+          "C": 0.01,
+          "class_weight": null
+        },
+        "semilla": 20262020,
+        "train_indices": "04bce0ccacfcc9c1b62512722b4f8ec298cb3b051f5cc84753e5633208a36848",
+        "eval_indices": "720e623b357d5145f33478d423d75722fe98bb53532e1153cb446505e4517f15",
+        "codigo": {
+          "modelos.py": "926a3eb0b0dcc3de4aa6b70f2f51a8cf5f413299155bc3c0c0c0ef028ac06951",
+          "experimento.py": "4b9e1fc5ac132f692730f8ffccac2b831034061fb9909968fe2b87c2f77028f3"
+        },
+        "datos": {
+          "X.npy": "797d4be9c7598ba85b766a7871e87e9ed0eab97715af09ec65c88ee028e28df3",
+          "y.npy": "7c793d6c0d9c8a583a4ed44af8c0cb6edf6c325b7f74f0cf2627a9eb64410197",
+          "grupos.npy": "300c85e51790caebd642c08c9dcfd6186c64ac7ba506397d3952773dab9f031c",
+          "X_produccion.npy": "6259fbef314607e7e0e97efc8cd84de186f79c7dea142eabb4fe6cddf9f2294f",
+          "particiones.npz": "bc7c03b2a02c299f6d4ec38a68d5e84213a898fafcef664107326a97529c5456"
+        }
+      },
+      "metricas": {
+        "ap": 0.7744008168816294,
+        "roc_auc": 0.9844900201792185,
+        "filas": 34177,
+        "fraudes": 59,
+        "precision_0.002": 0.6811594202898551,
+        "recall_0.002": 0.7966101694915254,
+        "k_0.002": 69,
+        "tp_0.002": 47,
+        "empatados_0.002": 1,
+        "precision_0.01": 0.14327485380116958,
+        "recall_0.01": 0.8305084745762712,
+        "k_0.01": 342,
+        "tp_0.01": 49,
+        "empatados_0.01": 1,
+        "precision_0.02": 0.07748538011695906,
+        "recall_0.02": 0.8983050847457628,
+        "k_0.02": 684,
+        "tp_0.02": 53,
+        "empatados_0.02": 1
+      },
+      "filas_fit": 136707,
+      "tiempos": {
+        "fit_s": 0.08626166700560134,
+        "score_s": 0.004625832996680401
+      },
+      "entrenamiento": {
+        "filas_fit": 136707,
+        "predictores": 21,
+        "escalado": true,
+        "iteraciones": [
+          13
+        ]
+      },
+      "avisos": [],
+      "scores_sha256": "e8067c7cf0733aac9c4302a06940cbe1c260f86c3c39070dd0d0bf99700ac9a2",
+      "fecha_utc": "2026-10-20T13:23:14Z",
+      "pid": 19233
+    }
+  },
+  {
+    "familia": "logistica",
+    "regimen": "supervisado",
+    "outer": 1,
+    "ganador": {
+      "config": 2,
+      "ap_media": 0.7523632677887361,
+      "ap_sd": 0.03611701583838697,
+      "recall_1pct": 0.8854809044682462,
+      "fit_s_media": 0.061905291663909644
+    },
+    "busqueda": [
+      {
+        "config": 0,
+        "ap_media": 0.7495405537898899,
+        "ap_sd": 0.031542843588827585,
+        "recall_1pct": 0.872822676620145,
+        "fit_s_media": 0.05657206933634976
+      },
+      {
+        "config": 1,
+        "ap_media": 0.7372605973412587,
+        "ap_sd": 0.030613610856489244,
+        "recall_1pct": 0.8982473222979551,
+        "fit_s_media": 0.095415055329795
+      },
+      {
+        "config": 2,
+        "ap_media": 0.7523632677887361,
+        "ap_sd": 0.03611701583838697,
+        "recall_1pct": 0.8854809044682462,
+        "fit_s_media": 0.061905291663909644
+      },
+      {
+        "config": 3,
+        "ap_media": 0.7345919975292373,
+        "ap_sd": 0.03698551404278223,
+        "recall_1pct": 0.8982473222979551,
+        "fit_s_media": 0.0934845553371512
+      },
+      {
+        "config": 4,
+        "ap_media": 0.7499466664170447,
+        "ap_sd": 0.04262320751200805,
+        "recall_1pct": 0.8854268094774423,
+        "fit_s_media": 0.06499593066594873
+      },
+      {
+        "config": 5,
+        "ap_media": 0.7352765184396782,
+        "ap_sd": 0.037255606286460505,
+        "recall_1pct": 0.8982473222979551,
+        "fit_s_media": 0.09836072233156301
+      },
+      {
+        "config": 6,
+        "ap_media": 0.7495800781476936,
+        "ap_sd": 0.04306123582475413,
+        "recall_1pct": 0.8854268094774423,
+        "fit_s_media": 0.06725452766598512
+      },
+      {
+        "config": 7,
+        "ap_media": 0.7354827459264183,
+        "ap_sd": 0.03728657119476085,
+        "recall_1pct": 0.8982473222979551,
+        "fit_s_media": 0.11418326366886807
+      }
+    ],
+    "protocolo": "638141edb70c6551f61114f7f3526db2f8d67d838f706ae3216808a220628201",
+    "evaluacion_exterior": {
+      "estado": "completo",
+      "identidad": {
+        "protocolo": "638141edb70c6551f61114f7f3526db2f8d67d838f706ae3216808a220628201",
+        "familia": "logistica",
+        "regimen": "supervisado",
+        "outer": 1,
+        "inner": -1,
+        "config": 2,
+        "parametros": {
+          "C": 0.1,
+          "class_weight": null
+        },
+        "semilla": 20263020,
+        "train_indices": "34d3c903dfe8e798004292d74cc277f3096542b4826e9a87c70a92721aa4cb10",
+        "eval_indices": "7dc2340747aa37698ae3658c5dc11fc85b4105095cb8e96893d72cebffc37c7f",
+        "codigo": {
+          "modelos.py": "926a3eb0b0dcc3de4aa6b70f2f51a8cf5f413299155bc3c0c0c0ef028ac06951",
+          "experimento.py": "4b9e1fc5ac132f692730f8ffccac2b831034061fb9909968fe2b87c2f77028f3"
+        },
+        "datos": {
+          "X.npy": "797d4be9c7598ba85b766a7871e87e9ed0eab97715af09ec65c88ee028e28df3",
+          "y.npy": "7c793d6c0d9c8a583a4ed44af8c0cb6edf6c325b7f74f0cf2627a9eb64410197",
+          "grupos.npy": "300c85e51790caebd642c08c9dcfd6186c64ac7ba506397d3952773dab9f031c",
+          "X_produccion.npy": "6259fbef314607e7e0e97efc8cd84de186f79c7dea142eabb4fe6cddf9f2294f",
+          "particiones.npz": "bc7c03b2a02c299f6d4ec38a68d5e84213a898fafcef664107326a97529c5456"
+        }
+      },
+      "metricas": {
+        "ap": 0.7615578753359713,
+        "roc_auc": 0.9678205549831542,
+        "filas": 34177,
+        "fraudes": 59,
+        "precision_0.002": 0.7101449275362319,
+        "recall_0.002": 0.8305084745762712,
+        "k_0.002": 69,
+        "tp_0.002": 49,
+        "empatados_0.002": 1,
+        "precision_0.01": 0.14912280701754385,
+        "recall_0.01": 0.864406779661017,
+        "k_0.01": 342,
+        "tp_0.01": 51,
+        "empatados_0.01": 1,
+        "precision_0.02": 0.07602339181286549,
+        "recall_0.02": 0.8813559322033898,
+        "k_0.02": 684,
+        "tp_0.02": 52,
+        "empatados_0.02": 1
+      },
+      "filas_fit": 136707,
+      "tiempos": {
+        "fit_s": 0.08707795800000895,
+        "score_s": 0.004556583007797599
+      },
+      "entrenamiento": {
+        "filas_fit": 136707,
+        "predictores": 21,
+        "escalado": true,
+        "iteraciones": [
+          16
+        ]
+      },
+      "avisos": [],
+      "scores_sha256": "1a9634d1e3042e6c1987151bf4ecff4eae4aa128bdb45bbdc1450a7027f7a08a",
+      "fecha_utc": "2026-10-20T13:23:18Z",
+      "pid": 19233
+    }
+  },
+  {
+    "familia": "logistica",
+    "regimen": "supervisado",
+    "outer": 2,
+    "ganador": {
+      "config": 0,
+      "ap_media": 0.7588647072272362,
+      "ap_sd": 0.02015214060248787,
+      "recall_1pct": 0.8687655523098562,
+      "fit_s_media": 0.05707044466786707
+    },
+    "busqueda": [
+      {
+        "config": 0,
+        "ap_media": 0.7588647072272362,
+        "ap_sd": 0.02015214060248787,
+        "recall_1pct": 0.8687655523098562,
+        "fit_s_media": 0.05707044466786707
+      },
+      {
+        "config": 1,
+        "ap_media": 0.7430270584338204,
+        "ap_sd": 0.019661214112497823,
+        "recall_1pct": 0.8856972844314616,
+        "fit_s_media": 0.08799137466606528
+      },
+      {
+        "config": 2,
+        "ap_media": 0.7572812336433244,
+        "ap_sd": 0.02316284540855334,
+        "recall_1pct": 0.8814237801579573,
+        "fit_s_media": 0.05616052766951422
+      },
+      {
+        "config": 3,
+        "ap_media": 0.7284427633617893,
+        "ap_sd": 0.011070577134418856,
+        "recall_1pct": 0.8856972844314616,
+        "fit_s_media": 0.09006737466552295
+      },
+      {
+        "config": 4,
+        "ap_media": 0.7573760140181122,
+        "ap_sd": 0.02624070878142031,
+        "recall_1pct": 0.8772043708752569,
+        "fit_s_media": 0.06394481966466022
+      },
+      {
+        "config": 5,
+        "ap_media": 0.7307402332587896,
+        "ap_sd": 0.009650021891243716,
+        "recall_1pct": 0.8856972844314616,
+        "fit_s_media": 0.09330212499965758
+      },
+      {
+        "config": 6,
+        "ap_media": 0.7563283323429367,
+        "ap_sd": 0.028371327985135524,
+        "recall_1pct": 0.8772043708752569,
+        "fit_s_media": 0.06248670900337553
+      },
+      {
+        "config": 7,
+        "ap_media": 0.7306924803262369,
+        "ap_sd": 0.00970865318496602,
+        "recall_1pct": 0.8856972844314616,
+        "fit_s_media": 0.09403755533761189
+      }
+    ],
+    "protocolo": "638141edb70c6551f61114f7f3526db2f8d67d838f706ae3216808a220628201",
+    "evaluacion_exterior": {
+      "estado": "completo",
+      "identidad": {
+        "protocolo": "638141edb70c6551f61114f7f3526db2f8d67d838f706ae3216808a220628201",
+        "familia": "logistica",
+        "regimen": "supervisado",
+        "outer": 2,
+        "inner": -1,
+        "config": 0,
+        "parametros": {
+          "C": 0.01,
+          "class_weight": null
+        },
+        "semilla": 20264020,
+        "train_indices": "3e60a16f9d94e448015fcde328c4d1c04792ae0395b6a8d6ef0c2bc1fdef6782",
+        "eval_indices": "5db8e274dc0f1d5eec8bf40767e86c4599a9baa88d9b6fd25df4c53ff468d09b",
+        "codigo": {
+          "modelos.py": "926a3eb0b0dcc3de4aa6b70f2f51a8cf5f413299155bc3c0c0c0ef028ac06951",
+          "experimento.py": "4b9e1fc5ac132f692730f8ffccac2b831034061fb9909968fe2b87c2f77028f3"
+        },
+        "datos": {
+          "X.npy": "797d4be9c7598ba85b766a7871e87e9ed0eab97715af09ec65c88ee028e28df3",
+          "y.npy": "7c793d6c0d9c8a583a4ed44af8c0cb6edf6c325b7f74f0cf2627a9eb64410197",
+          "grupos.npy": "300c85e51790caebd642c08c9dcfd6186c64ac7ba506397d3952773dab9f031c",
+          "X_produccion.npy": "6259fbef314607e7e0e97efc8cd84de186f79c7dea142eabb4fe6cddf9f2294f",
+          "particiones.npz": "bc7c03b2a02c299f6d4ec38a68d5e84213a898fafcef664107326a97529c5456"
+        }
+      },
+      "metricas": {
+        "ap": 0.7438944466043856,
+        "roc_auc": 0.9827090625655129,
+        "filas": 34177,
+        "fraudes": 59,
+        "precision_0.002": 0.7101449275362319,
+        "recall_0.002": 0.8305084745762712,
+        "k_0.002": 69,
+        "tp_0.002": 49,
+        "empatados_0.002": 1,
+        "precision_0.01": 0.14912280701754385,
+        "recall_0.01": 0.864406779661017,
+        "k_0.01": 342,
+        "tp_0.01": 51,
+        "empatados_0.01": 1,
+        "precision_0.02": 0.07894736842105263,
+        "recall_0.02": 0.9152542372881356,
+        "k_0.02": 684,
+        "tp_0.02": 54,
+        "empatados_0.02": 1
+      },
+      "filas_fit": 136707,
+      "tiempos": {
+        "fit_s": 0.08384774999285582,
+        "score_s": 0.004193250002572313
+      },
+      "entrenamiento": {
+        "filas_fit": 136707,
+        "predictores": 21,
+        "escalado": true,
+        "iteraciones": [
+          15
+        ]
+      },
+      "avisos": [],
+      "scores_sha256": "4b798d7b24a68bdd9da5e14ff74dd637c4ace6e378d7e5a2d0f13ac50a2c24c5",
+      "fecha_utc": "2026-10-20T13:23:22Z",
+      "pid": 19233
+    }
+  },
+  {
+    "familia": "logistica",
+    "regimen": "supervisado",
+    "outer": 3,
+    "ganador": {
+      "config": 0,
+      "ap_media": 0.7420447493168685,
+      "ap_sd": 0.06514150162745473,
+      "recall_1pct": 0.856053229470951,
+      "fit_s_media": 0.04775620833000479
+    },
+    "busqueda": [
+      {
+        "config": 0,
+        "ap_media": 0.7420447493168685,
+        "ap_sd": 0.06514150162745473,
+        "recall_1pct": 0.856053229470951,
+        "fit_s_media": 0.04775620833000479
+      },
+      {
+        "config": 1,
+        "ap_media": 0.728107619210182,
+        "ap_sd": 0.07193104720508284,
+        "recall_1pct": 0.8772043708752569,
+        "fit_s_media": 0.08449029166755888
+      },
+      {
+        "config": 2,
+        "ap_media": 0.7374455654700892,
+        "ap_sd": 0.0589690521159277,
+        "recall_1pct": 0.8559450394893432,
+        "fit_s_media": 0.05615862500659811
+      },
+      {
+        "config": 3,
+        "ap_media": 0.7278065533312387,
+        "ap_sd": 0.08278317731813237,
+        "recall_1pct": 0.8687114573190522,
+        "fit_s_media": 0.1009545973308074
+      },
+      {
+        "config": 4,
+        "ap_media": 0.7344724897055256,
+        "ap_sd": 0.05142502167979502,
+        "recall_1pct": 0.8559450394893432,
+        "fit_s_media": 0.059118638334136143
+      },
+      {
+        "config": 5,
+        "ap_media": 0.7310113617186276,
+        "ap_sd": 0.08125324443757385,
+        "recall_1pct": 0.8687114573190522,
+        "fit_s_media": 0.10937040266677893
+      },
+      {
+        "config": 6,
+        "ap_media": 0.7345341757998702,
+        "ap_sd": 0.05104307466440865,
+        "recall_1pct": 0.8559450394893432,
+        "fit_s_media": 0.06194586099688119
+      },
+      {
+        "config": 7,
+        "ap_media": 0.7309112868490746,
+        "ap_sd": 0.08135292873578608,
+        "recall_1pct": 0.8687114573190522,
+        "fit_s_media": 0.11479379166848958
+      }
+    ],
+    "protocolo": "638141edb70c6551f61114f7f3526db2f8d67d838f706ae3216808a220628201",
+    "evaluacion_exterior": {
+      "estado": "completo",
+      "identidad": {
+        "protocolo": "638141edb70c6551f61114f7f3526db2f8d67d838f706ae3216808a220628201",
+        "familia": "logistica",
+        "regimen": "supervisado",
+        "outer": 3,
+        "inner": -1,
+        "config": 0,
+        "parametros": {
+          "C": 0.01,
+          "class_weight": null
+        },
+        "semilla": 20265020,
+        "train_indices": "e9cadccfe45c112852fd319b5037503aae8c19b27a40c74e4e1888a1f0a9d584",
+        "eval_indices": "e8794e5d52dd4ac1f616339e17e0321b6968118b4dc10a4d8fad9aee009dfc86",
+        "codigo": {
+          "modelos.py": "926a3eb0b0dcc3de4aa6b70f2f51a8cf5f413299155bc3c0c0c0ef028ac06951",
+          "experimento.py": "4b9e1fc5ac132f692730f8ffccac2b831034061fb9909968fe2b87c2f77028f3"
+        },
+        "datos": {
+          "X.npy": "797d4be9c7598ba85b766a7871e87e9ed0eab97715af09ec65c88ee028e28df3",
+          "y.npy": "7c793d6c0d9c8a583a4ed44af8c0cb6edf6c325b7f74f0cf2627a9eb64410197",
+          "grupos.npy": "300c85e51790caebd642c08c9dcfd6186c64ac7ba506397d3952773dab9f031c",
+          "X_produccion.npy": "6259fbef314607e7e0e97efc8cd84de186f79c7dea142eabb4fe6cddf9f2294f",
+          "particiones.npz": "bc7c03b2a02c299f6d4ec38a68d5e84213a898fafcef664107326a97529c5456"
+        }
+      },
+      "metricas": {
+        "ap": 0.8284698557506738,
+        "roc_auc": 0.9858129462950618,
+        "filas": 34177,
+        "fraudes": 59,
+        "precision_0.002": 0.7391304347826086,
+        "recall_0.002": 0.864406779661017,
+        "k_0.002": 69,
+        "tp_0.002": 51,
+        "empatados_0.002": 1,
+        "precision_0.01": 0.1608187134502924,
+        "recall_0.01": 0.9322033898305084,
+        "k_0.01": 342,
+        "tp_0.01": 55,
+        "empatados_0.01": 1,
+        "precision_0.02": 0.08187134502923976,
+        "recall_0.02": 0.9491525423728814,
+        "k_0.02": 684,
+        "tp_0.02": 56,
+        "empatados_0.02": 1
+      },
+      "filas_fit": 136707,
+      "tiempos": {
+        "fit_s": 0.0752046249981504,
+        "score_s": 0.0045658750022994354
+      },
+      "entrenamiento": {
+        "filas_fit": 136707,
+        "predictores": 21,
+        "escalado": true,
+        "iteraciones": [
+          13
+        ]
+      },
+      "avisos": [],
+      "scores_sha256": "5351db18666dd0d3549869b043312756fa3d39b6dda04ea16ea1db0e9651c771",
+      "fecha_utc": "2026-10-20T13:23:26Z",
+      "pid": 19233
+    }
+  },
+  {
+    "familia": "logistica",
+    "regimen": "supervisado",
+    "outer": 4,
+    "ganador": {
+      "config": 4,
+      "ap_media": 0.7825455357225235,
+      "ap_sd": 0.025986361178457252,
+      "recall_1pct": 0.8856431894406578,
+      "fit_s_media": 0.05962519467478463
+    },
+    "busqueda": [
+      {
+        "config": 0,
+        "ap_media": 0.7793302889937289,
+        "ap_sd": 0.03171779404878072,
+        "recall_1pct": 0.877150275884453,
+        "fit_s_media": 0.054185749667036966
+      },
+      {
+        "config": 1,
+        "ap_media": 0.7630174900681137,
+        "ap_sd": 0.03696145399778147,
+        "recall_1pct": 0.8813696851671535,
+        "fit_s_media": 0.07745301366958302
+      },
+      {
+        "config": 2,
+        "ap_media": 0.7821765111873061,
+        "ap_sd": 0.025697826275430973,
+        "recall_1pct": 0.8814237801579573,
+        "fit_s_media": 0.0664311803363186
+      },
+      {
+        "config": 3,
+        "ap_media": 0.7628762401839556,
+        "ap_sd": 0.029567101829792747,
+        "recall_1pct": 0.8813696851671535,
+        "fit_s_media": 0.10483919433318079
+      },
+      {
+        "config": 4,
+        "ap_media": 0.7825455357225235,
+        "ap_sd": 0.025986361178457252,
+        "recall_1pct": 0.8856431894406578,
+        "fit_s_media": 0.05962519467478463
+      },
+      {
+        "config": 5,
+        "ap_media": 0.7655956182733238,
+        "ap_sd": 0.029299799321320697,
+        "recall_1pct": 0.8813696851671535,
+        "fit_s_media": 0.11176941666538671
+      },
+      {
+        "config": 6,
+        "ap_media": 0.7821261339365808,
+        "ap_sd": 0.02535591191768115,
+        "recall_1pct": 0.8856431894406578,
+        "fit_s_media": 0.06187558333234241
+      },
+      {
+        "config": 7,
+        "ap_media": 0.7662934010477663,
+        "ap_sd": 0.029823727645735078,
+        "recall_1pct": 0.8813696851671535,
+        "fit_s_media": 0.1151295699964976
+      }
+    ],
+    "protocolo": "638141edb70c6551f61114f7f3526db2f8d67d838f706ae3216808a220628201",
+    "evaluacion_exterior": {
+      "estado": "completo",
+      "identidad": {
+        "protocolo": "638141edb70c6551f61114f7f3526db2f8d67d838f706ae3216808a220628201",
+        "familia": "logistica",
+        "regimen": "supervisado",
+        "outer": 4,
+        "inner": -1,
+        "config": 4,
+        "parametros": {
+          "C": 1,
+          "class_weight": null
+        },
+        "semilla": 20266020,
+        "train_indices": "39bf7f13dd40ae52fe3032d69e4b2ecb7c259150fe82a1a8befb550263f46db7",
+        "eval_indices": "19cd5f0c9e0018735b2301c9d3da5f89a975c88e2f7da09ed63edc923bad7dfe",
+        "codigo": {
+          "modelos.py": "926a3eb0b0dcc3de4aa6b70f2f51a8cf5f413299155bc3c0c0c0ef028ac06951",
+          "experimento.py": "4b9e1fc5ac132f692730f8ffccac2b831034061fb9909968fe2b87c2f77028f3"
+        },
+        "datos": {
+          "X.npy": "797d4be9c7598ba85b766a7871e87e9ed0eab97715af09ec65c88ee028e28df3",
+          "y.npy": "7c793d6c0d9c8a583a4ed44af8c0cb6edf6c325b7f74f0cf2627a9eb64410197",
+          "grupos.npy": "300c85e51790caebd642c08c9dcfd6186c64ac7ba506397d3952773dab9f031c",
+          "X_produccion.npy": "6259fbef314607e7e0e97efc8cd84de186f79c7dea142eabb4fe6cddf9f2294f",
+          "particiones.npz": "bc7c03b2a02c299f6d4ec38a68d5e84213a898fafcef664107326a97529c5456"
+        }
+      },
+      "metricas": {
+        "ap": 0.6955237059868377,
+        "roc_auc": 0.9705485063115312,
+        "filas": 34176,
+        "fraudes": 59,
+        "precision_0.002": 0.6956521739130435,
+        "recall_0.002": 0.8135593220338984,
+        "k_0.002": 69,
+        "tp_0.002": 48,
+        "empatados_0.002": 1,
+        "precision_0.01": 0.15204678362573099,
+        "recall_0.01": 0.8813559322033898,
+        "k_0.01": 342,
+        "tp_0.01": 52,
+        "empatados_0.01": 1,
+        "precision_0.02": 0.07602339181286549,
+        "recall_0.02": 0.8813559322033898,
+        "k_0.02": 684,
+        "tp_0.02": 52,
+        "empatados_0.02": 1
+      },
+      "filas_fit": 136708,
+      "tiempos": {
+        "fit_s": 0.0814404580014525,
+        "score_s": 0.004267249998520128
+      },
+      "entrenamiento": {
+        "filas_fit": 136708,
+        "predictores": 21,
+        "escalado": true,
+        "iteraciones": [
+          14
+        ]
+      },
+      "avisos": [],
+      "scores_sha256": "220377123b9b4bedbaea9ed476507ef50629f37e999da8f349475478ca5cc71f",
+      "fecha_utc": "2026-10-20T13:23:30Z",
+      "pid": 19233
+    }
+  },
+  {
+    "familia": "logistica",
+    "regimen": "supervisado",
+    "outer": -1,
+    "ganador": {
+      "config": 0,
+      "ap_media": 0.7505302821485768,
+      "ap_sd": 0.07736525893754176,
+      "recall_1pct": 0.871194942623514,
+      "fit_s_media": 0.07070733333724395
+    },
+    "busqueda": [
+      {
+        "config": 0,
+        "ap_media": 0.7505302821485768,
+        "ap_sd": 0.07736525893754176,
+        "recall_1pct": 0.871194942623514,
+        "fit_s_media": 0.07070733333724395
+      },
+      {
+        "config": 1,
+        "ap_media": 0.7324270292253368,
+        "ap_sd": 0.06831996629245383,
+        "recall_1pct": 0.8813303099017386,
+        "fit_s_media": 0.09952372232995306
+      },
+      {
+        "config": 2,
+        "ap_media": 0.7403323359908313,
+        "ap_sd": 0.05564235312496462,
+        "recall_1pct": 0.8711605854462997,
+        "fit_s_media": 0.08125180566761021
+      },
+      {
+        "config": 3,
+        "ap_media": 0.73202453353488,
+        "ap_sd": 0.0620645478521735,
+        "recall_1pct": 0.8779289493575207,
+        "fit_s_media": 0.12007212500126722
+      },
+      {
+        "config": 4,
+        "ap_media": 0.7406618145181151,
+        "ap_sd": 0.05552801165113041,
+        "recall_1pct": 0.8677592249020821,
+        "fit_s_media": 0.07652916700074759
+      },
+      {
+        "config": 5,
+        "ap_media": 0.7329961640778276,
+        "ap_sd": 0.05838658659707876,
+        "recall_1pct": 0.8779289493575207,
+        "fit_s_media": 0.11570645832883504
+      },
+      {
+        "config": 6,
+        "ap_media": 0.7407633467041642,
+        "ap_sd": 0.05501930973641159,
+        "recall_1pct": 0.8677592249020821,
+        "fit_s_media": 0.07340720833841867
+      },
+      {
+        "config": 7,
+        "ap_media": 0.7329993744564862,
+        "ap_sd": 0.05840587819293364,
+        "recall_1pct": 0.8779289493575207,
+        "fit_s_media": 0.12104533366800752
+      }
+    ],
+    "protocolo": "638141edb70c6551f61114f7f3526db2f8d67d838f706ae3216808a220628201"
+  }
+]
