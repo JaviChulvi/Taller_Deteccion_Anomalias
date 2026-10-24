@@ -1,0 +1,524 @@
+[
+  {
+    "familia": "ecod_cohorte",
+    "regimen": "normales",
+    "outer": 0,
+    "ganador": {
+      "config": 0,
+      "ap_media": 0.38301276651078026,
+      "ap_sd": 0.049323236028579194,
+      "recall_1pct": 0.7964946445959105,
+      "fit_s_media": 0.47337394500694546
+    },
+    "busqueda": [
+      {
+        "config": 0,
+        "ap_media": 0.38301276651078026,
+        "ap_sd": 0.049323236028579194,
+        "recall_1pct": 0.7964946445959105,
+        "fit_s_media": 0.47337394500694546
+      }
+    ],
+    "protocolo": "638141edb70c6551f61114f7f3526db2f8d67d838f706ae3216808a220628201",
+    "evaluacion_exterior": {
+      "estado": "completo",
+      "identidad": {
+        "protocolo": "638141edb70c6551f61114f7f3526db2f8d67d838f706ae3216808a220628201",
+        "familia": "ecod_cohorte",
+        "regimen": "normales",
+        "outer": 0,
+        "inner": -1,
+        "config": 0,
+        "parametros": {},
+        "semilla": 20262020,
+        "train_indices": "6b7ca11677245ae99e20f7665713705b3a5e75a38cc2e54f1049ea95ac178e3c",
+        "eval_indices": "720e623b357d5145f33478d423d75722fe98bb53532e1153cb446505e4517f15",
+        "codigo": {
+          "modelos.py": "926a3eb0b0dcc3de4aa6b70f2f51a8cf5f413299155bc3c0c0c0ef028ac06951",
+          "experimento.py": "4b9e1fc5ac132f692730f8ffccac2b831034061fb9909968fe2b87c2f77028f3",
+          "modelo_ecod.py": "757c4b90a294bd505e7449065478d657bc307ee6c2d1d0a44f1f22d80651852c"
+        },
+        "datos": {
+          "X.npy": "797d4be9c7598ba85b766a7871e87e9ed0eab97715af09ec65c88ee028e28df3",
+          "y.npy": "7c793d6c0d9c8a583a4ed44af8c0cb6edf6c325b7f74f0cf2627a9eb64410197",
+          "grupos.npy": "300c85e51790caebd642c08c9dcfd6186c64ac7ba506397d3952773dab9f031c",
+          "X_produccion.npy": "6259fbef314607e7e0e97efc8cd84de186f79c7dea142eabb4fe6cddf9f2294f",
+          "particiones.npz": "bc7c03b2a02c299f6d4ec38a68d5e84213a898fafcef664107326a97529c5456"
+        }
+      },
+      "metricas": {
+        "ap": 0.46780190269759725,
+        "roc_auc": 0.9442587589830309,
+        "filas": 34177,
+        "fraudes": 59,
+        "precision_0.002": 0.463768115942029,
+        "recall_0.002": 0.5423728813559322,
+        "k_0.002": 69,
+        "tp_0.002": 32,
+        "empatados_0.002": 1,
+        "precision_0.01": 0.1286549707602339,
+        "recall_0.01": 0.7457627118644068,
+        "k_0.01": 342,
+        "tp_0.01": 44,
+        "empatados_0.01": 1,
+        "precision_0.02": 0.06725146198830409,
+        "recall_0.02": 0.7796610169491526,
+        "k_0.02": 684,
+        "tp_0.02": 46,
+        "empatados_0.02": 1
+      },
+      "filas_fit": 136471,
+      "tiempos": {
+        "fit_s": 0.3112057079997612,
+        "score_s": 0.42413616699923296
+      },
+      "entrenamiento": {
+        "filas_fit": 136471,
+        "predictores": 21,
+        "escalado": false,
+        "detalle": {
+          "modelo": "ECOD oficial PyOD",
+          "pyod_version": "3.6.7",
+          "protocolo": "cohorte_train_mas_consulta",
+          "seleccion_principal_elegible": false,
+          "depende_del_lote_consulta": true,
+          "usa_etiquetas": false,
+          "filas_fit": 136471,
+          "n_features": 21,
+          "contamination": 0.1,
+          "contamination_solo_umbral": true,
+          "n_jobs": 2,
+          "determinista": true,
+          "random_state_no_utilizado": 20262020,
+          "segundos_fit": 0.30769470799714327
+        }
+      },
+      "avisos": [],
+      "scores_sha256": "4a2539e723c06f7968e354f24c0b04d6fcca9d702045d08b1e69dade5843d350",
+      "fecha_utc": "2026-10-20T13:22:52Z",
+      "pid": 19155
+    }
+  },
+  {
+    "familia": "ecod_cohorte",
+    "regimen": "normales",
+    "outer": 1,
+    "ganador": {
+      "config": 0,
+      "ap_media": 0.3940750554093506,
+      "ap_sd": 0.051396796676428845,
+      "recall_1pct": 0.7881099210213134,
+      "fit_s_media": 0.2073673476697877
+    },
+    "busqueda": [
+      {
+        "config": 0,
+        "ap_media": 0.3940750554093506,
+        "ap_sd": 0.051396796676428845,
+        "recall_1pct": 0.7881099210213134,
+        "fit_s_media": 0.2073673476697877
+      }
+    ],
+    "protocolo": "638141edb70c6551f61114f7f3526db2f8d67d838f706ae3216808a220628201",
+    "evaluacion_exterior": {
+      "estado": "completo",
+      "identidad": {
+        "protocolo": "638141edb70c6551f61114f7f3526db2f8d67d838f706ae3216808a220628201",
+        "familia": "ecod_cohorte",
+        "regimen": "normales",
+        "outer": 1,
+        "inner": -1,
+        "config": 0,
+        "parametros": {},
+        "semilla": 20263020,
+        "train_indices": "b50833cd37db12b17d7a052829346bc5fb37ec97c969b88ed030ac73fbccd779",
+        "eval_indices": "7dc2340747aa37698ae3658c5dc11fc85b4105095cb8e96893d72cebffc37c7f",
+        "codigo": {
+          "modelos.py": "926a3eb0b0dcc3de4aa6b70f2f51a8cf5f413299155bc3c0c0c0ef028ac06951",
+          "experimento.py": "4b9e1fc5ac132f692730f8ffccac2b831034061fb9909968fe2b87c2f77028f3",
+          "modelo_ecod.py": "757c4b90a294bd505e7449065478d657bc307ee6c2d1d0a44f1f22d80651852c"
+        },
+        "datos": {
+          "X.npy": "797d4be9c7598ba85b766a7871e87e9ed0eab97715af09ec65c88ee028e28df3",
+          "y.npy": "7c793d6c0d9c8a583a4ed44af8c0cb6edf6c325b7f74f0cf2627a9eb64410197",
+          "grupos.npy": "300c85e51790caebd642c08c9dcfd6186c64ac7ba506397d3952773dab9f031c",
+          "X_produccion.npy": "6259fbef314607e7e0e97efc8cd84de186f79c7dea142eabb4fe6cddf9f2294f",
+          "particiones.npz": "bc7c03b2a02c299f6d4ec38a68d5e84213a898fafcef664107326a97529c5456"
+        }
+      },
+      "metricas": {
+        "ap": 0.41177127380011347,
+        "roc_auc": 0.9587801458745868,
+        "filas": 34177,
+        "fraudes": 59,
+        "precision_0.002": 0.37681159420289856,
+        "recall_0.002": 0.4406779661016949,
+        "k_0.002": 69,
+        "tp_0.002": 26,
+        "empatados_0.002": 1,
+        "precision_0.01": 0.13742690058479531,
+        "recall_0.01": 0.7966101694915254,
+        "k_0.01": 342,
+        "tp_0.01": 47,
+        "empatados_0.01": 1,
+        "precision_0.02": 0.07309941520467836,
+        "recall_0.02": 0.847457627118644,
+        "k_0.02": 684,
+        "tp_0.02": 50,
+        "empatados_0.02": 1
+      },
+      "filas_fit": 136471,
+      "tiempos": {
+        "fit_s": 0.31030950001149904,
+        "score_s": 0.39768691700010095
+      },
+      "entrenamiento": {
+        "filas_fit": 136471,
+        "predictores": 21,
+        "escalado": false,
+        "detalle": {
+          "modelo": "ECOD oficial PyOD",
+          "pyod_version": "3.6.7",
+          "protocolo": "cohorte_train_mas_consulta",
+          "seleccion_principal_elegible": false,
+          "depende_del_lote_consulta": true,
+          "usa_etiquetas": false,
+          "filas_fit": 136471,
+          "n_features": 21,
+          "contamination": 0.1,
+          "contamination_solo_umbral": true,
+          "n_jobs": 2,
+          "determinista": true,
+          "random_state_no_utilizado": 20263020,
+          "segundos_fit": 0.30574245800380595
+        }
+      },
+      "avisos": [],
+      "scores_sha256": "f5a8e20dd65feee528650fe8645d38798a995ae281c29390317e215af7476233",
+      "fecha_utc": "2026-10-20T13:22:55Z",
+      "pid": 19155
+    }
+  },
+  {
+    "familia": "ecod_cohorte",
+    "regimen": "normales",
+    "outer": 2,
+    "ganador": {
+      "config": 0,
+      "ap_media": 0.400939657321603,
+      "ap_sd": 0.017148460644236703,
+      "recall_1pct": 0.7842150816834361,
+      "fit_s_media": 0.21490429166685013
+    },
+    "busqueda": [
+      {
+        "config": 0,
+        "ap_media": 0.400939657321603,
+        "ap_sd": 0.017148460644236703,
+        "recall_1pct": 0.7842150816834361,
+        "fit_s_media": 0.21490429166685013
+      }
+    ],
+    "protocolo": "638141edb70c6551f61114f7f3526db2f8d67d838f706ae3216808a220628201",
+    "evaluacion_exterior": {
+      "estado": "completo",
+      "identidad": {
+        "protocolo": "638141edb70c6551f61114f7f3526db2f8d67d838f706ae3216808a220628201",
+        "familia": "ecod_cohorte",
+        "regimen": "normales",
+        "outer": 2,
+        "inner": -1,
+        "config": 0,
+        "parametros": {},
+        "semilla": 20264020,
+        "train_indices": "4d0a3300f177a4ed603098c1f3ae241b397aa2d8f48a5f9209488bfee05a82a4",
+        "eval_indices": "5db8e274dc0f1d5eec8bf40767e86c4599a9baa88d9b6fd25df4c53ff468d09b",
+        "codigo": {
+          "modelos.py": "926a3eb0b0dcc3de4aa6b70f2f51a8cf5f413299155bc3c0c0c0ef028ac06951",
+          "experimento.py": "4b9e1fc5ac132f692730f8ffccac2b831034061fb9909968fe2b87c2f77028f3",
+          "modelo_ecod.py": "757c4b90a294bd505e7449065478d657bc307ee6c2d1d0a44f1f22d80651852c"
+        },
+        "datos": {
+          "X.npy": "797d4be9c7598ba85b766a7871e87e9ed0eab97715af09ec65c88ee028e28df3",
+          "y.npy": "7c793d6c0d9c8a583a4ed44af8c0cb6edf6c325b7f74f0cf2627a9eb64410197",
+          "grupos.npy": "300c85e51790caebd642c08c9dcfd6186c64ac7ba506397d3952773dab9f031c",
+          "X_produccion.npy": "6259fbef314607e7e0e97efc8cd84de186f79c7dea142eabb4fe6cddf9f2294f",
+          "particiones.npz": "bc7c03b2a02c299f6d4ec38a68d5e84213a898fafcef664107326a97529c5456"
+        }
+      },
+      "metricas": {
+        "ap": 0.3642546234212569,
+        "roc_auc": 0.9411096682401358,
+        "filas": 34177,
+        "fraudes": 59,
+        "precision_0.002": 0.3333333333333333,
+        "recall_0.002": 0.3898305084745763,
+        "k_0.002": 69,
+        "tp_0.002": 23,
+        "empatados_0.002": 1,
+        "precision_0.01": 0.14035087719298245,
+        "recall_0.01": 0.8135593220338984,
+        "k_0.01": 342,
+        "tp_0.01": 48,
+        "empatados_0.01": 1,
+        "precision_0.02": 0.07309941520467836,
+        "recall_0.02": 0.847457627118644,
+        "k_0.02": 684,
+        "tp_0.02": 50,
+        "empatados_0.02": 1
+      },
+      "filas_fit": 136471,
+      "tiempos": {
+        "fit_s": 0.3103225419908995,
+        "score_s": 0.406078083004104
+      },
+      "entrenamiento": {
+        "filas_fit": 136471,
+        "predictores": 21,
+        "escalado": false,
+        "detalle": {
+          "modelo": "ECOD oficial PyOD",
+          "pyod_version": "3.6.7",
+          "protocolo": "cohorte_train_mas_consulta",
+          "seleccion_principal_elegible": false,
+          "depende_del_lote_consulta": true,
+          "usa_etiquetas": false,
+          "filas_fit": 136471,
+          "n_features": 21,
+          "contamination": 0.1,
+          "contamination_solo_umbral": true,
+          "n_jobs": 2,
+          "determinista": true,
+          "random_state_no_utilizado": 20264020,
+          "segundos_fit": 0.30690079199848697
+        }
+      },
+      "avisos": [],
+      "scores_sha256": "7b6423a304023b0a7385892c311d76ea6116d47ccfa7d3c05bfd8172feb07a27",
+      "fecha_utc": "2026-10-20T13:22:57Z",
+      "pid": 19155
+    }
+  },
+  {
+    "familia": "ecod_cohorte",
+    "regimen": "normales",
+    "outer": 3,
+    "ganador": {
+      "config": 0,
+      "ap_media": 0.3938258372361853,
+      "ap_sd": 0.059879097836604514,
+      "recall_1pct": 0.7712863788813156,
+      "fit_s_media": 0.21268443033720055
+    },
+    "busqueda": [
+      {
+        "config": 0,
+        "ap_media": 0.3938258372361853,
+        "ap_sd": 0.059879097836604514,
+        "recall_1pct": 0.7712863788813156,
+        "fit_s_media": 0.21268443033720055
+      }
+    ],
+    "protocolo": "638141edb70c6551f61114f7f3526db2f8d67d838f706ae3216808a220628201",
+    "evaluacion_exterior": {
+      "estado": "completo",
+      "identidad": {
+        "protocolo": "638141edb70c6551f61114f7f3526db2f8d67d838f706ae3216808a220628201",
+        "familia": "ecod_cohorte",
+        "regimen": "normales",
+        "outer": 3,
+        "inner": -1,
+        "config": 0,
+        "parametros": {},
+        "semilla": 20265020,
+        "train_indices": "5c4b4285dc79a68da9792b5ff586fb64bfc6e0384f5d1a20e8cff81d7caca341",
+        "eval_indices": "e8794e5d52dd4ac1f616339e17e0321b6968118b4dc10a4d8fad9aee009dfc86",
+        "codigo": {
+          "modelos.py": "926a3eb0b0dcc3de4aa6b70f2f51a8cf5f413299155bc3c0c0c0ef028ac06951",
+          "experimento.py": "4b9e1fc5ac132f692730f8ffccac2b831034061fb9909968fe2b87c2f77028f3",
+          "modelo_ecod.py": "757c4b90a294bd505e7449065478d657bc307ee6c2d1d0a44f1f22d80651852c"
+        },
+        "datos": {
+          "X.npy": "797d4be9c7598ba85b766a7871e87e9ed0eab97715af09ec65c88ee028e28df3",
+          "y.npy": "7c793d6c0d9c8a583a4ed44af8c0cb6edf6c325b7f74f0cf2627a9eb64410197",
+          "grupos.npy": "300c85e51790caebd642c08c9dcfd6186c64ac7ba506397d3952773dab9f031c",
+          "X_produccion.npy": "6259fbef314607e7e0e97efc8cd84de186f79c7dea142eabb4fe6cddf9f2294f",
+          "particiones.npz": "bc7c03b2a02c299f6d4ec38a68d5e84213a898fafcef664107326a97529c5456"
+        }
+      },
+      "metricas": {
+        "ap": 0.4462600435847879,
+        "roc_auc": 0.9810378934127917,
+        "filas": 34177,
+        "fraudes": 59,
+        "precision_0.002": 0.4492753623188406,
+        "recall_0.002": 0.5254237288135594,
+        "k_0.002": 69,
+        "tp_0.002": 31,
+        "empatados_0.002": 1,
+        "precision_0.01": 0.14619883040935672,
+        "recall_0.01": 0.847457627118644,
+        "k_0.01": 342,
+        "tp_0.01": 50,
+        "empatados_0.01": 1,
+        "precision_0.02": 0.07456140350877193,
+        "recall_0.02": 0.864406779661017,
+        "k_0.02": 684,
+        "tp_0.02": 51,
+        "empatados_0.02": 1
+      },
+      "filas_fit": 136471,
+      "tiempos": {
+        "fit_s": 0.314573499999824,
+        "score_s": 0.38766041699273046
+      },
+      "entrenamiento": {
+        "filas_fit": 136471,
+        "predictores": 21,
+        "escalado": false,
+        "detalle": {
+          "modelo": "ECOD oficial PyOD",
+          "pyod_version": "3.6.7",
+          "protocolo": "cohorte_train_mas_consulta",
+          "seleccion_principal_elegible": false,
+          "depende_del_lote_consulta": true,
+          "usa_etiquetas": false,
+          "filas_fit": 136471,
+          "n_features": 21,
+          "contamination": 0.1,
+          "contamination_solo_umbral": true,
+          "n_jobs": 2,
+          "determinista": true,
+          "random_state_no_utilizado": 20265020,
+          "segundos_fit": 0.31114283300121315
+        }
+      },
+      "avisos": [],
+      "scores_sha256": "985a17d25c551c864a274e540f5fc4898e82eefe07157eb08b810b24e47e32fa",
+      "fecha_utc": "2026-10-20T13:23:00Z",
+      "pid": 19155
+    }
+  },
+  {
+    "familia": "ecod_cohorte",
+    "regimen": "normales",
+    "outer": 4,
+    "ganador": {
+      "config": 0,
+      "ap_media": 0.405306291180015,
+      "ap_sd": 0.03436805834348328,
+      "recall_1pct": 0.7964946445959105,
+      "fit_s_media": 0.2098291946701162
+    },
+    "busqueda": [
+      {
+        "config": 0,
+        "ap_media": 0.405306291180015,
+        "ap_sd": 0.03436805834348328,
+        "recall_1pct": 0.7964946445959105,
+        "fit_s_media": 0.2098291946701162
+      }
+    ],
+    "protocolo": "638141edb70c6551f61114f7f3526db2f8d67d838f706ae3216808a220628201",
+    "evaluacion_exterior": {
+      "estado": "completo",
+      "identidad": {
+        "protocolo": "638141edb70c6551f61114f7f3526db2f8d67d838f706ae3216808a220628201",
+        "familia": "ecod_cohorte",
+        "regimen": "normales",
+        "outer": 4,
+        "inner": -1,
+        "config": 0,
+        "parametros": {},
+        "semilla": 20266020,
+        "train_indices": "e242d3e28f4372dd9aa014e9b60f3576c58e22b4404faad219c28ace2810099e",
+        "eval_indices": "19cd5f0c9e0018735b2301c9d3da5f89a975c88e2f7da09ed63edc923bad7dfe",
+        "codigo": {
+          "modelos.py": "926a3eb0b0dcc3de4aa6b70f2f51a8cf5f413299155bc3c0c0c0ef028ac06951",
+          "experimento.py": "4b9e1fc5ac132f692730f8ffccac2b831034061fb9909968fe2b87c2f77028f3",
+          "modelo_ecod.py": "757c4b90a294bd505e7449065478d657bc307ee6c2d1d0a44f1f22d80651852c"
+        },
+        "datos": {
+          "X.npy": "797d4be9c7598ba85b766a7871e87e9ed0eab97715af09ec65c88ee028e28df3",
+          "y.npy": "7c793d6c0d9c8a583a4ed44af8c0cb6edf6c325b7f74f0cf2627a9eb64410197",
+          "grupos.npy": "300c85e51790caebd642c08c9dcfd6186c64ac7ba506397d3952773dab9f031c",
+          "X_produccion.npy": "6259fbef314607e7e0e97efc8cd84de186f79c7dea142eabb4fe6cddf9f2294f",
+          "particiones.npz": "bc7c03b2a02c299f6d4ec38a68d5e84213a898fafcef664107326a97529c5456"
+        }
+      },
+      "metricas": {
+        "ap": 0.3757708820176037,
+        "roc_auc": 0.970108346005744,
+        "filas": 34176,
+        "fraudes": 59,
+        "precision_0.002": 0.391304347826087,
+        "recall_0.002": 0.4576271186440678,
+        "k_0.002": 69,
+        "tp_0.002": 27,
+        "empatados_0.002": 1,
+        "precision_0.01": 0.13157894736842105,
+        "recall_0.01": 0.7627118644067796,
+        "k_0.01": 342,
+        "tp_0.01": 45,
+        "empatados_0.01": 1,
+        "precision_0.02": 0.07309941520467836,
+        "recall_0.02": 0.847457627118644,
+        "k_0.02": 684,
+        "tp_0.02": 50,
+        "empatados_0.02": 1
+      },
+      "filas_fit": 136472,
+      "tiempos": {
+        "fit_s": 0.3156366670009447,
+        "score_s": 0.38783416600199416
+      },
+      "entrenamiento": {
+        "filas_fit": 136472,
+        "predictores": 21,
+        "escalado": false,
+        "detalle": {
+          "modelo": "ECOD oficial PyOD",
+          "pyod_version": "3.6.7",
+          "protocolo": "cohorte_train_mas_consulta",
+          "seleccion_principal_elegible": false,
+          "depende_del_lote_consulta": true,
+          "usa_etiquetas": false,
+          "filas_fit": 136472,
+          "n_features": 21,
+          "contamination": 0.1,
+          "contamination_solo_umbral": true,
+          "n_jobs": 2,
+          "determinista": true,
+          "random_state_no_utilizado": 20266020,
+          "segundos_fit": 0.3117112920008367
+        }
+      },
+      "avisos": [],
+      "scores_sha256": "1dffce0b7899be9dbe7eb44c204165316a3807fa6f4316834cae9b94bf7a296a",
+      "fecha_utc": "2026-10-20T13:23:02Z",
+      "pid": 19155
+    }
+  },
+  {
+    "familia": "ecod_cohorte",
+    "regimen": "normales",
+    "outer": -1,
+    "ganador": {
+      "config": 0,
+      "ap_media": 0.3919357006284825,
+      "ap_sd": 0.08464380646889932,
+      "recall_1pct": 0.7933072218786504,
+      "fit_s_media": 0.2653094443376176
+    },
+    "busqueda": [
+      {
+        "config": 0,
+        "ap_media": 0.3919357006284825,
+        "ap_sd": 0.08464380646889932,
+        "recall_1pct": 0.7933072218786504,
+        "fit_s_media": 0.2653094443376176
+      }
+    ],
+    "protocolo": "638141edb70c6551f61114f7f3526db2f8d67d838f706ae3216808a220628201"
+  }
+]

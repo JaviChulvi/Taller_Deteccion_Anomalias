@@ -1,0 +1,34 @@
+{
+  "filas": 170884,
+  "fraudes": 295,
+  "normales": 170589,
+  "patrones": 166717,
+  "produccion": 113923,
+  "folds": [
+    {
+      "fold": 0,
+      "filas": 34177,
+      "fraudes": 59
+    },
+    {
+      "fold": 1,
+      "filas": 34177,
+      "fraudes": 59
+    },
+    {
+      "fold": 2,
+      "filas": 34177,
+      "fraudes": 59
+    },
+    {
+      "fold": 3,
+      "filas": 34177,
+      "fraudes": 59
+    },
+    {
+      "fold": 4,
+      "filas": 34176,
+      "fraudes": 59
+    }
+  ]
+}

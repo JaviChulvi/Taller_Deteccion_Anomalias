@@ -1,0 +1,174 @@
+{
+  "estado": "completo",
+  "familia": "lightgbm",
+  "regimen": "supervisado",
+  "parametros": {
+    "n_estimators": 500,
+    "learning_rate": 0.05,
+    "num_leaves": 15,
+    "min_child_samples": 50,
+    "reg_lambda": 1.0,
+    "class_weight": "balanced"
+  },
+  "filas": 113923,
+  "columnas": [
+    "score"
+  ],
+  "mayor_score": "mayor sospecha de fraude; no probabilidad necesariamente calibrada",
+  "ruta_entrega": "entrega_scores.csv",
+  "modelo": "estudio_datos/comparativa_full/resultados/finales/lightgbm__supervisado.joblib",
+  "orden": "Mismo orden de X_produccion.npy, verificado frente al ZIP de producción.",
+  "scores_sha256": "5a093f11bf0ba42e4d1f1e2066223dc51aced23da77405b946b52526d1b85823",
+  "seleccion_sha256": "643e268c5baa9777c235258ea180cf23a9b76cf8663faf041e131502ccec8723",
+  "auditoria_cv_sha256": "c7db575a025e6b0766138a583b9f889b54e693bae99a21ebdd209c881918960d",
+  "protocolo": "638141edb70c6551f61114f7f3526db2f8d67d838f706ae3216808a220628201",
+  "refits_verificados": [
+    {
+      "familia": "constante",
+      "regimen": "referencia",
+      "filas_fit": 170884,
+      "scores_sha256": "ff0495491e2da234f6bec5b2fd22b3e130cbb1009a3d5caad98a5a7c962a27f9"
+    },
+    {
+      "familia": "univariante",
+      "regimen": "supervisado",
+      "filas_fit": 170884,
+      "scores_sha256": "26f7dca585961e0ab629acae9793e2b35fd6edc1b97f8cb0fed0579dd531fa3d"
+    },
+    {
+      "familia": "gmm_fijo",
+      "regimen": "normales",
+      "filas_fit": 170589,
+      "scores_sha256": "7735680ff5e6cd784dd8b41371c99476c4f83a1482199aa1cf6915bc6d6e3dfd"
+    },
+    {
+      "familia": "gmm",
+      "regimen": "normales",
+      "filas_fit": 170589,
+      "scores_sha256": "090051935ab54b8448d3a22939e59846426ac4361ff5d424f89c23685f87de6e"
+    },
+    {
+      "familia": "gmm",
+      "regimen": "todos",
+      "filas_fit": 170884,
+      "scores_sha256": "f9dd4db3eb957311d24c5bb98e901e4a3f5eee74de338c97464f306faf4b017c"
+    },
+    {
+      "familia": "isolation_forest",
+      "regimen": "normales",
+      "filas_fit": 170589,
+      "scores_sha256": "f9d9bdc69719b87b6ff18c32bd7ffcde5f6b6d84e0dc32bc9284bce13802db7f"
+    },
+    {
+      "familia": "isolation_forest",
+      "regimen": "todos",
+      "filas_fit": 170884,
+      "scores_sha256": "4998b976d2c72d53db80b9478946a4d4082f90647b52b054ead6b329b1423026"
+    },
+    {
+      "familia": "pca",
+      "regimen": "normales",
+      "filas_fit": 170589,
+      "scores_sha256": "75db8637638d71d194a21d3f912e53ee77ce0db90f06d9c99e552014af5e0de0"
+    },
+    {
+      "familia": "pca",
+      "regimen": "todos",
+      "filas_fit": 170884,
+      "scores_sha256": "099e49e87244aeb4a22778171fe6300990022bfa316991e8b194b6404d9678dd"
+    },
+    {
+      "familia": "lof",
+      "regimen": "normales",
+      "filas_fit": 170589,
+      "scores_sha256": "0900d43000393dc37d89ad8272c72d5b57337c2650e8950a642659a299b597b8"
+    },
+    {
+      "familia": "lof",
+      "regimen": "todos",
+      "filas_fit": 170884,
+      "scores_sha256": "dc50d1965ffc1c53201def3f808c24f5d1d23fb6e2942c725ce1d27fe52c29db"
+    },
+    {
+      "familia": "knn",
+      "regimen": "normales",
+      "filas_fit": 170589,
+      "scores_sha256": "e03f9ea9b54461de18ec86d5ec4e979ba3008f3888f7f07fa56f67646c640783"
+    },
+    {
+      "familia": "knn",
+      "regimen": "todos",
+      "filas_fit": 170884,
+      "scores_sha256": "d29e0f752a4f048e81adb783199e1cfd1218f462d86113d9939f971f576fe6be"
+    },
+    {
+      "familia": "autoencoder",
+      "regimen": "normales",
+      "filas_fit": 170589,
+      "scores_sha256": "2af5abdf1272bdf275278a6b508f576b488130764e57f1ea8bb9753a5b41d59e"
+    },
+    {
+      "familia": "autoencoder",
+      "regimen": "todos",
+      "filas_fit": 170884,
+      "scores_sha256": "d56f8f78621eeefade5db4ed13a73ef7181a337ffc3d0af459d1944e97b3ce45"
+    },
+    {
+      "familia": "rbig",
+      "regimen": "normales",
+      "filas_fit": 170589,
+      "scores_sha256": "2cbdeed8e6e781d6b7264e482d7747d647d971f6835831e34ec01796da8c8071"
+    },
+    {
+      "familia": "rbig",
+      "regimen": "todos",
+      "filas_fit": 170884,
+      "scores_sha256": "5963d5d928147928c3b0aa41e6f83879b3361f1d598bbca2958ca67810ded192"
+    },
+    {
+      "familia": "ecod_frozen",
+      "regimen": "normales",
+      "filas_fit": 170589,
+      "scores_sha256": "30b09aeb612b3735def5f1540c6c3d7a30178ca7fdec3249fb217294040892ff"
+    },
+    {
+      "familia": "ecod_frozen",
+      "regimen": "todos",
+      "filas_fit": 170884,
+      "scores_sha256": "3a462defbfffc17d67ab78a27e7e3067c6b4fc8ac48ae841df2882f38fe4f14f"
+    },
+    {
+      "familia": "ecod_cohorte",
+      "regimen": "normales",
+      "filas_fit": 170589,
+      "scores_sha256": "e4b08a87ac3bb14ac3f8a91875c5dc6651108ea8b5cefaefe6022393f0a5a6e0"
+    },
+    {
+      "familia": "ecod_cohorte",
+      "regimen": "todos",
+      "filas_fit": 170884,
+      "scores_sha256": "5f528943711ed89912aecbcd351a8259edbfca91ffde924b8747570329e4d112"
+    },
+    {
+      "familia": "logistica",
+      "regimen": "supervisado",
+      "filas_fit": 170884,
+      "scores_sha256": "c4c95148623183d7bc41d101b9708db050f4e48afad836dd3ababc1dfdcd54dc"
+    },
+    {
+      "familia": "random_forest",
+      "regimen": "supervisado",
+      "filas_fit": 170884,
+      "scores_sha256": "8230ea4fe885a8aff457fc3f58cb3fd9b3b744440c6129a492840e17878d0c79"
+    },
+    {
+      "familia": "lightgbm",
+      "regimen": "supervisado",
+      "filas_fit": 170884,
+      "scores_sha256": "5a093f11bf0ba42e4d1f1e2066223dc51aced23da77405b946b52526d1b85823"
+    }
+  ],
+  "refit_final_verificado": true,
+  "produccion_verificada": true,
+  "rendimiento_produccion": "Desconocido: no hay etiquetas de producción."
+}

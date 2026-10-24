@@ -1,0 +1,67 @@
+{
+  "identidad": {
+    "protocolo": "638141edb70c6551f61114f7f3526db2f8d67d838f706ae3216808a220628201",
+    "datos": {
+      "X.npy": "797d4be9c7598ba85b766a7871e87e9ed0eab97715af09ec65c88ee028e28df3",
+      "y.npy": "7c793d6c0d9c8a583a4ed44af8c0cb6edf6c325b7f74f0cf2627a9eb64410197",
+      "grupos.npy": "300c85e51790caebd642c08c9dcfd6186c64ac7ba506397d3952773dab9f031c",
+      "X_produccion.npy": "6259fbef314607e7e0e97efc8cd84de186f79c7dea142eabb4fe6cddf9f2294f",
+      "particiones.npz": "bc7c03b2a02c299f6d4ec38a68d5e84213a898fafcef664107326a97529c5456"
+    },
+    "familia": "knn",
+    "regimen": "normales",
+    "config": 2,
+    "parametros": {
+      "k": 30
+    },
+    "semilla": 20361019,
+    "hilos": 2,
+    "codigo": {
+      "modelos.py": "926a3eb0b0dcc3de4aa6b70f2f51a8cf5f413299155bc3c0c0c0ef028ac06951",
+      "experimento.py": "4b9e1fc5ac132f692730f8ffccac2b831034061fb9909968fe2b87c2f77028f3",
+      "modelos_vecinos.py": "d93f42775a5ce60487a2d744551176c8a9275ce8442c481d38425034b0f96845"
+    },
+    "codigo_finalizacion": "bdcdaa68d9e0383f8791956c89ded61e35b1b6b2210abc0a65255b51582170ba",
+    "decision": "8844ffd3909b8cf9498cd0bc246a3f1dd2d9c65c13f2a294458468d4bcff0a9e"
+  },
+  "filas_fit": 170589,
+  "filas_produccion": 113923,
+  "tiempos": {
+    "fit_s": 36.533817999996245,
+    "score_s": 24.511930125008803
+  },
+  "entrenamiento": {
+    "filas_fit": 170589,
+    "predictores": 21,
+    "escalado": true,
+    "detalle": {
+      "family": "knn",
+      "k": 30,
+      "max_k": 60,
+      "requested_max_k": 60,
+      "neighbor_policy": "búsqueda max_k y selección del prefijo de k vecinos",
+      "algorithm": "brute",
+      "metric": "euclidean",
+      "dtype": "float64",
+      "threads": 2,
+      "n_train": 170589,
+      "n_features": 21,
+      "fit_seconds": 36.50627145799808,
+      "random_state": 20361019,
+      "uses_labels": false,
+      "score_orientation": "mayor significa más anomalía"
+    }
+  },
+  "avisos": [],
+  "scores_sha256": "e03f9ea9b54461de18ec86d5ec4e979ba3008f3888f7f07fa56f67646c640783",
+  "modelo_sha256": "02ee44c93e775855f2039282cd8b9fe049c326be01d2d9510294566b7b46550e",
+  "invariante_lote": true,
+  "delta_serializacion": 0.0,
+  "delta_orden_lote": 3.817335394724723e-08,
+  "tolerancia_verificacion": {
+    "rtol": 1e-06,
+    "atol": 1e-07
+  },
+  "alcance_invariancia": "Coincidencia numérica dentro de rtol/atol; no identidad bit a bit.",
+  "fecha_utc": "2026-10-20T13:54:32Z"
+}

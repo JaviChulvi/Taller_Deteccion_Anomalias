@@ -1,0 +1,639 @@
+[
+  {
+    "familia": "ecod_frozen",
+    "regimen": "normales",
+    "outer": 0,
+    "ganador": {
+      "config": 0,
+      "ap_media": 0.42576890418854846,
+      "ap_sd": 0.05519047414013301,
+      "recall_1pct": 0.8049334631613112,
+      "fit_s_media": 0.10323181933199521
+    },
+    "busqueda": [
+      {
+        "config": 0,
+        "ap_media": 0.42576890418854846,
+        "ap_sd": 0.05519047414013301,
+        "recall_1pct": 0.8049334631613112,
+        "fit_s_media": 0.10323181933199521
+      }
+    ],
+    "protocolo": "638141edb70c6551f61114f7f3526db2f8d67d838f706ae3216808a220628201",
+    "evaluacion_exterior": {
+      "estado": "completo",
+      "identidad": {
+        "protocolo": "638141edb70c6551f61114f7f3526db2f8d67d838f706ae3216808a220628201",
+        "familia": "ecod_frozen",
+        "regimen": "normales",
+        "outer": 0,
+        "inner": -1,
+        "config": 0,
+        "parametros": {},
+        "semilla": 20262020,
+        "train_indices": "6b7ca11677245ae99e20f7665713705b3a5e75a38cc2e54f1049ea95ac178e3c",
+        "eval_indices": "720e623b357d5145f33478d423d75722fe98bb53532e1153cb446505e4517f15",
+        "codigo": {
+          "modelos.py": "926a3eb0b0dcc3de4aa6b70f2f51a8cf5f413299155bc3c0c0c0ef028ac06951",
+          "experimento.py": "4b9e1fc5ac132f692730f8ffccac2b831034061fb9909968fe2b87c2f77028f3",
+          "modelo_ecod.py": "757c4b90a294bd505e7449065478d657bc307ee6c2d1d0a44f1f22d80651852c"
+        },
+        "datos": {
+          "X.npy": "797d4be9c7598ba85b766a7871e87e9ed0eab97715af09ec65c88ee028e28df3",
+          "y.npy": "7c793d6c0d9c8a583a4ed44af8c0cb6edf6c325b7f74f0cf2627a9eb64410197",
+          "grupos.npy": "300c85e51790caebd642c08c9dcfd6186c64ac7ba506397d3952773dab9f031c",
+          "X_produccion.npy": "6259fbef314607e7e0e97efc8cd84de186f79c7dea142eabb4fe6cddf9f2294f",
+          "particiones.npz": "bc7c03b2a02c299f6d4ec38a68d5e84213a898fafcef664107326a97529c5456"
+        }
+      },
+      "metricas": {
+        "ap": 0.497467658839256,
+        "roc_auc": 0.9444028252893,
+        "filas": 34177,
+        "fraudes": 59,
+        "precision_0.002": 0.4927536231884058,
+        "recall_0.002": 0.576271186440678,
+        "k_0.002": 69,
+        "tp_0.002": 34,
+        "empatados_0.002": 1,
+        "precision_0.01": 0.13157894736842105,
+        "recall_0.01": 0.7627118644067796,
+        "k_0.01": 342,
+        "tp_0.01": 45,
+        "empatados_0.01": 1,
+        "precision_0.02": 0.06725146198830409,
+        "recall_0.02": 0.7796610169491526,
+        "k_0.02": 684,
+        "tp_0.02": 46,
+        "empatados_0.02": 1
+      },
+      "filas_fit": 136471,
+      "tiempos": {
+        "fit_s": 0.149309541011462,
+        "score_s": 0.14838174999749754
+      },
+      "entrenamiento": {
+        "filas_fit": 136471,
+        "predictores": 21,
+        "escalado": false,
+        "detalle": {
+          "modelo": "FrozenECOD adaptación ECDF congelada",
+          "protocolo": "inductivo_ecdf_train_congelada",
+          "seleccion_principal_elegible": true,
+          "depende_del_lote_consulta": false,
+          "usa_etiquetas": false,
+          "filas_fit": 136471,
+          "n_features": 21,
+          "smoothing": 0.5,
+          "colas": "inclusivas; (conteo + a) / (n_train + 2*a)",
+          "asimetria": "scipy.stats.skew bias=True; ajustada solo con train",
+          "signos_asimetria_train": [
+            -1.0,
+            -1.0,
+            -1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            -1.0,
+            1.0,
+            1.0,
+            1.0,
+            -1.0,
+            1.0,
+            -1.0,
+            -1.0,
+            -1.0,
+            1.0,
+            -1.0,
+            1.0,
+            -1.0,
+            1.0
+          ],
+          "extremos": "score finito saturado fuera del soporte de train",
+          "determinista": true,
+          "random_state_no_utilizado": 20262020,
+          "segundos_fit": 0.14485837500251364
+        }
+      },
+      "avisos": [],
+      "scores_sha256": "b631cb98194bd7cd11b0f17cdfd42888e0274cddfdcee378200ed74f14439f0b",
+      "fecha_utc": "2026-10-20T13:22:35Z",
+      "pid": 19022
+    }
+  },
+  {
+    "familia": "ecod_frozen",
+    "regimen": "normales",
+    "outer": 1,
+    "ganador": {
+      "config": 0,
+      "ap_media": 0.44429348388939,
+      "ap_sd": 0.07001593460497134,
+      "recall_1pct": 0.7923293303040139,
+      "fit_s_media": 0.08956950000235035
+    },
+    "busqueda": [
+      {
+        "config": 0,
+        "ap_media": 0.44429348388939,
+        "ap_sd": 0.07001593460497134,
+        "recall_1pct": 0.7923293303040139,
+        "fit_s_media": 0.08956950000235035
+      }
+    ],
+    "protocolo": "638141edb70c6551f61114f7f3526db2f8d67d838f706ae3216808a220628201",
+    "evaluacion_exterior": {
+      "estado": "completo",
+      "identidad": {
+        "protocolo": "638141edb70c6551f61114f7f3526db2f8d67d838f706ae3216808a220628201",
+        "familia": "ecod_frozen",
+        "regimen": "normales",
+        "outer": 1,
+        "inner": -1,
+        "config": 0,
+        "parametros": {},
+        "semilla": 20263020,
+        "train_indices": "b50833cd37db12b17d7a052829346bc5fb37ec97c969b88ed030ac73fbccd779",
+        "eval_indices": "7dc2340747aa37698ae3658c5dc11fc85b4105095cb8e96893d72cebffc37c7f",
+        "codigo": {
+          "modelos.py": "926a3eb0b0dcc3de4aa6b70f2f51a8cf5f413299155bc3c0c0c0ef028ac06951",
+          "experimento.py": "4b9e1fc5ac132f692730f8ffccac2b831034061fb9909968fe2b87c2f77028f3",
+          "modelo_ecod.py": "757c4b90a294bd505e7449065478d657bc307ee6c2d1d0a44f1f22d80651852c"
+        },
+        "datos": {
+          "X.npy": "797d4be9c7598ba85b766a7871e87e9ed0eab97715af09ec65c88ee028e28df3",
+          "y.npy": "7c793d6c0d9c8a583a4ed44af8c0cb6edf6c325b7f74f0cf2627a9eb64410197",
+          "grupos.npy": "300c85e51790caebd642c08c9dcfd6186c64ac7ba506397d3952773dab9f031c",
+          "X_produccion.npy": "6259fbef314607e7e0e97efc8cd84de186f79c7dea142eabb4fe6cddf9f2294f",
+          "particiones.npz": "bc7c03b2a02c299f6d4ec38a68d5e84213a898fafcef664107326a97529c5456"
+        }
+      },
+      "metricas": {
+        "ap": 0.43241998141477667,
+        "roc_auc": 0.9589579932457741,
+        "filas": 34177,
+        "fraudes": 59,
+        "precision_0.002": 0.391304347826087,
+        "recall_0.002": 0.4576271186440678,
+        "k_0.002": 69,
+        "tp_0.002": 27,
+        "empatados_0.002": 1,
+        "precision_0.01": 0.13742690058479531,
+        "recall_0.01": 0.7966101694915254,
+        "k_0.01": 342,
+        "tp_0.01": 47,
+        "empatados_0.01": 1,
+        "precision_0.02": 0.07309941520467836,
+        "recall_0.02": 0.847457627118644,
+        "k_0.02": 684,
+        "tp_0.02": 50,
+        "empatados_0.02": 1
+      },
+      "filas_fit": 136471,
+      "tiempos": {
+        "fit_s": 0.13603216700721532,
+        "score_s": 0.1462777080014348
+      },
+      "entrenamiento": {
+        "filas_fit": 136471,
+        "predictores": 21,
+        "escalado": false,
+        "detalle": {
+          "modelo": "FrozenECOD adaptación ECDF congelada",
+          "protocolo": "inductivo_ecdf_train_congelada",
+          "seleccion_principal_elegible": true,
+          "depende_del_lote_consulta": false,
+          "usa_etiquetas": false,
+          "filas_fit": 136471,
+          "n_features": 21,
+          "smoothing": 0.5,
+          "colas": "inclusivas; (conteo + a) / (n_train + 2*a)",
+          "asimetria": "scipy.stats.skew bias=True; ajustada solo con train",
+          "signos_asimetria_train": [
+            -1.0,
+            -1.0,
+            -1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            -1.0,
+            1.0,
+            1.0,
+            1.0,
+            -1.0,
+            1.0,
+            -1.0,
+            -1.0,
+            -1.0,
+            1.0,
+            -1.0,
+            1.0,
+            -1.0,
+            1.0
+          ],
+          "extremos": "score finito saturado fuera del soporte de train",
+          "determinista": true,
+          "random_state_no_utilizado": 20263020,
+          "segundos_fit": 0.13262712499999907
+        }
+      },
+      "avisos": [],
+      "scores_sha256": "9bd6733cbf680385c16b2c794a353bd0d22bace7fda3b39e9f664eec2be85600",
+      "fecha_utc": "2026-10-20T13:22:37Z",
+      "pid": 19022
+    }
+  },
+  {
+    "familia": "ecod_frozen",
+    "regimen": "normales",
+    "outer": 2,
+    "ganador": {
+      "config": 0,
+      "ap_media": 0.45024395067636824,
+      "ap_sd": 0.017978035263951617,
+      "recall_1pct": 0.792653900248837,
+      "fit_s_media": 0.08594038899658092
+    },
+    "busqueda": [
+      {
+        "config": 0,
+        "ap_media": 0.45024395067636824,
+        "ap_sd": 0.017978035263951617,
+        "recall_1pct": 0.792653900248837,
+        "fit_s_media": 0.08594038899658092
+      }
+    ],
+    "protocolo": "638141edb70c6551f61114f7f3526db2f8d67d838f706ae3216808a220628201",
+    "evaluacion_exterior": {
+      "estado": "completo",
+      "identidad": {
+        "protocolo": "638141edb70c6551f61114f7f3526db2f8d67d838f706ae3216808a220628201",
+        "familia": "ecod_frozen",
+        "regimen": "normales",
+        "outer": 2,
+        "inner": -1,
+        "config": 0,
+        "parametros": {},
+        "semilla": 20264020,
+        "train_indices": "4d0a3300f177a4ed603098c1f3ae241b397aa2d8f48a5f9209488bfee05a82a4",
+        "eval_indices": "5db8e274dc0f1d5eec8bf40767e86c4599a9baa88d9b6fd25df4c53ff468d09b",
+        "codigo": {
+          "modelos.py": "926a3eb0b0dcc3de4aa6b70f2f51a8cf5f413299155bc3c0c0c0ef028ac06951",
+          "experimento.py": "4b9e1fc5ac132f692730f8ffccac2b831034061fb9909968fe2b87c2f77028f3",
+          "modelo_ecod.py": "757c4b90a294bd505e7449065478d657bc307ee6c2d1d0a44f1f22d80651852c"
+        },
+        "datos": {
+          "X.npy": "797d4be9c7598ba85b766a7871e87e9ed0eab97715af09ec65c88ee028e28df3",
+          "y.npy": "7c793d6c0d9c8a583a4ed44af8c0cb6edf6c325b7f74f0cf2627a9eb64410197",
+          "grupos.npy": "300c85e51790caebd642c08c9dcfd6186c64ac7ba506397d3952773dab9f031c",
+          "X_produccion.npy": "6259fbef314607e7e0e97efc8cd84de186f79c7dea142eabb4fe6cddf9f2294f",
+          "particiones.npz": "bc7c03b2a02c299f6d4ec38a68d5e84213a898fafcef664107326a97529c5456"
+        }
+      },
+      "metricas": {
+        "ap": 0.39297900588838786,
+        "roc_auc": 0.9413277548210051,
+        "filas": 34177,
+        "fraudes": 59,
+        "precision_0.002": 0.36231884057971014,
+        "recall_0.002": 0.423728813559322,
+        "k_0.002": 69,
+        "tp_0.002": 25,
+        "empatados_0.002": 1,
+        "precision_0.01": 0.14035087719298245,
+        "recall_0.01": 0.8135593220338984,
+        "k_0.01": 342,
+        "tp_0.01": 48,
+        "empatados_0.01": 1,
+        "precision_0.02": 0.07309941520467836,
+        "recall_0.02": 0.847457627118644,
+        "k_0.02": 684,
+        "tp_0.02": 50,
+        "empatados_0.02": 1
+      },
+      "filas_fit": 136471,
+      "tiempos": {
+        "fit_s": 0.13624266600527335,
+        "score_s": 0.14557141700061038
+      },
+      "entrenamiento": {
+        "filas_fit": 136471,
+        "predictores": 21,
+        "escalado": false,
+        "detalle": {
+          "modelo": "FrozenECOD adaptación ECDF congelada",
+          "protocolo": "inductivo_ecdf_train_congelada",
+          "seleccion_principal_elegible": true,
+          "depende_del_lote_consulta": false,
+          "usa_etiquetas": false,
+          "filas_fit": 136471,
+          "n_features": 21,
+          "smoothing": 0.5,
+          "colas": "inclusivas; (conteo + a) / (n_train + 2*a)",
+          "asimetria": "scipy.stats.skew bias=True; ajustada solo con train",
+          "signos_asimetria_train": [
+            -1.0,
+            -1.0,
+            -1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            -1.0,
+            1.0,
+            1.0,
+            1.0,
+            -1.0,
+            1.0,
+            -1.0,
+            -1.0,
+            -1.0,
+            1.0,
+            -1.0,
+            1.0,
+            -1.0,
+            1.0
+          ],
+          "extremos": "score finito saturado fuera del soporte de train",
+          "determinista": true,
+          "random_state_no_utilizado": 20264020,
+          "segundos_fit": 0.1324910830007866
+        }
+      },
+      "avisos": [],
+      "scores_sha256": "d9435e0161b8b281734c2452c9f5e4c4120d4dfda0b4d4a12c1cb48cedeba436",
+      "fecha_utc": "2026-10-20T13:22:38Z",
+      "pid": 19022
+    }
+  },
+  {
+    "familia": "ecod_frozen",
+    "regimen": "normales",
+    "outer": 3,
+    "ganador": {
+      "config": 0,
+      "ap_media": 0.4361398002149186,
+      "ap_sd": 0.05630242410640905,
+      "recall_1pct": 0.7797792924375203,
+      "fit_s_media": 0.08626058366886961
+    },
+    "busqueda": [
+      {
+        "config": 0,
+        "ap_media": 0.4361398002149186,
+        "ap_sd": 0.05630242410640905,
+        "recall_1pct": 0.7797792924375203,
+        "fit_s_media": 0.08626058366886961
+      }
+    ],
+    "protocolo": "638141edb70c6551f61114f7f3526db2f8d67d838f706ae3216808a220628201",
+    "evaluacion_exterior": {
+      "estado": "completo",
+      "identidad": {
+        "protocolo": "638141edb70c6551f61114f7f3526db2f8d67d838f706ae3216808a220628201",
+        "familia": "ecod_frozen",
+        "regimen": "normales",
+        "outer": 3,
+        "inner": -1,
+        "config": 0,
+        "parametros": {},
+        "semilla": 20265020,
+        "train_indices": "5c4b4285dc79a68da9792b5ff586fb64bfc6e0384f5d1a20e8cff81d7caca341",
+        "eval_indices": "e8794e5d52dd4ac1f616339e17e0321b6968118b4dc10a4d8fad9aee009dfc86",
+        "codigo": {
+          "modelos.py": "926a3eb0b0dcc3de4aa6b70f2f51a8cf5f413299155bc3c0c0c0ef028ac06951",
+          "experimento.py": "4b9e1fc5ac132f692730f8ffccac2b831034061fb9909968fe2b87c2f77028f3",
+          "modelo_ecod.py": "757c4b90a294bd505e7449065478d657bc307ee6c2d1d0a44f1f22d80651852c"
+        },
+        "datos": {
+          "X.npy": "797d4be9c7598ba85b766a7871e87e9ed0eab97715af09ec65c88ee028e28df3",
+          "y.npy": "7c793d6c0d9c8a583a4ed44af8c0cb6edf6c325b7f74f0cf2627a9eb64410197",
+          "grupos.npy": "300c85e51790caebd642c08c9dcfd6186c64ac7ba506397d3952773dab9f031c",
+          "X_produccion.npy": "6259fbef314607e7e0e97efc8cd84de186f79c7dea142eabb4fe6cddf9f2294f",
+          "particiones.npz": "bc7c03b2a02c299f6d4ec38a68d5e84213a898fafcef664107326a97529c5456"
+        }
+      },
+      "metricas": {
+        "ap": 0.4930303371632676,
+        "roc_auc": 0.981247037947065,
+        "filas": 34177,
+        "fraudes": 59,
+        "precision_0.002": 0.4782608695652174,
+        "recall_0.002": 0.559322033898305,
+        "k_0.002": 69,
+        "tp_0.002": 33,
+        "empatados_0.002": 1,
+        "precision_0.01": 0.14619883040935672,
+        "recall_0.01": 0.847457627118644,
+        "k_0.01": 342,
+        "tp_0.01": 50,
+        "empatados_0.01": 1,
+        "precision_0.02": 0.07602339181286549,
+        "recall_0.02": 0.8813559322033898,
+        "k_0.02": 684,
+        "tp_0.02": 52,
+        "empatados_0.02": 1
+      },
+      "filas_fit": 136471,
+      "tiempos": {
+        "fit_s": 0.14106570900185034,
+        "score_s": 0.14630858300370164
+      },
+      "entrenamiento": {
+        "filas_fit": 136471,
+        "predictores": 21,
+        "escalado": false,
+        "detalle": {
+          "modelo": "FrozenECOD adaptación ECDF congelada",
+          "protocolo": "inductivo_ecdf_train_congelada",
+          "seleccion_principal_elegible": true,
+          "depende_del_lote_consulta": false,
+          "usa_etiquetas": false,
+          "filas_fit": 136471,
+          "n_features": 21,
+          "smoothing": 0.5,
+          "colas": "inclusivas; (conteo + a) / (n_train + 2*a)",
+          "asimetria": "scipy.stats.skew bias=True; ajustada solo con train",
+          "signos_asimetria_train": [
+            -1.0,
+            -1.0,
+            -1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            -1.0,
+            1.0,
+            1.0,
+            1.0,
+            -1.0,
+            1.0,
+            -1.0,
+            -1.0,
+            -1.0,
+            1.0,
+            -1.0,
+            1.0,
+            -1.0,
+            1.0
+          ],
+          "extremos": "score finito saturado fuera del soporte de train",
+          "determinista": true,
+          "random_state_no_utilizado": 20265020,
+          "segundos_fit": 0.13751716598926578
+        }
+      },
+      "avisos": [],
+      "scores_sha256": "9cdad23f277b2037c3b0075a6bf891e707e7ee9a63a0474a02f81265cdf57eaf",
+      "fecha_utc": "2026-10-20T13:22:40Z",
+      "pid": 19022
+    }
+  },
+  {
+    "familia": "ecod_frozen",
+    "regimen": "normales",
+    "outer": 4,
+    "ganador": {
+      "config": 0,
+      "ap_media": 0.4601202318570459,
+      "ap_sd": 0.02379021295272862,
+      "recall_1pct": 0.805041653142919,
+      "fit_s_media": 0.08867722199647687
+    },
+    "busqueda": [
+      {
+        "config": 0,
+        "ap_media": 0.4601202318570459,
+        "ap_sd": 0.02379021295272862,
+        "recall_1pct": 0.805041653142919,
+        "fit_s_media": 0.08867722199647687
+      }
+    ],
+    "protocolo": "638141edb70c6551f61114f7f3526db2f8d67d838f706ae3216808a220628201",
+    "evaluacion_exterior": {
+      "estado": "completo",
+      "identidad": {
+        "protocolo": "638141edb70c6551f61114f7f3526db2f8d67d838f706ae3216808a220628201",
+        "familia": "ecod_frozen",
+        "regimen": "normales",
+        "outer": 4,
+        "inner": -1,
+        "config": 0,
+        "parametros": {},
+        "semilla": 20266020,
+        "train_indices": "e242d3e28f4372dd9aa014e9b60f3576c58e22b4404faad219c28ace2810099e",
+        "eval_indices": "19cd5f0c9e0018735b2301c9d3da5f89a975c88e2f7da09ed63edc923bad7dfe",
+        "codigo": {
+          "modelos.py": "926a3eb0b0dcc3de4aa6b70f2f51a8cf5f413299155bc3c0c0c0ef028ac06951",
+          "experimento.py": "4b9e1fc5ac132f692730f8ffccac2b831034061fb9909968fe2b87c2f77028f3",
+          "modelo_ecod.py": "757c4b90a294bd505e7449065478d657bc307ee6c2d1d0a44f1f22d80651852c"
+        },
+        "datos": {
+          "X.npy": "797d4be9c7598ba85b766a7871e87e9ed0eab97715af09ec65c88ee028e28df3",
+          "y.npy": "7c793d6c0d9c8a583a4ed44af8c0cb6edf6c325b7f74f0cf2627a9eb64410197",
+          "grupos.npy": "300c85e51790caebd642c08c9dcfd6186c64ac7ba506397d3952773dab9f031c",
+          "X_produccion.npy": "6259fbef314607e7e0e97efc8cd84de186f79c7dea142eabb4fe6cddf9f2294f",
+          "particiones.npz": "bc7c03b2a02c299f6d4ec38a68d5e84213a898fafcef664107326a97529c5456"
+        }
+      },
+      "metricas": {
+        "ap": 0.39836924470255175,
+        "roc_auc": 0.9704292755289251,
+        "filas": 34176,
+        "fraudes": 59,
+        "precision_0.002": 0.391304347826087,
+        "recall_0.002": 0.4576271186440678,
+        "k_0.002": 69,
+        "tp_0.002": 27,
+        "empatados_0.002": 1,
+        "precision_0.01": 0.13157894736842105,
+        "recall_0.01": 0.7627118644067796,
+        "k_0.01": 342,
+        "tp_0.01": 45,
+        "empatados_0.01": 1,
+        "precision_0.02": 0.07309941520467836,
+        "recall_0.02": 0.847457627118644,
+        "k_0.02": 684,
+        "tp_0.02": 50,
+        "empatados_0.02": 1
+      },
+      "filas_fit": 136472,
+      "tiempos": {
+        "fit_s": 0.14167262500268407,
+        "score_s": 0.14577933300461154
+      },
+      "entrenamiento": {
+        "filas_fit": 136472,
+        "predictores": 21,
+        "escalado": false,
+        "detalle": {
+          "modelo": "FrozenECOD adaptación ECDF congelada",
+          "protocolo": "inductivo_ecdf_train_congelada",
+          "seleccion_principal_elegible": true,
+          "depende_del_lote_consulta": false,
+          "usa_etiquetas": false,
+          "filas_fit": 136472,
+          "n_features": 21,
+          "smoothing": 0.5,
+          "colas": "inclusivas; (conteo + a) / (n_train + 2*a)",
+          "asimetria": "scipy.stats.skew bias=True; ajustada solo con train",
+          "signos_asimetria_train": [
+            -1.0,
+            -1.0,
+            -1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            -1.0,
+            1.0,
+            1.0,
+            1.0,
+            -1.0,
+            1.0,
+            -1.0,
+            -1.0,
+            -1.0,
+            1.0,
+            -1.0,
+            1.0,
+            -1.0,
+            1.0
+          ],
+          "extremos": "score finito saturado fuera del soporte de train",
+          "determinista": true,
+          "random_state_no_utilizado": 20266020,
+          "segundos_fit": 0.13831562500854488
+        }
+      },
+      "avisos": [],
+      "scores_sha256": "db29d7d9b32009537f8c4bd4b8699daedfb730d6299c196ce5db283abf00344b",
+      "fecha_utc": "2026-10-20T13:22:41Z",
+      "pid": 19022
+    }
+  },
+  {
+    "familia": "ecod_frozen",
+    "regimen": "normales",
+    "outer": -1,
+    "ganador": {
+      "config": 0,
+      "ap_media": 0.43713796664435195,
+      "ap_sd": 0.08399629323994154,
+      "recall_1pct": 0.7967085824228682,
+      "fit_s_media": 0.11568336133010841
+    },
+    "busqueda": [
+      {
+        "config": 0,
+        "ap_media": 0.43713796664435195,
+        "ap_sd": 0.08399629323994154,
+        "recall_1pct": 0.7967085824228682,
+        "fit_s_media": 0.11568336133010841
+      }
+    ],
+    "protocolo": "638141edb70c6551f61114f7f3526db2f8d67d838f706ae3216808a220628201"
+  }
+]

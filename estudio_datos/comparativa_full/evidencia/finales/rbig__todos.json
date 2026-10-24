@@ -1,0 +1,80 @@
+{
+  "identidad": {
+    "protocolo": "638141edb70c6551f61114f7f3526db2f8d67d838f706ae3216808a220628201",
+    "datos": {
+      "X.npy": "797d4be9c7598ba85b766a7871e87e9ed0eab97715af09ec65c88ee028e28df3",
+      "y.npy": "7c793d6c0d9c8a583a4ed44af8c0cb6edf6c325b7f74f0cf2627a9eb64410197",
+      "grupos.npy": "300c85e51790caebd642c08c9dcfd6186c64ac7ba506397d3952773dab9f031c",
+      "X_produccion.npy": "6259fbef314607e7e0e97efc8cd84de186f79c7dea142eabb4fe6cddf9f2294f",
+      "particiones.npz": "bc7c03b2a02c299f6d4ec38a68d5e84213a898fafcef664107326a97529c5456"
+    },
+    "familia": "rbig",
+    "regimen": "todos",
+    "config": 0,
+    "parametros": {
+      "n_layers": 20,
+      "bins": 128
+    },
+    "semilla": 20361019,
+    "hilos": 2,
+    "codigo": {
+      "modelos.py": "926a3eb0b0dcc3de4aa6b70f2f51a8cf5f413299155bc3c0c0c0ef028ac06951",
+      "experimento.py": "4b9e1fc5ac132f692730f8ffccac2b831034061fb9909968fe2b87c2f77028f3",
+      "modelo_rbig.py": "dde3281be39f86e38cd0c04829ff53b77145d9febe62cf01d1d55ea5c19a8018"
+    },
+    "codigo_finalizacion": "bdcdaa68d9e0383f8791956c89ded61e35b1b6b2210abc0a65255b51582170ba",
+    "decision": "c9db08d900d4da67a94eb19035be24693655218926a4b64d84d36305c36c1a64"
+  },
+  "filas_fit": 170884,
+  "filas_produccion": 113923,
+  "tiempos": {
+    "fit_s": 8.99585558300896,
+    "score_s": 4.990568541994435
+  },
+  "entrenamiento": {
+    "filas_fit": 170884,
+    "predictores": 21,
+    "escalado": true,
+    "detalle": {
+      "modelo": "RBIG adaptado: histograma + Gaussianización + PCA",
+      "parametros": {
+        "n_layers": 20,
+        "bins": 128,
+        "pseudocount": 0.5,
+        "bound_ext": 0.3,
+        "rotation": "pca"
+      },
+      "filas_entrenamiento": 170884,
+      "columnas": 21,
+      "filas_por_capa": 170884,
+      "submuestreo": false,
+      "etiquetas_utilizadas": false,
+      "semilla": 20361019,
+      "rotacion_determinista": true,
+      "hilos": 2,
+      "segundos_ajuste": 8.969583790996694,
+      "fuente_url": "https://github.com/IPL-UV/rbig/tree/a9124fc07d8e851833802d604fe552b6327ab980",
+      "fuente_commit": "a9124fc07d8e851833802d604fe552b6327ab980",
+      "referencia_miax": "5_Inteligencia_Artificial_Generativa/2026_Anomalias/scripts_deep/AD_rbig_demo_clase.ipynb, celdas 2 y 6",
+      "adaptaciones": [
+        "Histograma de bins equidistantes y pseudocuentas normalizadas.",
+        "Colas exponenciales con masa explícita y CDF inversa sin clipping.",
+        "Logdensidad y jacobianos calculados sin exponentiar probabilidades.",
+        "Número fijo de capas elegido en validación, sin parada por entropía.",
+        "Marginales y rotaciones congeladas al predecir; score independiente del lote."
+      ]
+    }
+  },
+  "avisos": [],
+  "scores_sha256": "5963d5d928147928c3b0aa41e6f83879b3361f1d598bbca2958ca67810ded192",
+  "modelo_sha256": "2ea7f17b544a5a95b22eccd84c7004716486d349ad7cbb389f60824e69888c88",
+  "invariante_lote": true,
+  "delta_serializacion": 0.0,
+  "delta_orden_lote": 0.0,
+  "tolerancia_verificacion": {
+    "rtol": 1e-06,
+    "atol": 1e-08
+  },
+  "alcance_invariancia": "Coincidencia numérica dentro de rtol/atol; no identidad bit a bit.",
+  "fecha_utc": "2026-10-20T13:54:51Z"
+}

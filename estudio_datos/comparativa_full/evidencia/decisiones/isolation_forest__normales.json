@@ -1,0 +1,548 @@
+[
+  {
+    "familia": "isolation_forest",
+    "regimen": "normales",
+    "outer": 0,
+    "ganador": {
+      "config": 2,
+      "ap_media": 0.4612353048554314,
+      "ap_sd": 0.041005974576108106,
+      "recall_1pct": 0.8431786216596343,
+      "fit_s_media": 3.029641736667448
+    },
+    "busqueda": [
+      {
+        "config": 0,
+        "ap_media": 0.21235731698642304,
+        "ap_sd": 0.031125192104832302,
+        "recall_1pct": 0.6691550362436439,
+        "fit_s_media": 0.36973290266663145
+      },
+      {
+        "config": 1,
+        "ap_media": 0.32126302151838,
+        "ap_sd": 0.021367429107205096,
+        "recall_1pct": 0.8092610624256192,
+        "fit_s_media": 0.7974357776693068
+      },
+      {
+        "config": 2,
+        "ap_media": 0.4612353048554314,
+        "ap_sd": 0.041005974576108106,
+        "recall_1pct": 0.8431786216596343,
+        "fit_s_media": 3.029641736667448
+      }
+    ],
+    "protocolo": "638141edb70c6551f61114f7f3526db2f8d67d838f706ae3216808a220628201",
+    "evaluacion_exterior": {
+      "estado": "completo",
+      "identidad": {
+        "protocolo": "638141edb70c6551f61114f7f3526db2f8d67d838f706ae3216808a220628201",
+        "familia": "isolation_forest",
+        "regimen": "normales",
+        "outer": 0,
+        "inner": -1,
+        "config": 2,
+        "parametros": {
+          "n_estimators": 400,
+          "max_samples": 1.0,
+          "max_features": 1.0
+        },
+        "semilla": 20262020,
+        "train_indices": "6b7ca11677245ae99e20f7665713705b3a5e75a38cc2e54f1049ea95ac178e3c",
+        "eval_indices": "720e623b357d5145f33478d423d75722fe98bb53532e1153cb446505e4517f15",
+        "codigo": {
+          "modelos.py": "926a3eb0b0dcc3de4aa6b70f2f51a8cf5f413299155bc3c0c0c0ef028ac06951",
+          "experimento.py": "4b9e1fc5ac132f692730f8ffccac2b831034061fb9909968fe2b87c2f77028f3"
+        },
+        "datos": {
+          "X.npy": "797d4be9c7598ba85b766a7871e87e9ed0eab97715af09ec65c88ee028e28df3",
+          "y.npy": "7c793d6c0d9c8a583a4ed44af8c0cb6edf6c325b7f74f0cf2627a9eb64410197",
+          "grupos.npy": "300c85e51790caebd642c08c9dcfd6186c64ac7ba506397d3952773dab9f031c",
+          "X_produccion.npy": "6259fbef314607e7e0e97efc8cd84de186f79c7dea142eabb4fe6cddf9f2294f",
+          "particiones.npz": "bc7c03b2a02c299f6d4ec38a68d5e84213a898fafcef664107326a97529c5456"
+        }
+      },
+      "metricas": {
+        "ap": 0.524454216214519,
+        "roc_auc": 0.9490422571315306,
+        "filas": 34177,
+        "fraudes": 59,
+        "precision_0.002": 0.5072463768115942,
+        "recall_0.002": 0.5932203389830508,
+        "k_0.002": 69,
+        "tp_0.002": 35,
+        "empatados_0.002": 1,
+        "precision_0.01": 0.13157894736842105,
+        "recall_0.01": 0.7627118644067796,
+        "k_0.01": 342,
+        "tp_0.01": 45,
+        "empatados_0.01": 1,
+        "precision_0.02": 0.06578947368421052,
+        "recall_0.02": 0.7627118644067796,
+        "k_0.02": 684,
+        "tp_0.02": 45,
+        "empatados_0.02": 1
+      },
+      "filas_fit": 136471,
+      "tiempos": {
+        "fit_s": 5.164256917007151,
+        "score_s": 0.591832665988477
+      },
+      "entrenamiento": {
+        "filas_fit": 136471,
+        "predictores": 21,
+        "escalado": false,
+        "muestra_por_arbol": 136471
+      },
+      "avisos": [],
+      "scores_sha256": "e7378494700d88f42ceb3147c9eee1ae47b9b7a1716a9881e03e942cb6be4501",
+      "fecha_utc": "2026-10-20T13:08:38Z",
+      "pid": 17529
+    }
+  },
+  {
+    "familia": "isolation_forest",
+    "regimen": "normales",
+    "outer": 1,
+    "ganador": {
+      "config": 2,
+      "ap_media": 0.46896320496206223,
+      "ap_sd": 0.06633400749232422,
+      "recall_1pct": 0.8220274802553282,
+      "fit_s_media": 2.8177636806697897
+    },
+    "busqueda": [
+      {
+        "config": 0,
+        "ap_media": 0.20735119540570493,
+        "ap_sd": 0.03056755330846709,
+        "recall_1pct": 0.6780266147354755,
+        "fit_s_media": 0.3526242916705087
+      },
+      {
+        "config": 1,
+        "ap_media": 0.3323557018545041,
+        "ap_sd": 0.030514348559536934,
+        "recall_1pct": 0.7966028345775181,
+        "fit_s_media": 0.7623486386631461
+      },
+      {
+        "config": 2,
+        "ap_media": 0.46896320496206223,
+        "ap_sd": 0.06633400749232422,
+        "recall_1pct": 0.8220274802553282,
+        "fit_s_media": 2.8177636806697897
+      }
+    ],
+    "protocolo": "638141edb70c6551f61114f7f3526db2f8d67d838f706ae3216808a220628201",
+    "evaluacion_exterior": {
+      "estado": "completo",
+      "identidad": {
+        "protocolo": "638141edb70c6551f61114f7f3526db2f8d67d838f706ae3216808a220628201",
+        "familia": "isolation_forest",
+        "regimen": "normales",
+        "outer": 1,
+        "inner": -1,
+        "config": 2,
+        "parametros": {
+          "n_estimators": 400,
+          "max_samples": 1.0,
+          "max_features": 1.0
+        },
+        "semilla": 20263020,
+        "train_indices": "b50833cd37db12b17d7a052829346bc5fb37ec97c969b88ed030ac73fbccd779",
+        "eval_indices": "7dc2340747aa37698ae3658c5dc11fc85b4105095cb8e96893d72cebffc37c7f",
+        "codigo": {
+          "modelos.py": "926a3eb0b0dcc3de4aa6b70f2f51a8cf5f413299155bc3c0c0c0ef028ac06951",
+          "experimento.py": "4b9e1fc5ac132f692730f8ffccac2b831034061fb9909968fe2b87c2f77028f3"
+        },
+        "datos": {
+          "X.npy": "797d4be9c7598ba85b766a7871e87e9ed0eab97715af09ec65c88ee028e28df3",
+          "y.npy": "7c793d6c0d9c8a583a4ed44af8c0cb6edf6c325b7f74f0cf2627a9eb64410197",
+          "grupos.npy": "300c85e51790caebd642c08c9dcfd6186c64ac7ba506397d3952773dab9f031c",
+          "X_produccion.npy": "6259fbef314607e7e0e97efc8cd84de186f79c7dea142eabb4fe6cddf9f2294f",
+          "particiones.npz": "bc7c03b2a02c299f6d4ec38a68d5e84213a898fafcef664107326a97529c5456"
+        }
+      },
+      "metricas": {
+        "ap": 0.4749615223579176,
+        "roc_auc": 0.9558565934180576,
+        "filas": 34177,
+        "fraudes": 59,
+        "precision_0.002": 0.4492753623188406,
+        "recall_0.002": 0.5254237288135594,
+        "k_0.002": 69,
+        "tp_0.002": 31,
+        "empatados_0.002": 1,
+        "precision_0.01": 0.14327485380116958,
+        "recall_0.01": 0.8305084745762712,
+        "k_0.01": 342,
+        "tp_0.01": 49,
+        "empatados_0.01": 1,
+        "precision_0.02": 0.07456140350877193,
+        "recall_0.02": 0.864406779661017,
+        "k_0.02": 684,
+        "tp_0.02": 51,
+        "empatados_0.02": 1
+      },
+      "filas_fit": 136471,
+      "tiempos": {
+        "fit_s": 4.690925250004511,
+        "score_s": 0.5522984999988694
+      },
+      "entrenamiento": {
+        "filas_fit": 136471,
+        "predictores": 21,
+        "escalado": false,
+        "muestra_por_arbol": 136471
+      },
+      "avisos": [],
+      "scores_sha256": "1a16b6f2a282f83ad6a6f9e762afd13f0d5103483f1fd25f7b4cd9fd65467e4f",
+      "fecha_utc": "2026-10-20T13:09:00Z",
+      "pid": 17529
+    }
+  },
+  {
+    "familia": "isolation_forest",
+    "regimen": "normales",
+    "outer": 2,
+    "ganador": {
+      "config": 2,
+      "ap_media": 0.47940117530409315,
+      "ap_sd": 0.014066793706950076,
+      "recall_1pct": 0.8180785459266472,
+      "fit_s_media": 3.112520805671617
+    },
+    "busqueda": [
+      {
+        "config": 0,
+        "ap_media": 0.24502189159434917,
+        "ap_sd": 0.046419076688953516,
+        "recall_1pct": 0.673861300443579,
+        "fit_s_media": 0.394615944334267
+      },
+      {
+        "config": 1,
+        "ap_media": 0.3543999370506061,
+        "ap_sd": 0.04333915615901725,
+        "recall_1pct": 0.7885426809477442,
+        "fit_s_media": 0.8689092779968632
+      },
+      {
+        "config": 2,
+        "ap_media": 0.47940117530409315,
+        "ap_sd": 0.014066793706950076,
+        "recall_1pct": 0.8180785459266472,
+        "fit_s_media": 3.112520805671617
+      }
+    ],
+    "protocolo": "638141edb70c6551f61114f7f3526db2f8d67d838f706ae3216808a220628201",
+    "evaluacion_exterior": {
+      "estado": "completo",
+      "identidad": {
+        "protocolo": "638141edb70c6551f61114f7f3526db2f8d67d838f706ae3216808a220628201",
+        "familia": "isolation_forest",
+        "regimen": "normales",
+        "outer": 2,
+        "inner": -1,
+        "config": 2,
+        "parametros": {
+          "n_estimators": 400,
+          "max_samples": 1.0,
+          "max_features": 1.0
+        },
+        "semilla": 20264020,
+        "train_indices": "4d0a3300f177a4ed603098c1f3ae241b397aa2d8f48a5f9209488bfee05a82a4",
+        "eval_indices": "5db8e274dc0f1d5eec8bf40767e86c4599a9baa88d9b6fd25df4c53ff468d09b",
+        "codigo": {
+          "modelos.py": "926a3eb0b0dcc3de4aa6b70f2f51a8cf5f413299155bc3c0c0c0ef028ac06951",
+          "experimento.py": "4b9e1fc5ac132f692730f8ffccac2b831034061fb9909968fe2b87c2f77028f3"
+        },
+        "datos": {
+          "X.npy": "797d4be9c7598ba85b766a7871e87e9ed0eab97715af09ec65c88ee028e28df3",
+          "y.npy": "7c793d6c0d9c8a583a4ed44af8c0cb6edf6c325b7f74f0cf2627a9eb64410197",
+          "grupos.npy": "300c85e51790caebd642c08c9dcfd6186c64ac7ba506397d3952773dab9f031c",
+          "X_produccion.npy": "6259fbef314607e7e0e97efc8cd84de186f79c7dea142eabb4fe6cddf9f2294f",
+          "particiones.npz": "bc7c03b2a02c299f6d4ec38a68d5e84213a898fafcef664107326a97529c5456"
+        }
+      },
+      "metricas": {
+        "ap": 0.4280550809053266,
+        "roc_auc": 0.9518381370338834,
+        "filas": 34177,
+        "fraudes": 59,
+        "precision_0.002": 0.42028985507246375,
+        "recall_0.002": 0.4915254237288136,
+        "k_0.002": 69,
+        "tp_0.002": 29,
+        "empatados_0.002": 1,
+        "precision_0.01": 0.14327485380116958,
+        "recall_0.01": 0.8305084745762712,
+        "k_0.01": 342,
+        "tp_0.01": 49,
+        "empatados_0.01": 1,
+        "precision_0.02": 0.07309941520467836,
+        "recall_0.02": 0.847457627118644,
+        "k_0.02": 684,
+        "tp_0.02": 50,
+        "empatados_0.02": 1
+      },
+      "filas_fit": 136471,
+      "tiempos": {
+        "fit_s": 5.0558775840036105,
+        "score_s": 0.5814399160008179
+      },
+      "entrenamiento": {
+        "filas_fit": 136471,
+        "predictores": 21,
+        "escalado": false,
+        "muestra_por_arbol": 136471
+      },
+      "avisos": [],
+      "scores_sha256": "fdb5bae90faac36ba18d826f0432aee187d2f26a5f1b128e431416f3f99ca4e7",
+      "fecha_utc": "2026-10-20T13:09:25Z",
+      "pid": 17529
+    }
+  },
+  {
+    "familia": "isolation_forest",
+    "regimen": "normales",
+    "outer": 3,
+    "ganador": {
+      "config": 2,
+      "ap_media": 0.4739055975282218,
+      "ap_sd": 0.06091291316400066,
+      "recall_1pct": 0.8095315373796387,
+      "fit_s_media": 2.88037008367246
+    },
+    "busqueda": [
+      {
+        "config": 0,
+        "ap_media": 0.1940428291313999,
+        "ap_sd": 0.041886337138297536,
+        "recall_1pct": 0.6651520069241589,
+        "fit_s_media": 0.3852666389963512
+      },
+      {
+        "config": 1,
+        "ap_media": 0.3493488831335494,
+        "ap_sd": 0.06868428266540587,
+        "recall_1pct": 0.7839987017202207,
+        "fit_s_media": 0.8102909723287061
+      },
+      {
+        "config": 2,
+        "ap_media": 0.4739055975282218,
+        "ap_sd": 0.06091291316400066,
+        "recall_1pct": 0.8095315373796387,
+        "fit_s_media": 2.88037008367246
+      }
+    ],
+    "protocolo": "638141edb70c6551f61114f7f3526db2f8d67d838f706ae3216808a220628201",
+    "evaluacion_exterior": {
+      "estado": "completo",
+      "identidad": {
+        "protocolo": "638141edb70c6551f61114f7f3526db2f8d67d838f706ae3216808a220628201",
+        "familia": "isolation_forest",
+        "regimen": "normales",
+        "outer": 3,
+        "inner": -1,
+        "config": 2,
+        "parametros": {
+          "n_estimators": 400,
+          "max_samples": 1.0,
+          "max_features": 1.0
+        },
+        "semilla": 20265020,
+        "train_indices": "5c4b4285dc79a68da9792b5ff586fb64bfc6e0384f5d1a20e8cff81d7caca341",
+        "eval_indices": "e8794e5d52dd4ac1f616339e17e0321b6968118b4dc10a4d8fad9aee009dfc86",
+        "codigo": {
+          "modelos.py": "926a3eb0b0dcc3de4aa6b70f2f51a8cf5f413299155bc3c0c0c0ef028ac06951",
+          "experimento.py": "4b9e1fc5ac132f692730f8ffccac2b831034061fb9909968fe2b87c2f77028f3"
+        },
+        "datos": {
+          "X.npy": "797d4be9c7598ba85b766a7871e87e9ed0eab97715af09ec65c88ee028e28df3",
+          "y.npy": "7c793d6c0d9c8a583a4ed44af8c0cb6edf6c325b7f74f0cf2627a9eb64410197",
+          "grupos.npy": "300c85e51790caebd642c08c9dcfd6186c64ac7ba506397d3952773dab9f031c",
+          "X_produccion.npy": "6259fbef314607e7e0e97efc8cd84de186f79c7dea142eabb4fe6cddf9f2294f",
+          "particiones.npz": "bc7c03b2a02c299f6d4ec38a68d5e84213a898fafcef664107326a97529c5456"
+        }
+      },
+      "metricas": {
+        "ap": 0.4875036856648942,
+        "roc_auc": 0.9840026786397359,
+        "filas": 34177,
+        "fraudes": 59,
+        "precision_0.002": 0.5217391304347826,
+        "recall_0.002": 0.6101694915254238,
+        "k_0.002": 69,
+        "tp_0.002": 36,
+        "empatados_0.002": 1,
+        "precision_0.01": 0.14912280701754385,
+        "recall_0.01": 0.864406779661017,
+        "k_0.01": 342,
+        "tp_0.01": 51,
+        "empatados_0.01": 1,
+        "precision_0.02": 0.0804093567251462,
+        "recall_0.02": 0.9322033898305084,
+        "k_0.02": 684,
+        "tp_0.02": 55,
+        "empatados_0.02": 1
+      },
+      "filas_fit": 136471,
+      "tiempos": {
+        "fit_s": 5.330940917003318,
+        "score_s": 0.5645238750003045
+      },
+      "entrenamiento": {
+        "filas_fit": 136471,
+        "predictores": 21,
+        "escalado": false,
+        "muestra_por_arbol": 136471
+      },
+      "avisos": [],
+      "scores_sha256": "7ad6eaa744b78645f823a1bd0b4b42769db3fa672fd864be9ee81d20ba53cf27",
+      "fecha_utc": "2026-10-20T13:09:49Z",
+      "pid": 17529
+    }
+  },
+  {
+    "familia": "isolation_forest",
+    "regimen": "normales",
+    "outer": 4,
+    "ganador": {
+      "config": 2,
+      "ap_media": 0.4887748267921858,
+      "ap_sd": 0.027417950637054506,
+      "recall_1pct": 0.8219733852645245,
+      "fit_s_media": 3.318431819662995
+    },
+    "busqueda": [
+      {
+        "config": 0,
+        "ap_media": 0.2492776745147721,
+        "ap_sd": 0.03134403274382007,
+        "recall_1pct": 0.7204911825164989,
+        "fit_s_media": 0.3861634170025354
+      },
+      {
+        "config": 1,
+        "ap_media": 0.3551486445685863,
+        "ap_sd": 0.032350407668331305,
+        "recall_1pct": 0.805095748133723,
+        "fit_s_media": 0.7653021250055948
+      },
+      {
+        "config": 2,
+        "ap_media": 0.4887748267921858,
+        "ap_sd": 0.027417950637054506,
+        "recall_1pct": 0.8219733852645245,
+        "fit_s_media": 3.318431819662995
+      }
+    ],
+    "protocolo": "638141edb70c6551f61114f7f3526db2f8d67d838f706ae3216808a220628201",
+    "evaluacion_exterior": {
+      "estado": "completo",
+      "identidad": {
+        "protocolo": "638141edb70c6551f61114f7f3526db2f8d67d838f706ae3216808a220628201",
+        "familia": "isolation_forest",
+        "regimen": "normales",
+        "outer": 4,
+        "inner": -1,
+        "config": 2,
+        "parametros": {
+          "n_estimators": 400,
+          "max_samples": 1.0,
+          "max_features": 1.0
+        },
+        "semilla": 20266020,
+        "train_indices": "e242d3e28f4372dd9aa014e9b60f3576c58e22b4404faad219c28ace2810099e",
+        "eval_indices": "19cd5f0c9e0018735b2301c9d3da5f89a975c88e2f7da09ed63edc923bad7dfe",
+        "codigo": {
+          "modelos.py": "926a3eb0b0dcc3de4aa6b70f2f51a8cf5f413299155bc3c0c0c0ef028ac06951",
+          "experimento.py": "4b9e1fc5ac132f692730f8ffccac2b831034061fb9909968fe2b87c2f77028f3"
+        },
+        "datos": {
+          "X.npy": "797d4be9c7598ba85b766a7871e87e9ed0eab97715af09ec65c88ee028e28df3",
+          "y.npy": "7c793d6c0d9c8a583a4ed44af8c0cb6edf6c325b7f74f0cf2627a9eb64410197",
+          "grupos.npy": "300c85e51790caebd642c08c9dcfd6186c64ac7ba506397d3952773dab9f031c",
+          "X_produccion.npy": "6259fbef314607e7e0e97efc8cd84de186f79c7dea142eabb4fe6cddf9f2294f",
+          "particiones.npz": "bc7c03b2a02c299f6d4ec38a68d5e84213a898fafcef664107326a97529c5456"
+        }
+      },
+      "metricas": {
+        "ap": 0.43474695584175144,
+        "roc_auc": 0.9730871283911843,
+        "filas": 34176,
+        "fraudes": 59,
+        "precision_0.002": 0.43478260869565216,
+        "recall_0.002": 0.5084745762711864,
+        "k_0.002": 69,
+        "tp_0.002": 30,
+        "empatados_0.002": 1,
+        "precision_0.01": 0.14327485380116958,
+        "recall_0.01": 0.8305084745762712,
+        "k_0.01": 342,
+        "tp_0.01": 49,
+        "empatados_0.01": 1,
+        "precision_0.02": 0.07163742690058479,
+        "recall_0.02": 0.8305084745762712,
+        "k_0.02": 684,
+        "tp_0.02": 49,
+        "empatados_0.02": 1
+      },
+      "filas_fit": 136472,
+      "tiempos": {
+        "fit_s": 5.333699166003498,
+        "score_s": 0.5722319999913452
+      },
+      "entrenamiento": {
+        "filas_fit": 136472,
+        "predictores": 21,
+        "escalado": false,
+        "muestra_por_arbol": 136472
+      },
+      "avisos": [],
+      "scores_sha256": "64be7b6548704c053945b0e1d67cd2e40897a080d93f53930190585eef861ef1",
+      "fecha_utc": "2026-10-20T13:10:15Z",
+      "pid": 17529
+    }
+  },
+  {
+    "familia": "isolation_forest",
+    "regimen": "normales",
+    "outer": -1,
+    "ganador": {
+      "config": 2,
+      "ap_media": 0.4785933107112079,
+      "ap_sd": 0.07861363414556823,
+      "recall_1pct": 0.8237820380677524,
+      "fit_s_media": 3.99770720799764
+    },
+    "busqueda": [
+      {
+        "config": 0,
+        "ap_media": 0.24852914807784623,
+        "ap_sd": 0.10106204246448053,
+        "recall_1pct": 0.6848759705902564,
+        "fit_s_media": 0.4210152083299666
+      },
+      {
+        "config": 1,
+        "ap_media": 0.3440281117550279,
+        "ap_sd": 0.10706892410155001,
+        "recall_1pct": 0.7967085824228682,
+        "fit_s_media": 0.8302928473373564
+      },
+      {
+        "config": 2,
+        "ap_media": 0.4785933107112079,
+        "ap_sd": 0.07861363414556823,
+        "recall_1pct": 0.8237820380677524,
+        "fit_s_media": 3.99770720799764
+      }
+    ],
+    "protocolo": "638141edb70c6551f61114f7f3526db2f8d67d838f706ae3216808a220628201"
+  }
+]
