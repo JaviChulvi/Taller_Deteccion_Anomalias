@@ -347,7 +347,7 @@ con perfiles de todos los campos, matrices, multiplicidades, diagnósticos y ver
 ["importes_extremos.json y orden_filas.json", "Importes, colas, reglas descriptivas y bloques de orden"],
 ["comparacion_distribuciones.json y deriva_multivariante.json", "Diferencias entre conjuntos"],
 ["duplicados_validacion.json", "Patrones repetidos y solape del split"]]) + """
-<p>Desde la raíz del proyecto y con un entorno que tenga las dependencias indicadas:</p>
+<p>Desde la carpeta <code>javi/</code> y con un entorno que tenga las dependencias indicadas:</p>
 <pre>python estudio_datos/perfilar_datos.py
 python estudio_datos/auditar_duplicados.py
 python estudio_datos/auditar_deriva_multivariante.py

@@ -30,7 +30,7 @@ Git conserva los notebooks ejecutados, el código, la entrega y una [selección 
 
 En una copia nueva, ejecutar primero el notebook 02 y después el 03. No copiar `evidencia/` a `resultados/`: la evidencia no contiene los modelos, arrays ni scores intermedios necesarios para reanudar. Las salidas de los notebooks conservan las rutas de su ejecución original.
 
-El protocolo registrado utiliza **CPython 3.12.14**, CPU y las versiones fijadas en [requirements.txt](requirements.txt), obtenido del entorno local. Para reproducirlo en una copia nueva, con Python 3.12.14 disponible como `python3.12`:
+El protocolo registrado utiliza **CPython 3.12.14**, CPU y las versiones fijadas en [requirements.txt](requirements.txt), obtenido del entorno local. Todos los comandos de este documento se ejecutan desde `javi/` (`cd javi` desde la raíz del repositorio). Los ZIP originales permanecen en la carpeta superior; el entorno, los notebooks y los resultados pertenecen a `javi/`. Para reproducirlo en una copia nueva, con Python 3.12.14 disponible como `python3.12`:
 
 ```bash
 env -u PYTHONPATH python3.12 -m venv .venv
@@ -50,7 +50,7 @@ Para ejecutar ambos notebooks, guardar sus salidas en los propios `.ipynb` y det
 env -u PYTHONPATH .venv/bin/python -m estudio_datos.comparativa_full.ejecutar_notebooks
 ```
 
-El runner [ejecutar_notebooks.py](ejecutar_notebooks.py) usa el kernel `taller-comparativa`, trabaja desde la raíz, guarda después de cada celda ejecutada y registra inicio, fin y estado en `metadata.ejecucion_local`.
+El runner [ejecutar_notebooks.py](ejecutar_notebooks.py) usa el kernel `taller-comparativa`, trabaja desde `javi/`, guarda después de cada celda ejecutada y registra inicio, fin y estado en `metadata.ejecucion_local`.
 
 - **02** prepara y verifica los datos, ejecuta o reanuda toda la comparación con cuatro trabajos y dos hilos por trabajo, audita la cobertura completa y produce tablas, selección y figuras.
 - **03** necesita los artefactos del 02. Reajusta las 24 combinaciones mediante hasta cuatro procesos independientes y dos hilos por modelo, verifica la entrega ganadora y, cuando terminan todos los refits, ejecuta cinco inferencias completas del modelo guardado, sin reentrenarlo, para registrar mediana e IQR del tiempo de inferencia.
@@ -180,7 +180,7 @@ No se deben editar los módulos de entrenamiento mientras haya procesos activos:
 | `resultados/auditoria_entrega.json` y `estado_entrega.json` | Verificación posterior de refits y entrega elegida. |
 | `resultados/tiempos_inferencia_entrega.json` | Cinco inferencias completas, mediana/IQR y hashes, generados por el notebook 03. |
 
-La entrega es [`entrega_scores.csv`](../../entrega_scores.csv), en la raíz: **una columna `score`, sin índice y con 113.923 filas de datos**, en el orden original de producción. Se copia del CSV de la combinación elegida después de verificar los 24 refits. Un score mayor significa más sospecha; no implica una probabilidad calibrada.
+La entrega es [`entrega_scores.csv`](../../entrega_scores.csv), dentro de `javi/`: **una columna `score`, sin índice y con 113.923 filas de datos**, en el orden original de producción. Se copia del CSV de la combinación elegida después de verificar los 24 refits. Un score mayor significa más sospecha; no implica una probabilidad calibrada.
 
 La verificación de serialización y orden de lote utiliza `rtol=1e-6`, `atol=1e-8`; kNN usa `atol=1e-7`. En una de las 258 consultas comprobadas, el cálculo euclídeo por productos escalares varió `3,82e-8` al invertir el lote. La comprobación por resta directa confirmó redondeo, con vecinos y ranking idénticos en esa muestra. Se conservan el [diagnóstico numérico](evidencia/logs/diagnostico_precision_knn.json), la incidencia inicial y las tolerancias y diferencias de cada refit. No se alteraron el algoritmo ni los scores de validación. La invariancia numérica no significa identidad bit a bit.
 

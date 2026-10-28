@@ -7,4 +7,4 @@ __pycache__/
 venv/
 
 # Resultados regenerables; la evidencia histórica seleccionada se guarda aparte.
-/estudio_datos/comparativa_full/resultados/
+/javi/estudio_datos/comparativa_full/resultados/

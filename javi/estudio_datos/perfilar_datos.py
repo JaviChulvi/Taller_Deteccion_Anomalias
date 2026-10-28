@@ -1,6 +1,6 @@
 """Estudio descriptivo completo de los ZIP originales, sin modificarlos.
 
-Ejecutar desde cualquier directorio: python estudio_datos/perfilar_datos.py
+Desde la raíz del repositorio: python javi/estudio_datos/perfilar_datos.py
 Las estadísticas utilizan todas las filas. No se entrena un detector de fraude.
 """
 from pathlib import Path
@@ -19,7 +19,7 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
 SALIDA = Path(__file__).resolve().parent
-RAIZ = SALIDA.parent
+RAIZ = SALIDA.parent.parent
 FIGURAS = SALIDA / "figuras"
 FIGURAS.mkdir(exist_ok=True)
 VARIABLES = [f"X{i}" for i in range(1, 21)] + ["Amount"]
