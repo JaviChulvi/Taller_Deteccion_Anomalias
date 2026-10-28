@@ -1,7 +1,7 @@
 """Audita el origen de las filas y la estructura numérica sin modelar fraude.
 
 Ejecutar con un entorno que tenga numpy, pandas y scikit-learn:
-    python estudio_datos/auditar_deriva_multivariante.py
+    python javi/estudio_datos/auditar_deriva_multivariante.py
 
 No modifica los ZIP, el notebook ni sus etiquetas. La etiqueta auxiliar representa
 el archivo de origen y nunca se utiliza Class ni la posición de la fila.
@@ -153,7 +153,7 @@ def main() -> None:
     parser.add_argument("--bootstrap", type=int, default=500)
     args = parser.parse_args()
     inicio = time.monotonic()
-    raiz = Path(__file__).resolve().parents[1]
+    raiz = Path(__file__).resolve().parents[2]
     marcos = [
         pd.read_csv(raiz / "credit_card_construction.csv.zip"),
         pd.read_csv(raiz / "credit_card_production.csv.zip"),

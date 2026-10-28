@@ -2,7 +2,7 @@
 """Audita igualdad exacta de predictores y solapes de particiones, sin entrenar.
 
 Ejecucion desde cualquier directorio:
-    python estudio_datos/auditar_duplicados.py
+    python javi/estudio_datos/auditar_duplicados.py
 
 Las agrupaciones se hacen sobre los valores de las columnas, no sobre un
 resumen hash persistido. Igualdad numerica exacta incluye -0.0 == 0.0 y no
@@ -201,7 +201,7 @@ def sensibilidad_cuantizacion(construccion: pd.DataFrame, produccion: pd.DataFra
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    raiz = Path(__file__).resolve().parent.parent
+    raiz = Path(__file__).resolve().parents[2]
     parser.add_argument("--datos", type=Path, default=raiz)
     parser.add_argument("--salida", type=Path, default=Path(__file__).with_name("duplicados_validacion.json"))
     args = parser.parse_args()

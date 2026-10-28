@@ -25,6 +25,7 @@ from threadpoolctl import threadpool_limits
 from .modelos import CONFIGURACIONES, Modelo, regimenes
 
 RAIZ = Path(__file__).resolve().parents[2]
+DATOS = RAIZ.parent
 SALIDA = RAIZ / "estudio_datos" / "comparativa_full" / "resultados"
 PREDICTORES = [f"X{i}" for i in range(1, 21)] + ["Amount"]
 SEMILLA = 20261020
@@ -57,7 +58,7 @@ def versiones():
 def preparar():
     """Materializa cinco folds exteriores y tres interiores sin grupos comunes."""
     SALIDA.mkdir(parents=True, exist_ok=True)
-    hashes = {n: digest_bytes((RAIZ / f"credit_card_{n}.csv.zip").read_bytes())
+    hashes = {n: digest_bytes((DATOS / f"credit_card_{n}.csv.zip").read_bytes())
               for n in ["construction", "production"]}
     protocolo = {
         "version": 1, "semilla": SEMILLA, "outer_folds": 5, "inner_folds": 3,
@@ -78,8 +79,8 @@ def preparar():
         if previo["id"] != protocolo["id"]:
             raise RuntimeError("El protocolo cambió: revisar y versionar resultados antes de continuar.")
         return previo
-    train = pd.read_csv(RAIZ / "credit_card_construction.csv.zip")
-    prod = pd.read_csv(RAIZ / "credit_card_production.csv.zip")
+    train = pd.read_csv(DATOS / "credit_card_construction.csv.zip")
+    prod = pd.read_csv(DATOS / "credit_card_production.csv.zip")
     assert list(train.columns) == list(prod.columns) == PREDICTORES + ["Class"]
     X = train[PREDICTORES].to_numpy(dtype=np.float64)
     y = train.Class.to_numpy(dtype=np.int8)
@@ -137,8 +138,8 @@ def cargar():
 
 def sellar_datos():
     """Verifica los arrays frente a los ZIP originales antes del primer ajuste."""
-    construccion = pd.read_csv(RAIZ / "credit_card_construction.csv.zip")
-    produccion = pd.read_csv(RAIZ / "credit_card_production.csv.zip")
+    construccion = pd.read_csv(DATOS / "credit_card_construction.csv.zip")
+    produccion = pd.read_csv(DATOS / "credit_card_production.csv.zip")
     assert np.array_equal(np.load(SALIDA / "X.npy"), construccion[PREDICTORES].to_numpy())
     assert np.array_equal(np.load(SALIDA / "y.npy"), construccion.Class.to_numpy())
     assert np.array_equal(np.load(SALIDA / "X_produccion.npy"), produccion[PREDICTORES].to_numpy())

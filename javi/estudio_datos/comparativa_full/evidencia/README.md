@@ -16,7 +16,7 @@ Por ello, los hashes de archivos omitidos son referencias de procedencia: **no p
 
 ## Comprobar las copias y el CSV
 
-Desde esta carpeta, `shasum -a 256 -c SHA256SUMS` verifica todos los archivos de evidencia inventariados. Desde la raíz del repositorio, el siguiente comando comprueba el hash del CSV contra la auditoría de entrega, su forma y que todos los scores sean finitos, usando solo la biblioteca estándar:
+Desde esta carpeta, `shasum -a 256 -c SHA256SUMS` verifica todos los archivos de evidencia inventariados. Desde `javi/`, el siguiente comando comprueba el hash del CSV contra la auditoría de entrega, su forma y que todos los scores sean finitos, usando solo la biblioteca estándar:
 
 ```bash
 python3 - <<'PY'
